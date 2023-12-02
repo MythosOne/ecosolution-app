@@ -4,7 +4,9 @@ export const theme = Object.freeze({
     logo2: `"CA Saygon Text"`,
     main: `'Oswald', sans-serif`,
     second: `'Fira Sans', sans-serif`,
+    
   },
+  
   fontSizes: [10, 12, 14, 16, 18, 20, 28, 48],
   fontWeights: {
     regular: 400,

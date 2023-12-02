@@ -1,18 +1,21 @@
 import React from 'react';
-import { LogoWrapper, LogoImg, TitleEco, TitleGreen } from './Logo.styled';
+import {
+  LogoWrapper,
+  TitleEco,
+  TitleGreen,
+  Green,
+} from './Logo.styled';
+import { LogoImg } from '../../../icons/IconsComponent';
 
 export const Logo = () => {
   return (
     <LogoWrapper>
-      <LogoImg
-        src="../../../images/logo.svg"
-        alt="logo"
-        width="31px"
-        height="18px"
-      />
+      <LogoImg />
       <TitleEco>ecosolution</TitleEco>
       <div style={{ width: 60, height: 18 }}>
-        <TitleGreen>GREENERGY FOR LIFE</TitleGreen>
+        <TitleGreen>
+          <Green>GREEN</Green>ERGY FOR LIFE
+        </TitleGreen>
       </div>
     </LogoWrapper>
   );
