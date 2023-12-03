@@ -9,6 +9,8 @@ import {
   MailItem,
   CorpItem,
   ArrowUpBtn,
+  SocialFacebook,
+  SocialInstagram,
 } from './Footer.styled';
 
 import { FaceBook, Instagram, ArrowUp } from '../../icons/IconsComponent';
@@ -24,8 +26,20 @@ export const Footer = () => {
           </ArrowUpBtn>
         </LogoItem>
         <SocialItem>
-          <FaceBook fill={'#173D33'} stroke={'#173D33'} />
-          <Instagram stroke={'#173D33'} />
+          <SocialFacebook
+            href="https://www.facebook.com/"
+            rel="noopener noreferrer"
+            aria-label="facebook"
+          >
+            <FaceBook fill={'#173D33'} stroke={'#173D33'} />
+          </SocialFacebook>
+          <SocialInstagram
+            href="https://www.instagram.com/"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <Instagram stroke={'#173D33'} />
+          </SocialInstagram>
         </SocialItem>
         <AddressItem>
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

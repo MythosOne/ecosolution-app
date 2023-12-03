@@ -1,21 +1,21 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  width: 100%;
+  /* width: 100%; */
 
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
 
   border-top: 1px solid;
   border-color: #97d28b;
 `;
 
 export const FooterList = styled.ul`
-  width: 100%;
+  /* width: 100%; */
   list-style: none;
 
   display: flex;
@@ -48,7 +48,16 @@ export const SocialItem = styled.li`
   gap: 8px;
 
   margin-bottom: 24px;
+
+  &:focus,
+  &:hover {
+    fill: #97d28b;
+    stroke: #97d28b;
+  }
 `;
+
+export const SocialFacebook = styled.a``;
+export const SocialInstagram = styled.a``;
 
 export const AddressItem = styled.li`
   color: #173d33;
