@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
+export const HeaderSection = styled.div`
   /* position: fixed; */
   right: 0;
   left: 0;
@@ -19,7 +19,7 @@ export const MenuBtn = styled.button`
   height: 16px;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  /* background-color: transparent; */
   border: 0;
   padding: 0;
 `;

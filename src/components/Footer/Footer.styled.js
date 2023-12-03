@@ -1,12 +1,12 @@
 import styled from '@emotion/styled';
 
-export const Container = styled.div`
-  /* width: 100%; */
+export const FooterSection = styled.div`
+  width: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   /* left: 0; */
 
@@ -15,6 +15,7 @@ export const Container = styled.div`
 `;
 
 export const FooterList = styled.ul`
+width: 100%;
   /* width: 100%; */
   list-style: none;
 

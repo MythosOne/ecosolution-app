@@ -1,7 +1,7 @@
 import React from 'react';
 import { Logo } from '../Header/Logo/Logo';
 import {
-  Container,
+  FooterSection,
   FooterList,
   LogoItem,
   SocialItem,
@@ -13,16 +13,20 @@ import {
   SocialInstagram,
 } from './Footer.styled';
 
-import { FaceBook, Instagram, ArrowUp } from '../../icons/IconsComponent';
+import {
+  FaceBookImg,
+  InstagramImg,
+  ArrowUpImg,
+} from '../../icons/IconsComponent';
 
 export const Footer = () => {
   return (
-    <Container>
+    <FooterSection>
       <FooterList>
         <LogoItem>
           <Logo />
           <ArrowUpBtn onClick={() => console.log('ArrowUp')}>
-            <ArrowUp />
+            <ArrowUpImg />
           </ArrowUpBtn>
         </LogoItem>
         <SocialItem>
@@ -31,14 +35,14 @@ export const Footer = () => {
             rel="noopener noreferrer"
             aria-label="facebook"
           >
-            <FaceBook fill={'#173D33'} stroke={'#173D33'} />
+            <FaceBookImg fill={'#173D33'} stroke={'#173D33'} />
           </SocialFacebook>
           <SocialInstagram
             href="https://www.instagram.com/"
             rel="noopener noreferrer"
             aria-label="instagram"
           >
-            <Instagram stroke={'#173D33'} />
+            <InstagramImg stroke={'#173D33'} />
           </SocialInstagram>
         </SocialItem>
         <AddressItem>
@@ -47,6 +51,6 @@ export const Footer = () => {
         <MailItem>office@ecosolution.com</MailItem>
         <CorpItem>ecosolution © 2023</CorpItem>
       </FooterList>
-    </Container>
+    </FooterSection>
   );
 };

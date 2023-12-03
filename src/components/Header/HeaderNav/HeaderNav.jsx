@@ -12,10 +12,10 @@ import {
   SocialInstagram,
 } from './HeaderNav.styled';
 import {
-  ArrowRight,
-  CloseLight,
-  FaceBook,
-  Instagram,
+  ArrowRightImg,
+  CloseLightImg,
+  FaceBookImg,
+  InstagramImg,
 } from '../../../icons/IconsComponent';
 
 export const HeaderNav = ({ handleClose }) => {
@@ -24,25 +24,25 @@ export const HeaderNav = ({ handleClose }) => {
       <Container>
         <CloseBLock>
           <CloseBtn onClick={handleClose}>
-            <CloseLight />
+            <CloseLightImg />
             close
           </CloseBtn>
         </CloseBLock>
         <NavList>
           <NavListItem>
-            Fira Sans <ArrowRight />
+            Fira Sans <ArrowRightImg />
           </NavListItem>
           <NavListItem>
-            About <ArrowRight />
+            About <ArrowRightImg />
           </NavListItem>
           <NavListItem>
-            Cases <ArrowRight />
+            Cases <ArrowRightImg />
           </NavListItem>
           <NavListItem>
-            FAQ <ArrowRight />
+            FAQ <ArrowRightImg />
           </NavListItem>
           <NavListItem>
-            Contact US <ArrowRight />
+            Contact US <ArrowRightImg />
           </NavListItem>
         </NavList>
       </Container>
@@ -53,7 +53,7 @@ export const HeaderNav = ({ handleClose }) => {
             rel="noopener noreferrer"
             aria-label="facebook"
           >
-            <FaceBook />
+            <FaceBookImg />
           </SocialFacebook>
         </SocialItem>
         <SocialItem>
@@ -62,7 +62,7 @@ export const HeaderNav = ({ handleClose }) => {
             rel="noopener noreferrer"
             aria-label="instagram"
           >
-            <Instagram />
+            <InstagramImg />
           </SocialInstagram>
         </SocialItem>
       </SocialList>

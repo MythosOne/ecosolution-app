@@ -5,4 +5,6 @@ export const ContainerEco = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
 `;

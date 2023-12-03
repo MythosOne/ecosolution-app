@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import { Logo } from './Logo/Logo';
 import { HeaderNav } from './HeaderNav/HeaderNav';
-import { Container, MenuBtn, ContainerBtn } from './Header.styled';
+import { HeaderSection, MenuBtn, ContainerBtn } from './Header.styled';
 import { MenuBurger } from '../../icons/IconsComponent';
 
 export const Header = () => {
@@ -9,7 +9,7 @@ export const Header = () => {
   const handleClose = () => setIsOpen(false);
 
   return (
-    <Container>
+    <HeaderSection>
       <Logo />
       {isOpen && <HeaderNav handleClose={handleClose}/>}
       <ContainerBtn>
@@ -21,6 +21,6 @@ export const Header = () => {
           <MenuBurger />
         </MenuBtn>
       </ContainerBtn>
-    </Container>
+    </HeaderSection>
   );
 };
