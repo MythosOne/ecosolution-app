@@ -123,8 +123,6 @@ export const NavListItem = styled.li`
   }
 `;
 
-export const ArrowRight = styled.svg``;
-
 export const SocialList = styled.ul`
   display: flex;
   gap: 8px;

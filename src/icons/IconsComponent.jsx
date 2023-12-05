@@ -54,7 +54,7 @@ export const CloseLightImg = ({ stroke }) => {
   );
 };
 
-export const ArrowRightImg = ({ stroke }) => {
+export const ArrowNavImg = ({ stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -257,6 +257,35 @@ export const ArrowUpImg = () => {
       />
       <path
         d="M8 13.667L8 2.44699"
+        stroke="#173D33"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+//ContactUs
+
+export const ArrowRightImg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="17"
+      viewBox="0 0 16 17"
+      fill="none"
+    >
+      <path
+        d="M9.62012 4.45312L13.6668 8.49979L9.62012 12.5465"
+        stroke="#173D33"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2.3335 8.5H13.5535"
         stroke="#173D33"
         strokeMiterlimit="10"
         strokeLinecap="round"

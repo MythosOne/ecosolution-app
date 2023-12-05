@@ -12,7 +12,7 @@ import {
   SocialInstagram,
 } from './HeaderNav.styled';
 import {
-  ArrowRightImg,
+  ArrowNavImg,
   CloseLightImg,
   FaceBookImg,
   InstagramImg,
@@ -30,19 +30,19 @@ export const HeaderNav = ({ handleClose }) => {
         </CloseBLock>
         <NavList>
           <NavListItem>
-            Fira Sans <ArrowRightImg />
+            Fira Sans <ArrowNavImg />
           </NavListItem>
           <NavListItem>
-            About <ArrowRightImg />
+            About <ArrowNavImg />
           </NavListItem>
           <NavListItem>
-            Cases <ArrowRightImg />
+            Cases <ArrowNavImg />
           </NavListItem>
           <NavListItem>
-            FAQ <ArrowRightImg />
+            FAQ <ArrowNavImg />
           </NavListItem>
           <NavListItem>
-            Contact US <ArrowRightImg />
+            Contact US <ArrowNavImg />
           </NavListItem>
         </NavList>
       </Container>
