@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  ContactUsSection,
+  Section,
   TitleSection,
   ContactList,
   PhoneList,
@@ -15,7 +15,7 @@ import {
   InstagramItem,
   SocialFacebook,
   SocialInstagram,
-} from './ContactUs.styled';
+} from './ContactUsSection';
 
 import {
   PhoneImg,
@@ -27,9 +27,9 @@ import {
 
 import {ContactForm} from './ContactForm/ContactForm'
 
-export const ContactUs = () => {
+export const ContactUsSection = () => {
   return (
-    <ContactUsSection>
+    <Section>
       <TitleSection>CONTACT US</TitleSection>
       <ContactList>
         <PhoneList>
@@ -85,6 +85,6 @@ export const ContactUs = () => {
         </SocialItem>
         <ContactForm />
       </ContactList>
-    </ContactUsSection>
+    </Section>
   );
 };

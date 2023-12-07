@@ -1,18 +1,22 @@
 import React from 'react';
 import { Header } from '../Header/Header.jsx';
-import { Main } from '../Main/Main.jsx';
+import { MainSection } from '../Main/MainSection.jsx';
 import { Footer } from '../Footer/Footer.jsx';
-import { ContainerEco } from './App.styled.js';
-import { ContactUs } from 'components/ContactUs/ContactUs.jsx';
+import { Main } from './App.styled.js';
+import { ContactUsSection } from '../ContactUs/ContactUsSection.jsx';
+import {AboutSection } from '../About/AboutSection.jsx';
 
 function App() {
   return (
-    <ContainerEco>
+    <>
       <Header />
-      <Main />
-      <ContactUs/>
+      <Main>
+        <MainSection/>
+        <AboutSection />
+        <ContactUsSection />
+      </Main>
       <Footer />
-    </ContainerEco>
+    </>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Logo } from '../Header/Logo/Logo';
 import {
-  FooterSection,
+  Section,
   FooterList,
   LogoItem,
   SocialItem,
@@ -21,7 +21,7 @@ import {
 
 export const Footer = () => {
   return (
-    <FooterSection>
+    <Section>
       <FooterList>
         <LogoItem>
           <Logo />
@@ -51,6 +51,6 @@ export const Footer = () => {
         <MailItem>office@ecosolution.com</MailItem>
         <CorpItem>ecosolution © 2023</CorpItem>
       </FooterList>
-    </FooterSection>
+    </Section>
   );
 };

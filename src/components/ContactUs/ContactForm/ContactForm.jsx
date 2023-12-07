@@ -14,8 +14,9 @@ import { ArrowRightImg } from '../../../icons/IconsComponent';
 
 export const ContactForm = () => {
   const [contact, setContact] = useState([]);
+//   console.log(contact)
 
-  const SignupSchema = Yup.object().shape({
+  const ContactUsSchema = Yup.object().shape({
     fullName: Yup.string().required('Required').min(2, 'Wrong Fullname'),
     email: Yup.string().required('Required').email('Wrong Email'),
     phone: Yup.number().positive().required('Required'),
@@ -33,7 +34,7 @@ export const ContactForm = () => {
       setContact({ id: nanoid(), ...values });
       formik.resetForm();
     },
-    validationSchema: { SignupSchema },
+    validationSchema: ContactUsSchema,
   });
 
   return (
@@ -44,21 +45,21 @@ export const ContactForm = () => {
         name="fullName"
         onChange={formik.handleChange}
         value={formik.values.name}
-      ></Input>
+      />
       <Label>E-mail:</Label>
       <Input
         type="email"
         name="email"
         onChange={formik.handleChange}
         value={formik.values.email}
-      ></Input>
+      />
       <Label>Phone:</Label>
       <Input
         type="phone"
         name="phone"
         onChange={formik.handleChange}
         value={formik.values.phone}
-      ></Input>
+      />
       <Label>Description:</Label>
       <InputDescription
         name="description"
@@ -67,7 +68,7 @@ export const ContactForm = () => {
         placeholder="Your message"
         onChange={formik.handleChange}
         value={formik.values.description}
-      ></InputDescription>
+      />
       <SendBtn
         type="submit"
         onClick={() => {
