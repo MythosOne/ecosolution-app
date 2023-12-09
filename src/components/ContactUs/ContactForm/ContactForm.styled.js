@@ -20,7 +20,7 @@ export const Label = styled.label`
   margin-top: 28px;
   color: #173d33;
   text-align: justify;
-  font-family: Fira Sans, sans-serif;
+  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -62,11 +62,11 @@ padding: 3px;
   border: 1px solid #97d28b;
 
   color: #173D33;
-font-family: Fira Sans, sans-serif;
+font-family: Fira Sans;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 18px; /* 112.5% */
+line-height: 18px; 
 letter-spacing: -0.64px;
 `;    
 

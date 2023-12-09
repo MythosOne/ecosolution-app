@@ -14,7 +14,7 @@ export const Section = styled.div`
 
 export const MainTitle = styled.h2`
   color: #173d33;
-  font-family: Oswald, sans-serif;
+  font-family: Oswald;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -25,7 +25,7 @@ export const MainTitle = styled.h2`
 export const MainText = styled.p`
   color: #173d33;
   text-align: justify;
-  font-family: Fira Sans, sans-serif;
+  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -52,7 +52,7 @@ export const MainBtn = styled.button`
   background: transparent;
 
   color: #173d33;
-  font-family: Fira Sans, sans-serif;
+  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

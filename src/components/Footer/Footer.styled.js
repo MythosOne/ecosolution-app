@@ -15,7 +15,7 @@ export const Section = styled.footer`
 `;
 
 export const FooterList = styled.ul`
-width: 100%;
+  width: 100%;
   /* width: 100%; */
   list-style: none;
 
@@ -63,33 +63,53 @@ export const SocialInstagram = styled.a``;
 export const AddressItem = styled.li`
   color: #173d33;
 
-  font-family: Fira Sans, sans-serif;
+  margin-bottom: 16px;
+`;
+
+export const Address = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #173d33;
+
+  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
 
-  margin-bottom: 16px;
+  text-decoration: none;
 `;
 
 export const MailItem = styled.li`
   color: #173d33;
 
-  font-family: Fira Sans, sans-serif;
+  margin-bottom: 16px;
+`;
+
+export const Mail = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #173d33;
+
+  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
 
-  margin-bottom: 16px;
+  text-decoration: none;
 `;
 
 export const CorpItem = styled.li`
   color: #173d33;
 
-  font-family: Fira Sans, sans-serif;
+  font-family: Fira Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

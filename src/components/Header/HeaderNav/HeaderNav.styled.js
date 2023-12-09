@@ -29,7 +29,7 @@ export const NavContain = styled.nav`
   transition: all 3s;
 
   color: #fff;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: Fira Sans;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -97,7 +97,7 @@ export const CloseBtn = styled.button`
   border: 0;
 
   color: #fff;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: Fira Sans;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

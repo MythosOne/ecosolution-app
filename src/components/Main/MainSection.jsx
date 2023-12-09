@@ -17,7 +17,7 @@ export const MainSection = () => {
         sources, generating power generation using energy wind, sun, water,
         biomass
       </MainText>
-      <MainBtn onClick={()=> console.log("MainBtn")}>
+      <MainBtn onClick={()=> console.log("MainBtn clicked")}>
         Learn more
         <ButtonImg>
           <ArrowRightImg />

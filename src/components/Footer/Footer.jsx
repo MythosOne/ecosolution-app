@@ -6,7 +6,9 @@ import {
   LogoItem,
   SocialItem,
   AddressItem,
+  Address,
   MailItem,
+  Mail,
   CorpItem,
   ArrowUpBtn,
   SocialFacebook,
@@ -46,9 +48,11 @@ export const Footer = () => {
           </SocialInstagram>
         </SocialItem>
         <AddressItem>
-          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+          <Address href="https://bit.ly/3n3ZUYY">79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
         </AddressItem>
-        <MailItem>office@ecosolution.com</MailItem>
+        <MailItem>
+          <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
+        </MailItem>
         <CorpItem>ecosolution © 2023</CorpItem>
       </FooterList>
     </Section>
