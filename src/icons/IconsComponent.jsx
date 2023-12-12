@@ -352,8 +352,8 @@ export const InnovImg = () => {
       <path
         d="M1.33325 10.6666H2.66659"
         stroke="#173D33"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M7.9999 6.46667L7.37323 7.56001C7.23323 7.80001 7.34656 8.00001 7.62656 8.00001H8.37323C8.65323 8.00001 8.76656 8.20001 8.62656 8.44001L7.9999 9.53334"
@@ -382,7 +382,7 @@ export const QualityImg = () => {
         strokeLinejoin="round"
       />
       <path
-        d="M8.88677 6.66663H7.10677C6.37344 6.66663 L77344 7.26663 5.77344 7.99996V14.6666H10.2201V7.99996C10.2201 7.26663 9.62677 6.66663 8.88677 6.66663Z"
+        d="M8.88677 6.66663H7.10677C6.37344 6.66663 5.77344 7.26663 5.77344 7.99996V14.6666H10.2201V7.99996C10.2201 7.26663 9.62677 6.66663 8.88677 6.66663Z"
         stroke="#173D33"
         strokeMiterlimit="10"
         strokeLinecap="round"

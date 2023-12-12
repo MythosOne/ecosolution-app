@@ -3,6 +3,7 @@ import {
   Section,
   Address,
   Mail,
+  Figure,
   AboutImg,
   AboutTitle,
   AboutText,
@@ -13,7 +14,10 @@ import {
   CardText,
   AboutElectrTitle,
   VerticalLine,
-  AboutElectrContainer,
+  MeterContainer,
+  ElectricityMeter,
+  Unit,
+  CasesCompanyTitle,
 } from './AboutSection.styled';
 
 import {
@@ -30,11 +34,12 @@ export const AboutSection = () => {
         79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
       </Address>
       <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
-      <AboutImg
-        src="../images/wind-turbine-clean-energy.png"
-        alt="Wind turbine"
-        width={320}
-      />
+      <Figure>
+        <AboutImg
+          src="../images/wind-turbine-clean-energy.png"
+          alt="Wind turbine"
+        />
+      </Figure>
       <AboutTitle>Main values of our company</AboutTitle>
       <AboutText>
         EcoSolution envisions a world where sustainable energy solutions power a
@@ -81,9 +86,13 @@ export const AboutSection = () => {
           </CardText>
         </AboutItem>
       </AboutList>
-      <AboutElectrTitle>Electricity we produced for all time</AboutElectrTitle>
-      <VerticalLine/>
-      <AboutElectrContainer>1.134.147.814</AboutElectrContainer>
+      <AboutElectrTitle>Electricity we produced for all time </AboutElectrTitle>
+      <VerticalLine />
+      <MeterContainer>
+        <ElectricityMeter>1.134.147.814</ElectricityMeter>
+        <Unit>kWh</Unit>
+      </MeterContainer>
+      <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
     </Section>
   );
 };

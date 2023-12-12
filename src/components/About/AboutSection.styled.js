@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 
-export const Section = styled.div``;
+export const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const Address = styled.a`
   color: #173d33;
@@ -26,7 +29,13 @@ export const Mail = styled.a`
   text-decoration: none;
 `;
 
-export const AboutImg = styled.img``;
+export const Figure = styled.figure`
+  margin: 0;
+`;
+
+export const AboutImg = styled.img`
+  width: 320px;
+`;
 
 export const AboutTitle = styled.h2`
   color: #173d33;
@@ -83,7 +92,7 @@ export const CardItem = styled.div`
   line-height: 24px;
   text-transform: uppercase;
 
-  border-bottom: 1px solid #97D28B;
+  border-bottom: 1px solid #97d28b;
 `;
 
 // export const CardImage = styled.img``;
@@ -110,24 +119,51 @@ export const AboutElectrTitle = styled.h2`
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 100% */
+  line-height: 28px;
   text-transform: uppercase;
 `;
 
 export const VerticalLine = styled.hr`
-height: 48px;
-width: 1px;
-color: #97D28B;
+  height: 48px;
+  width: 1px;
+  background: #97d28b;
+  border: 0;
 `;
 
-export const AboutElectrContainer = styled.div`
+export const MeterContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+`;
 
+export const ElectricityMeter = styled.div`
   color: #97d28b;
   text-align: center;
   font-family: Oswald;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px; /* 100% */
+  line-height: 48px;
+  text-transform: uppercase;
+`;
+
+export const Unit = styled.span`
+  color: #173d33;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+`;
+
+export const CasesCompanyTitle = styled.h2`
+  color: #173d33;
+  font-family: Oswald;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 100% */
   text-transform: uppercase;
 `;
