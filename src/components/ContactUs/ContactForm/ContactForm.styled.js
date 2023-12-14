@@ -48,7 +48,7 @@ export const SendBtn = styled.button`
   margin-top: 16px;
   margin-left: 197px;
 
-padding: 3px;
+  padding: 3px;
 
   width: 99px;
   height: 39px;
@@ -61,14 +61,14 @@ padding: 3px;
   border-radius: 500px;
   border: 1px solid #97d28b;
 
-  color: #173D33;
-font-family: Fira Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 18px; 
-letter-spacing: -0.64px;
-`;    
+  color: #173d33;
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.64px;
+`;
 
 export const ButtonImg = styled.div`
   display: flex;
@@ -79,4 +79,6 @@ export const ButtonImg = styled.div`
   border-radius: 100px;
   background: #97d28b;
   border: 0;
+
+    stroke: #173d33;
 `;

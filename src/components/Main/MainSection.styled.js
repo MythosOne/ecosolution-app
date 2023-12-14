@@ -56,8 +56,15 @@ export const MainBtn = styled.button`
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 112.5% */
+  line-height: 18px;
   letter-spacing: -0.64px;
+
+  stroke: #173d33;
+
+  &:hover {
+    background: #173d33;
+    color: #97d28b;
+  }
 `;
 
 export const ButtonImg = styled.div`

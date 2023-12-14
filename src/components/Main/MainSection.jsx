@@ -20,7 +20,7 @@ export const MainSection = () => {
       <MainBtn onClick={()=> console.log("MainBtn clicked")}>
         Learn more
         <ButtonImg>
-          <ArrowRightImg />
+          <ArrowRightImg width={"16"} height={"16"} />
         </ButtonImg>
       </MainBtn>
     </Section>

@@ -14,14 +14,14 @@ import { ArrowRightImg } from '../../../icons/IconsComponent';
 
 export const ContactForm = () => {
   const [contact, setContact] = useState([]);
-//   console.log(contact)
+  //   console.log(contact)
 
   const ContactUsSchema = Yup.object().shape({
     fullName: Yup.string().required('Required').min(2, 'Wrong Fullname'),
     email: Yup.string().required('Required').email('Wrong Email'),
     phone: Yup.number().positive().required('Required'),
-    description: Yup.string().required('Required').max(200)
-  })
+    description: Yup.string().required('Required').max(200),
+  });
 
   const formik = useFormik({
     initialValues: {
@@ -77,7 +77,7 @@ export const ContactForm = () => {
       >
         Send
         <ButtonImg>
-          <ArrowRightImg />
+          <ArrowRightImg width={'16'} height={'16'}/>
         </ButtonImg>
       </SendBtn>
     </Form>

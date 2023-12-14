@@ -42,6 +42,13 @@ export const ArrowUpBtn = styled.button`
   border-radius: 100px;
   background: #97d28b;
   border: 0;
+
+  stroke: #173d33;
+
+  &:hover {
+    stroke: #97d28b;
+    background: #173d33;
+  }
 `;
 
 export const SocialItem = styled.li`

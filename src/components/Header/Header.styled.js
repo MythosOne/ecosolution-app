@@ -14,19 +14,23 @@ export const Section = styled.header`
 `;
 
 export const MenuBtn = styled.button`
-display: flex;
-height: 40px;
-width: 40px;
-padding: 4px 12px;
-justify-content: center;
-align-items: center;
-gap: 12px;
-flex-shrink: 0;
-margin-left: 11px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  margin-left: 11px;
 
-border-radius: 50%;
-background: #DCEFD8;
-border: 0;
+  border-radius: 50%;
+  background: #dcefd8;
+  border: 0;
+
+  &:hover {
+    background: #97d28b;
+  }
 `;
 
 // export const ContainerBtn = styled.div`

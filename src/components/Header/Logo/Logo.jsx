@@ -11,7 +11,7 @@ export const Logo = () => {
   return (
     <LogoWrapper>
       <LogoImg />
-      <TitleEco>ecosolution</TitleEco>
+      <TitleEco href='/'>ecosolution</TitleEco>
       <div style={{ width: 60, height: 18 }}>
         <TitleGreen>
           <Green>GREEN</Green>ERGY FOR LIFE

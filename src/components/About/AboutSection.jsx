@@ -18,6 +18,9 @@ import {
   ElectricityMeter,
   Unit,
   CasesCompanyTitle,
+  SliderLeftBtn,
+  SliderRighttBtn,
+  BlockBtn,
 } from './AboutSection.styled';
 
 import {
@@ -25,6 +28,8 @@ import {
   RespImg,
   InnovImg,
   QualityImg,
+  ArrowLeftImg,
+  ArrowRightImg,
 } from '../../icons/IconsComponent';
 
 export const AboutSection = () => {
@@ -93,6 +98,14 @@ export const AboutSection = () => {
         <Unit>kWh</Unit>
       </MeterContainer>
       <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
+      <BlockBtn>
+        <SliderLeftBtn>
+          <ArrowLeftImg width={'36'} height={'36'} />
+        </SliderLeftBtn>
+        <SliderRighttBtn>
+          <ArrowRightImg width={'36'} height={'36'} />
+        </SliderRighttBtn>
+      </BlockBtn>
     </Section>
   );
 };

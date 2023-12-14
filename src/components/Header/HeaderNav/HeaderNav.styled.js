@@ -103,6 +103,10 @@ export const CloseBtn = styled.button`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.8px;
+
+  &:hover {
+    color: #97d28b;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -114,7 +118,8 @@ export const NavList = styled.ul`
 `;
 
 export const NavListItem = styled.li`
-  stroke: white;
+  color: rgba(255, 255, 255, 0.25);
+  stroke: rgba(255, 255, 255, 0.25);
 
   &:focus,
   &:hover {

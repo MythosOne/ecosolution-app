@@ -9,7 +9,7 @@ export const LogoWrapper = styled.div`
 
 export const LogoImg = styled.img``;
 
-export const TitleEco = styled.h1`
+export const TitleEco = styled.a`
   color: #173d33;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 33px;
@@ -17,6 +17,12 @@ export const TitleEco = styled.h1`
   font-weight: 500;
   line-height: normal;
   letter-spacing: -1.32px;
+
+  text-decoration: none;
+
+  &:hover {
+    color: #97d28b;
+  }
 `;
 
 export const TitleGreen = styled.h2`

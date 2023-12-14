@@ -70,6 +70,12 @@ export const Link = styled.a`
   letter-spacing: -0.8px;
 
   text-decoration: none;
+
+  stroke: #173d33;
+
+  &:hover {
+    stroke: #97d28b;
+  }
 `;
 
 export const MailItem = styled.li``;
