@@ -97,6 +97,20 @@ export const FaceBookItem = styled.li`
 
 export const InstagramItem = styled.li``;
 
-export const SocialFacebook = styled.a``;
+export const SocialFacebook = styled.a`
+  fill: #173d33;
+  stroke: #173d33;
 
-export const SocialInstagram = styled.a``;
+  &:hover {
+    fill: #97d28b;
+    stroke: #97d28b;
+  }
+`;
+
+export const SocialInstagram = styled.a`
+  stroke: #173d33;
+
+  &:hover {
+    stroke: #97d28b;
+  }
+`;

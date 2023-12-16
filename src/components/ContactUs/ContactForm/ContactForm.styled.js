@@ -68,6 +68,13 @@ export const SendBtn = styled.button`
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.64px;
+
+  stroke: #173d33;
+
+  &:hover {
+    background: #173d33;
+    color: #97d28b;
+  }
 `;
 
 export const ButtonImg = styled.div`
@@ -80,5 +87,5 @@ export const ButtonImg = styled.div`
   background: #97d28b;
   border: 0;
 
-    stroke: #173d33;
+  stroke: #173d33;
 `;

@@ -4,16 +4,18 @@ import { MainSection } from '../Main/MainSection.jsx';
 import { Footer } from '../Footer/Footer.jsx';
 import { Main } from './App.styled.js';
 import { ContactUsSection } from '../ContactUs/ContactUsSection.jsx';
-import {AboutSection } from '../About/AboutSection.jsx';
+import { AboutSection } from '../About/AboutSection.jsx';
+import { SlideCard } from '../About/SlideCard/SlideCard.jsx';
 
 function App() {
   return (
     <>
       <Header />
       <Main>
-        <MainSection/>
+        <SlideCard />
+        {/* <MainSection/>
         <AboutSection />
-        <ContactUsSection />
+        <ContactUsSection /> */}
       </Main>
       <Footer />
     </>

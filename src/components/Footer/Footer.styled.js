@@ -56,16 +56,24 @@ export const SocialItem = styled.li`
   gap: 8px;
 
   margin-bottom: 24px;
+`;
 
-  &:focus,
+export const SocialFacebook = styled.a`
+  fill: #173d33;
+  stroke: #173d33;
+
   &:hover {
     fill: #97d28b;
     stroke: #97d28b;
   }
 `;
+export const SocialInstagram = styled.a`
+  stroke: #173d33;
 
-export const SocialFacebook = styled.a``;
-export const SocialInstagram = styled.a``;
+  &:hover {
+    stroke: #97d28b;
+  }
+`;
 
 export const AddressItem = styled.li`
   color: #173d33;

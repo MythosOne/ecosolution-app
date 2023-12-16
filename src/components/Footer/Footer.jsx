@@ -37,21 +37,25 @@ export const Footer = () => {
             rel="noopener noreferrer"
             aria-label="facebook"
           >
-            <FaceBookImg fill={'#173D33'} stroke={'#173D33'} />
+            <FaceBookImg />
           </SocialFacebook>
           <SocialInstagram
             href="https://www.instagram.com/"
             rel="noopener noreferrer"
             aria-label="instagram"
           >
-            <InstagramImg stroke={'#173D33'} />
+            <InstagramImg />
           </SocialInstagram>
         </SocialItem>
         <AddressItem>
-          <Address href="https://bit.ly/3n3ZUYY">79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
+          <Address href="https://bit.ly/3n3ZUYY">
+            79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+          </Address>
         </AddressItem>
         <MailItem>
-          <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
+          <Mail href="mailto:office@ecosolution.com">
+            office@ecosolution.com
+          </Mail>
         </MailItem>
         <CorpItem>ecosolution © 2023</CorpItem>
       </FooterList>

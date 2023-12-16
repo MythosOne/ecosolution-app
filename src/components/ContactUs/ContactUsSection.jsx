@@ -25,7 +25,7 @@ import {
   InstagramImg,
 } from '../../icons/IconsComponent';
 
-import {ContactForm} from './ContactForm/ContactForm'
+import { ContactForm } from './ContactForm/ContactForm';
 
 export const ContactUsSection = () => {
   return (
@@ -69,7 +69,7 @@ export const ContactUsSection = () => {
                 rel="noopener noreferrer"
                 aria-label="facebook"
               >
-                <FaceBookImg fill={'#173D33'} stroke={'#173D33'} />
+                <FaceBookImg />
               </SocialFacebook>
             </FaceBookItem>
             <InstagramItem>
@@ -78,7 +78,7 @@ export const ContactUsSection = () => {
                 rel="noopener noreferrer"
                 aria-label="instagram"
               >
-                <InstagramImg stroke={'#173D33'} />
+                <InstagramImg />
               </SocialInstagram>
             </InstagramItem>
           </NetworksList>

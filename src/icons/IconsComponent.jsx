@@ -88,7 +88,7 @@ export const FaceBookImg = ({ fill, stroke }) => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
+      fill={'none'}
     >
       <path
         d="M14 9.3V12.2H16.6C16.8 12.2 16.9 12.4 16.9 12.6L16.5 14.5C16.5 14.6 16.3 14.7 16.2 14.7H14V22H11V14.8H9.3C9.1 14.8 9 14.7 9 14.5V12.6C9 12.4 9.1 12.3 9.3 12.3H11V9C11 7.3 12.3 6 14 6H16.7C16.9 6 17 6.1 17 6.3V8.7C17 8.9 16.9 9 16.7 9H14.3C14.1 9 14 9.1 14 9.3Z"
@@ -405,8 +405,37 @@ export const QualityImg = () => {
   );
 };
 
+export const ArrowUpRightImg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+    >
+      <path
+        d="M10.9976 6.98669L21.0125 6.98669L21.0125 17.0017"
+        stroke="#173D33"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6.98901 21.0109L20.8731 7.12688"
+        stroke="#173D33"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
 //ContactUs
-export const PhoneImg = ({stroke}) => {
+export const PhoneImg = ({ stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -425,7 +454,7 @@ export const PhoneImg = ({stroke}) => {
   );
 };
 
-export const MailImg = ({stroke}) => {
+export const MailImg = ({ stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -454,7 +483,7 @@ export const MailImg = ({stroke}) => {
   );
 };
 
-export const AddressImg = ({stroke}) => {
+export const AddressImg = ({ stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -489,7 +518,7 @@ export const AddressImg = ({stroke}) => {
 };
 
 //Footer
-export const ArrowUpImg = ({stroke}) => {
+export const ArrowUpImg = ({ stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -530,18 +559,18 @@ export const ArrowRightImg = ({ width, height, stroke }) => {
       <path
         d="M21.6458 8.89343L30.7508 17.9984L21.6458 27.1034"
         stroke={stroke}
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5.25098 17.9988H30.496"
         stroke={stroke}
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
