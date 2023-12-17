@@ -3,6 +3,16 @@ import styled from '@emotion/styled';
 export const Section = styled.div`
   display: flex;
   flex-direction: column;
+
+  margin-top: 24px;
+  margin-bottom: 36px;
+`;
+
+export const AboutLink = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 `;
 
 export const Address = styled.a`
@@ -27,6 +37,8 @@ export const Mail = styled.a`
   letter-spacing: -0.64px;
 
   text-decoration: none;
+
+  margin-bottom: 40px;
 `;
 
 export const Figure = styled.figure`
@@ -36,8 +48,16 @@ export const Figure = styled.figure`
 export const AboutImg = styled.img`
   width: 320px;
 `;
+export const AboutMainValues = styled.div`
+  margin-top: 40px;
+  margin-bottom: 36px;
 
-export const AboutTitle = styled.h2`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+`;
+
+export const MainValuesTitle = styled.h2`
   color: #173d33;
   font-family: Oswald;
   font-size: 28px;
@@ -47,7 +67,7 @@ export const AboutTitle = styled.h2`
   text-transform: uppercase;
 `;
 
-export const AboutText = styled.p`
+export const MainValuesText = styled.p`
   color: #173d33;
   text-align: justify;
   font-family: Fira Sans;
@@ -131,9 +151,18 @@ export const VerticalLine = styled.hr`
 `;
 
 export const MeterContainer = styled.div`
+  margin-top: 36px;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+`;
+
+export const Meter = styled.div`
+  display: flex;
+  align-items: center;
   gap: 8px;
 `;
 
@@ -156,58 +185,4 @@ export const Unit = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-`;
-
-export const CasesCompanyTitle = styled.h2`
-  color: #173d33;
-  font-family: Oswald;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  text-transform: uppercase;
-`;
-
-export const BlockBtn = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  gap: 12px;
-`;
-
-export const SliderLeftBtn = styled.button`
-  width: 66px;
-  height: 66px;
-
-  padding: 15px;
-
-  border-radius: 100px;
-  border: 1px solid #173d33;
-
-  background-color: transparent;
-
-  stroke: #173d33;
-
-  &:hover {
-    border: 1px solid #97d28b;
-    stroke: #97d28b;
-  }
-`;
-
-export const SliderRighttBtn = styled.button`
-  width: 66px;
-  height: 66px;
-
-  padding: 15px;
-
-  border-radius: 100px;
-  border: 1px solid #173d33;
-
-  background-color: transparent;
-
-  stroke: #173d33;
-
-  &:hover {
-    border: 1px solid #97d28b;
-    stroke: #97d28b;
-  }
 `;

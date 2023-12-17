@@ -7,11 +7,12 @@ export const Container = styled.div`
 
   background: #eaedf1;
 
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 `;
 
-export const Figure = styled.figure``;
+export const Figure = styled.figure`
+margin: 0`;
 
 export const SlideImg = styled.img`
   width: 100%;

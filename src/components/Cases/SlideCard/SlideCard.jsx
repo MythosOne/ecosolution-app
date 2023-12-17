@@ -13,20 +13,23 @@ import {
 
 import { ArrowUpRightImg } from '../../../icons/IconsComponent';
 
+import img from '../../../images/wind-turbines-holland.png';
+
 export const SlideCard = () => {
   return (
     <Container>
       <Figure>
-        <SlideImg
-          src="../../../images/wind-turbines-holland.png"
-          alt="wind power"
-        />
+        <SlideImg src={img} alt="wind power" />
       </Figure>
       <SlideLink>
         <SlideText>
           Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”
         </SlideText>
-        <SlideBtn onClick={()=>{console.log("SlideLinkButton")}}>
+        <SlideBtn
+          onClick={() => {
+            console.log('SlideLinkButton');
+          }}
+        >
           <ArrowUpRightImg />
         </SlideBtn>
       </SlideLink>

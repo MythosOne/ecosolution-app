@@ -5,17 +5,17 @@ import { Footer } from '../Footer/Footer.jsx';
 import { Main } from './App.styled.js';
 import { ContactUsSection } from '../ContactUs/ContactUsSection.jsx';
 import { AboutSection } from '../About/AboutSection.jsx';
-import { SlideCard } from '../About/SlideCard/SlideCard.jsx';
+import {CasesSection} from '../Cases/CasesSection.jsx';
 
 function App() {
   return (
     <>
       <Header />
       <Main>
-        <SlideCard />
-        {/* <MainSection/>
+        <MainSection />
         <AboutSection />
-        <ContactUsSection /> */}
+        <CasesSection />
+        <ContactUsSection />
       </Main>
       <Footer />
     </>

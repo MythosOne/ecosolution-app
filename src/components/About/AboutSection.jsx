@@ -1,26 +1,25 @@
 import React from 'react';
 import {
   Section,
+  AboutLink,
   Address,
   Mail,
   Figure,
   AboutImg,
-  AboutTitle,
-  AboutText,
+  AboutMainValues,
+  MainValuesTitle,
+  MainValuesText,
   AboutList,
   AboutItem,
   CardItem,
   CardTitle,
   CardText,
+  MeterContainer,
   AboutElectrTitle,
   VerticalLine,
-  MeterContainer,
+  Meter,
   ElectricityMeter,
   Unit,
-  CasesCompanyTitle,
-  SliderLeftBtn,
-  SliderRighttBtn,
-  BlockBtn,
 } from './AboutSection.styled';
 
 import {
@@ -28,31 +27,32 @@ import {
   RespImg,
   InnovImg,
   QualityImg,
-  ArrowLeftImg,
-  ArrowRightImg,
 } from '../../icons/IconsComponent';
+
+import img from '../../images/wind-turbine-clean-energy.png';
 
 export const AboutSection = () => {
   return (
     <Section>
-      <Address href="https://bit.ly/3n3ZUYY">
-        79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
-      </Address>
-      <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
+      <AboutLink>
+        <Address href="https://bit.ly/3n3ZUYY">
+          79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+        </Address>
+        <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
+      </AboutLink>
       <Figure>
-        <AboutImg
-          src="../images/wind-turbine-clean-energy.png"
-          alt="Wind turbine"
-        />
+        <AboutImg src={img} alt="Wind turbine" />
       </Figure>
-      <AboutTitle>Main values of our company</AboutTitle>
-      <AboutText>
-        EcoSolution envisions a world where sustainable energy solutions power a
-        brighter and cleaner future for all. We aspire to be at the forefront of
-        the global shift towards renewable energy, leading the way in innovative
-        technologies that harness the power of nature to meet the world's energy
-        needs.
-      </AboutText>
+      <AboutMainValues>
+        <MainValuesTitle>Main values of our company</MainValuesTitle>
+        <MainValuesText>
+          EcoSolution envisions a world where sustainable energy solutions power
+          a brighter and cleaner future for all. We aspire to be at the
+          forefront of the global shift towards renewable energy, leading the
+          way in innovative technologies that harness the power of nature to
+          meet the world's energy needs.
+        </MainValuesText>
+      </AboutMainValues>
       <AboutList>
         <AboutItem>
           <CardItem>
@@ -91,21 +91,16 @@ export const AboutSection = () => {
           </CardText>
         </AboutItem>
       </AboutList>
-      <AboutElectrTitle>Electricity we produced for all time </AboutElectrTitle>
-      <VerticalLine />
       <MeterContainer>
-        <ElectricityMeter>1.134.147.814</ElectricityMeter>
-        <Unit>kWh</Unit>
+        <AboutElectrTitle>
+          Electricity we produced for all time{' '}
+        </AboutElectrTitle>
+        <VerticalLine />
+        <Meter>
+          <ElectricityMeter>1.134.147.814</ElectricityMeter>
+          <Unit>kWh</Unit>
+        </Meter>
       </MeterContainer>
-      <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
-      <BlockBtn>
-        <SliderLeftBtn>
-          <ArrowLeftImg width={'36'} height={'36'} />
-        </SliderLeftBtn>
-        <SliderRighttBtn>
-          <ArrowRightImg width={'36'} height={'36'} />
-        </SliderRighttBtn>
-      </BlockBtn>
     </Section>
   );
 };
