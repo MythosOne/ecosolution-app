@@ -13,18 +13,16 @@ import {
 
 import { ArrowUpRightImg } from '../../../icons/IconsComponent';
 
-import img from '../../../images/wind-turbines-holland.png';
+export const SlideCard = ({ energyObject }) => {
+  const {image, title, signature, date}= energyObject;
 
-export const SlideCard = () => {
   return (
     <Container>
       <Figure>
-        <SlideImg src={img} alt="wind power" />
+        <SlideImg src={image} alt="wind power" />
       </Figure>
       <SlideLink>
-        <SlideText>
-          Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”
-        </SlideText>
+        <SlideText>{title}”</SlideText>
         <SlideBtn
           onClick={() => {
             console.log('SlideLinkButton');
@@ -34,8 +32,8 @@ export const SlideCard = () => {
         </SlideBtn>
       </SlideLink>
       <SignatureProject>
-        <ProjectName>Wind Power for auto field irrigation</ProjectName>
-        <ProjectDate>July 2023</ProjectDate>
+        <ProjectName>{signature}</ProjectName>
+        <ProjectDate>{date}</ProjectDate>
       </SignatureProject>
     </Container>
   );

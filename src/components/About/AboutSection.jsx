@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Section,
   AboutLink,
@@ -32,6 +32,15 @@ import {
 import img from '../../images/wind-turbine-clean-energy.png';
 
 export const AboutSection = () => {
+  const [number, setNumber] = useState(1134147804);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setNumber(number + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [number]);
+
   return (
     <Section>
       <AboutLink>
@@ -93,11 +102,11 @@ export const AboutSection = () => {
       </AboutList>
       <MeterContainer>
         <AboutElectrTitle>
-          Electricity we produced for all time{' '}
+          Electricity we produced for all time
         </AboutElectrTitle>
         <VerticalLine />
         <Meter>
-          <ElectricityMeter>1.134.147.814</ElectricityMeter>
+          <ElectricityMeter>{number.toLocaleString('ru')}</ElectricityMeter>
           <Unit>kWh</Unit>
         </Meter>
       </MeterContainer>

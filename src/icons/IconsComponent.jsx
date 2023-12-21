@@ -405,7 +405,7 @@ export const QualityImg = () => {
   );
 };
 
-export const ArrowUpRightImg = () => {
+export const ArrowUpRightImg = ({stroke}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -416,7 +416,7 @@ export const ArrowUpRightImg = () => {
     >
       <path
         d="M10.9976 6.98669L21.0125 6.98669L21.0125 17.0017"
-        stroke="#173D33"
+        stroke={stroke}
         strokeWidth="1.5"
         strokeMiterlimit="10"
         strokeLinecap="round"
@@ -424,7 +424,7 @@ export const ArrowUpRightImg = () => {
       />
       <path
         d="M6.98901 21.0109L20.8731 7.12688"
-        stroke="#173D33"
+        stroke={stroke}
         strokeWidth="1.5"
         strokeMiterlimit="10"
         strokeLinecap="round"

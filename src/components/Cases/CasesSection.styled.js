@@ -46,6 +46,8 @@ export const SliderLeftBtn = styled.button`
     border: 1px solid #97d28b;
     stroke: #97d28b;
   }
+
+  cursor: pointer;
 `;
 
 export const SliderRighttBtn = styled.button`
@@ -65,4 +67,14 @@ export const SliderRighttBtn = styled.button`
     border: 1px solid #97d28b;
     stroke: #97d28b;
   }
+
+  cursor: pointer;
+`;
+
+export const SlideWindow = styled.ul`
+  display: flex;
+
+  width: 320px;
+  height: 318px;
+  overflow: hidden;
 `;

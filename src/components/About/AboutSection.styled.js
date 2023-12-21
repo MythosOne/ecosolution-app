@@ -141,6 +141,8 @@ export const AboutElectrTitle = styled.h2`
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
+
+  margin-bottom: 24px;
 `;
 
 export const VerticalLine = styled.hr`
@@ -156,14 +158,15 @@ export const MeterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
 `;
 
 export const Meter = styled.div`
+  margin-top: 24px;
+  width: 303px;
+
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
 `;
 
 export const ElectricityMeter = styled.div`

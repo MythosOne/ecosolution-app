@@ -7,15 +7,19 @@ export const Container = styled.div`
 
   background: #eaedf1;
 
-  margin-top: 20px;
-  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+
+  /* margin-top: 20px;
+  margin-bottom: 10px; */
 `;
 
 export const Figure = styled.figure`
-margin: 0`;
+  margin: 0;
+`;
 
 export const SlideImg = styled.img`
-  width: 100%;
+  width: 320px;
 `;
 
 export const SlideLink = styled.div`
@@ -49,6 +53,13 @@ export const SlideBtn = styled.button`
 
   border-radius: 50%;
   background: #97d28b;
+
+  stroke: #173d33;
+
+  &:hover {
+    stroke: #97d28b;
+    background: #173d33;
+  }
 `;
 
 export const SignatureProject = styled.div`
