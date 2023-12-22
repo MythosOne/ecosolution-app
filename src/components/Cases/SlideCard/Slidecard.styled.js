@@ -20,16 +20,19 @@ export const Figure = styled.figure`
 
 export const SlideImg = styled.img`
   width: 320px;
+  height: 174px;
 `;
 
 export const SlideLink = styled.div`
+  width: 296px;
+  height: 107px;
+
   display: flex;
   align-items: center;
   gap: 61px;
 
-  padding: 21px 12px;
-  /* padding-top: 21px;
-  padding-bottom: 21px; */
+  padding-top: 21px;
+  padding-bottom: 21px;
 
   border-bottom: 1px solid #97d28b;
 `;
@@ -63,7 +66,10 @@ export const SlideBtn = styled.button`
 `;
 
 export const SignatureProject = styled.div`
+  width: 296px;
+
   display: flex;
+  justify-content: space-between;
   gap: 61px;
 
   margin-top: 12px;

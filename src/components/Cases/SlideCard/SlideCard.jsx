@@ -14,7 +14,7 @@ import {
 import { ArrowUpRightImg } from '../../../icons/IconsComponent';
 
 export const SlideCard = ({ energyObject }) => {
-  const {image, title, signature, date}= energyObject;
+  const { image, title, signature, date } = energyObject;
 
   return (
     <Container>
@@ -22,7 +22,7 @@ export const SlideCard = ({ energyObject }) => {
         <SlideImg src={image} alt="wind power" />
       </Figure>
       <SlideLink>
-        <SlideText>{title}”</SlideText>
+        <SlideText>{title}</SlideText>
         <SlideBtn
           onClick={() => {
             console.log('SlideLinkButton');

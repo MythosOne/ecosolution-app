@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import {
+  Section,
   CasesCompanyTitle,
   MeterSlide,
+  HeaderSlider,
   Slider,
+  BlockMeter,
   SliderLeftBtn,
   SliderRighttBtn,
   BlockBtn,
@@ -47,29 +50,37 @@ export const CasesSection = () => {
   };
 
   return (
-    <>
+    <Section>
       <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
       <Slider>
-        <BlockBtn>
-          <MeterSlide>
-            {slideNUmber.toString().padStart(2, '0')}/
-            {data.length.toString().padStart(2, '0')}
-          </MeterSlide>
-          <SliderLeftBtn
-            onClick={() => {
-              handleLeftArrowClick();
-            }}
-          >
-            <ArrowLeftImg width={'36'} height={'36'} />
-          </SliderLeftBtn>
-          <SliderRighttBtn
-            onClick={() => {
-              handleRigthArrowClick();
-            }}
-          >
-            <ArrowRightImg width={'36'} height={'36'} />
-          </SliderRighttBtn>
-        </BlockBtn>
+        <HeaderSlider>
+          <BlockMeter>
+            <MeterSlide>
+              <span>
+                {slideNUmber.toString().padStart(2, '0')}
+              </span>
+              <span style={{ opacity: "0.2" }}>/
+                {data.length.toString().padStart(2, '0')}
+              </span>
+            </MeterSlide>
+          </BlockMeter>
+          <BlockBtn>
+            <SliderLeftBtn
+              onClick={() => {
+                handleLeftArrowClick();
+              }}
+            >
+              <ArrowLeftImg width={'36'} height={'36'} />
+            </SliderLeftBtn>
+            <SliderRighttBtn
+              onClick={() => {
+                handleRigthArrowClick();
+              }}
+            >
+              <ArrowRightImg width={'36'} height={'36'} />
+            </SliderRighttBtn>
+          </BlockBtn>
+        </HeaderSlider>
         <SlideWindow>
           {data.map(energyObjects => {
             return (
@@ -93,6 +104,6 @@ export const CasesSection = () => {
           })}
         </SlideWindow>
       </Slider>
-    </>
+    </Section>
   );
 };

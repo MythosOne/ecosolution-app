@@ -1,5 +1,9 @@
 import styled from '@emotion/styled';
 
+export const Section = styled.section`
+  margin-bottom: 36px;
+`;
+
 export const CasesCompanyTitle = styled.h2`
   color: #173d33;
   font-family: Oswald;
@@ -10,10 +14,30 @@ export const CasesCompanyTitle = styled.h2`
   text-transform: uppercase;
 `;
 
-export const Slider = styled.div``;
+export const Slider = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
-export const MeterSlide = styled.p`
+  margin-top: 24px;
+`;
+
+export const HeaderSlider = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+`;
+
+export const BlockMeter = styled.div``;
+
+export const MeterSlide = styled.div`
+  width: 72px;
+
+  display: flex;
+  justify-content: space-between;
+
   color: #173d33;
+
   text-align: justify;
   font-family: Fira Sans;
   font-size: 28px;
