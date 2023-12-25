@@ -12,7 +12,7 @@ export const Header = () => {
     <Section>
       <Logo />
       {isOpen && <HeaderNav handleClose={handleClose}/>}
-        <MenuBtn
+        <MenuBtn type='button'
           onClick={() => {
             setIsOpen(true);
           }}

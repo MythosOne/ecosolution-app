@@ -27,7 +27,7 @@ export const Footer = () => {
       <FooterList>
         <LogoItem>
           <Logo />
-          <ArrowUpBtn onClick={() => console.log('ArrowUpButton Clicked')}>
+          <ArrowUpBtn type='button' onClick={() => console.log('ArrowUpButton Clicked')}>
             <ArrowUpImg />
           </ArrowUpBtn>
         </LogoItem>

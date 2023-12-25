@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Section = styled.div`
+export const Section = styled.section`
   width: 100%;
 
   display: flex;

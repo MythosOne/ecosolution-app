@@ -6,6 +6,7 @@ import { Main } from './App.styled.js';
 import { ContactUsSection } from '../ContactUs/ContactUsSection.jsx';
 import { AboutSection } from '../About/AboutSection.jsx';
 import { CasesSection } from '../Cases/CasesSection.jsx';
+import {FAQSection} from '../FAQ/FAQSection.jsx';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <MainSection />
         <AboutSection />
         <CasesSection />
+        <FAQSection/>
         <ContactUsSection />
       </Main>
       <Footer />

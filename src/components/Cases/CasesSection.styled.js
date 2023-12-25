@@ -74,7 +74,7 @@ export const SliderLeftBtn = styled.button`
   cursor: pointer;
 `;
 
-export const SliderRighttBtn = styled.button`
+export const SliderRightBtn = styled.button`
   width: 66px;
   height: 66px;
 

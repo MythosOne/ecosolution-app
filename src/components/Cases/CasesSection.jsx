@@ -7,7 +7,7 @@ import {
   Slider,
   BlockMeter,
   SliderLeftBtn,
-  SliderRighttBtn,
+  SliderRightBtn,
   BlockBtn,
   SlideWindow,
 } from './CasesSection.styled';
@@ -56,29 +56,27 @@ export const CasesSection = () => {
         <HeaderSlider>
           <BlockMeter>
             <MeterSlide>
-              <span>
-                {slideNUmber.toString().padStart(2, '0')}
-              </span>
-              <span style={{ opacity: "0.2" }}>/
-                {data.length.toString().padStart(2, '0')}
+              <span>{slideNUmber.toString().padStart(2, '0')}</span>
+              <span style={{ opacity: '0.2' }}>
+                /{data.length.toString().padStart(2, '0')}
               </span>
             </MeterSlide>
           </BlockMeter>
           <BlockBtn>
-            <SliderLeftBtn
+            <SliderLeftBtn type='button'
               onClick={() => {
                 handleLeftArrowClick();
               }}
             >
               <ArrowLeftImg width={'36'} height={'36'} />
             </SliderLeftBtn>
-            <SliderRighttBtn
+            <SliderRightBtn type='button'
               onClick={() => {
                 handleRigthArrowClick();
               }}
             >
               <ArrowRightImg width={'36'} height={'36'} />
-            </SliderRighttBtn>
+            </SliderRightBtn>
           </BlockBtn>
         </HeaderSlider>
         <SlideWindow>

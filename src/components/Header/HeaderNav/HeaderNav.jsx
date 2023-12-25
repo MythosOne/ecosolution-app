@@ -23,7 +23,7 @@ export const HeaderNav = ({ handleClose }) => {
     <NavContain>
       <Container>
         <CloseBLock>
-          <CloseBtn onClick={handleClose}>
+          <CloseBtn type='button' onClick={handleClose}>
             <CloseLightImg />
             close
           </CloseBtn>

@@ -23,7 +23,7 @@ export const SlideCard = ({ energyObject }) => {
       </Figure>
       <SlideLink>
         <SlideText>{title}</SlideText>
-        <SlideBtn
+        <SlideBtn type='button'
           onClick={() => {
             console.log('SlideLinkButton');
           }}

@@ -405,7 +405,7 @@ export const QualityImg = () => {
   );
 };
 
-export const ArrowUpRightImg = ({stroke}) => {
+export const ArrowUpRightImg = ({ stroke }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -597,6 +597,85 @@ export const ArrowLeftImg = ({ width, height, stroke }) => {
         d="M30.749 17.9988H5.50402"
         stroke={stroke}
         strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+//FAQ
+
+export const MinusImg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+    >
+      <path
+        d="M4 8H12"
+        stroke="#173D33"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const PlusImg = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      viewBox="0 0 16 16"
+      fill="none"
+    >
+      <path
+        d="M4 8H12"
+        stroke="#97D28B"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8 12V4"
+        stroke="#97D28B"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export const EllipseArrowDown = ({ fill }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="14"
+      height="15"
+      viewBox="0 0 14 15"
+      fill={fill}
+    >
+      <circle cx="7" cy="7.5" r="7" fill={fill} />
+      <path
+        d="M9.27588 8.31006L6.99963 10.3334L4.72338 8.31006"
+        stroke="#173D33"
+        strokeWidth="0.833607"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6.99951 4.66675L6.99951 10.2767"
+        stroke="#173D33"
+        strokeWidth="0.833607"
         strokeMiterlimit="10"
         strokeLinecap="round"
         strokeLinejoin="round"
