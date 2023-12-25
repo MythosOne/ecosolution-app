@@ -11,7 +11,7 @@ import {
 import { PlusImg, MinusImg } from '../../../icons/IconsComponent';
 
 export const FAQCard = ({ FAQ }) => {
-  const [isOpen, setIsOpen] = useState(FAQ[0]? true : false);
+  const [isOpen, setIsOpen] = useState(false);
   const { chapter, description } = FAQ;
 
   return (
