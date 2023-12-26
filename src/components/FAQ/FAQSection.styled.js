@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
-  width: 320px;
+  /* width: 320px; */
 
   display: flex;
   flex-direction: column;

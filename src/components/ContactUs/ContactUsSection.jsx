@@ -4,6 +4,7 @@ import {
   TitleSection,
   ContactList,
   PhoneList,
+  List,
   PhoneItem,
   TitleLine,
   Link,
@@ -33,18 +34,20 @@ export const ContactUsSection = () => {
       <TitleSection>CONTACT US</TitleSection>
       <ContactList>
         <PhoneList>
-          <PhoneItem>
-            <TitleLine>Phone:</TitleLine>
-            <Link href="tel:+380981234567">
-              <PhoneImg /> 38 (098) 12 34 567
-            </Link>
-          </PhoneItem>
-          <PhoneItem>
-            <Link href="+380931234567">
-              <PhoneImg />
-              38 (093) 12 34 567
-            </Link>
-          </PhoneItem>
+          <List>
+            <PhoneItem>
+              <TitleLine>Phone:</TitleLine>
+              <Link href="tel:+380981234567">
+                <PhoneImg /> 38 (098) 12 34 567
+              </Link>
+            </PhoneItem>
+            <PhoneItem>
+              <Link href="+380931234567">
+                <PhoneImg />
+                38 (093) 12 34 567
+              </Link>
+            </PhoneItem>
+          </List>
         </PhoneList>
         <MailItem>
           <TitleLine>E-mail:</TitleLine>

@@ -101,4 +101,6 @@ export const SlideWindow = styled.ul`
   width: 320px;
   height: 318px;
   overflow: hidden;
+
+  margin: 0 auto;
 `;

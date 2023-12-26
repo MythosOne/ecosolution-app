@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   margin-top: 24px;
   margin-bottom: 36px;
@@ -54,6 +55,7 @@ export const AboutMainValues = styled.div`
 
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
 `;
 
@@ -79,9 +81,10 @@ export const MainValuesText = styled.p`
 `;
 
 export const AboutList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
 `;
 
 export const AboutItem = styled.li`

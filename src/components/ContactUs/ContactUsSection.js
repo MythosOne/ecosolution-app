@@ -31,12 +31,19 @@ export const ContactList = styled.ul`
   list-style: none;
 `;
 
-export const PhoneList = styled.ul`
+export const PhoneList = styled.li`
   display: flex;
   flex-direction: column;
   gap: 12px;
 
   list-style: none;
+`;
+
+export const List = styled.ul`
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 12px;
 `;
 
 export const PhoneItem = styled.li``;

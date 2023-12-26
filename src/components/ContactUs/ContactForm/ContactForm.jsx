@@ -7,6 +7,7 @@ import {
   Label,
   Input,
   InputDescription,
+  BlockBtn,
   SendBtn,
   ButtonImg,
 } from './ContactForm.styled';
@@ -39,28 +40,28 @@ export const ContactForm = () => {
 
   return (
     <Form onSubmit={formik.handleSubmit}>
-      <Label>Full name:</Label>
+      <Label for="fullName">Full name:</Label>
       <Input
         type="text"
         name="fullName"
         onChange={formik.handleChange}
         value={formik.values.name}
       />
-      <Label>E-mail:</Label>
+      <Label for="email">E-mail:</Label>
       <Input
         type="email"
         name="email"
         onChange={formik.handleChange}
         value={formik.values.email}
       />
-      <Label>Phone:</Label>
+      <Label for="phone">Phone:</Label>
       <Input
         type="phone"
         name="phone"
         onChange={formik.handleChange}
         value={formik.values.phone}
       />
-      <Label>Description:</Label>
+      <Label for="description">Description:</Label>
       <InputDescription
         name="description"
         editable
@@ -69,17 +70,19 @@ export const ContactForm = () => {
         onChange={formik.handleChange}
         value={formik.values.description}
       />
-      <SendBtn
-        type="submit"
-        onClick={() => {
-          console.log('SendButton clicked');
-        }}
-      >
-        Send
-        <ButtonImg>
-          <ArrowRightImg width={'16'} height={'16'}/>
-        </ButtonImg>
-      </SendBtn>
+      <BlockBtn>
+        <SendBtn
+          type="submit"
+          onClick={() => {
+            console.log('SendButton clicked');
+          }}
+        >
+          Send
+          <ButtonImg>
+            <ArrowRightImg width={'16'} height={'16'} />
+          </ButtonImg>
+        </SendBtn>
+      </BlockBtn>
     </Form>
   );
 };

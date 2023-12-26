@@ -1,16 +1,21 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.header`
-  /* position: fixed; */
-  right: 0;
-  left: 0;
+  /* right: 0;
+  left: 0; */
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  /* width: 100%; */
   height: 55px;
   background-color: transparent;
   z-index: 1;
+  margin: 0px 20px;
+  /* gap: 11px; */
+
+  @media screen and (min-width: 480px) {
+
+  }
 `;
 
 export const MenuBtn = styled.button`
@@ -22,7 +27,7 @@ export const MenuBtn = styled.button`
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  margin-left: 11px;
+  /* margin-left: 11px; */
 
   border-radius: 50%;
   background: #dcefd8;
@@ -32,18 +37,3 @@ export const MenuBtn = styled.button`
     background: #97d28b;
   }
 `;
-
-// export const ContainerBtn = styled.div`
-// display: flex;
-// height: 39px;
-// width: 23px;
-// padding: 4px 12px;
-// justify-content: center;
-// align-items: center;
-// gap: 12px;
-// flex-shrink: 0;
-// margin-left: 11px;
-
-// border-radius: 50%;
-// background: #DCEFD8;
-// `;

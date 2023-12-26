@@ -69,14 +69,6 @@ export const CloseBLock = styled.div`
 
   border-bottom: 1px solid #fff;
 
-  /* color: #fff;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.8px; */
-
   padding-bottom: 8px;
 
   stroke: white;

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Form = styled.form`
-  width: 320px;
+  width: 100%;
   height: 559px;
 
   background-color: #eaedf1;
@@ -17,7 +17,7 @@ export const Form = styled.form`
 `;
 
 export const Label = styled.label`
-  margin-top: 28px;
+  margin-top: 36px;
   color: #173d33;
   text-align: justify;
   font-family: Fira Sans;
@@ -29,7 +29,7 @@ export const Label = styled.label`
 `;
 
 export const Input = styled.input`
-  height: 31px;
+  height: 36px;
 
   background: transparent;
   border: 0;
@@ -44,9 +44,13 @@ export const InputDescription = styled.input`
   border-bottom: 1px solid #97d28b;
 `;
 
+export const BlockBtn = styled.div`
+display: flex;
+justify-content: flex-end;
+`;
+
 export const SendBtn = styled.button`
   margin-top: 16px;
-  margin-left: 197px;
 
   padding: 3px;
 

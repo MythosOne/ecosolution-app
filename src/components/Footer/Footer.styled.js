@@ -6,9 +6,7 @@ export const Section = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: fixed; */
   bottom: 0;
-  /* left: 0; */
 
   border-top: 1px solid;
   border-color: #97d28b;
@@ -16,7 +14,6 @@ export const Section = styled.footer`
 
 export const FooterList = styled.ul`
   width: 100%;
-  /* width: 100%; */
   list-style: none;
 
   display: flex;
