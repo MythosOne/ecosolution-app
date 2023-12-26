@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ecosolution-app-test/static/css/main.240be8ed.css",
-    "main.js": "/ecosolution-app-test/static/js/main.91bc1fd1.js",
+    "main.js": "/ecosolution-app-test/static/js/main.ec606bd2.js",
     "static/media/wind-turbine-clean-energy.png": "/ecosolution-app-test/static/media/wind-turbine-clean-energy.82188a65894393fb43c5.png",
     "index.html": "/ecosolution-app-test/index.html",
     "main.240be8ed.css.map": "/ecosolution-app-test/static/css/main.240be8ed.css.map",
-    "main.91bc1fd1.js.map": "/ecosolution-app-test/static/js/main.91bc1fd1.js.map"
+    "main.ec606bd2.js.map": "/ecosolution-app-test/static/js/main.ec606bd2.js.map"
   },
   "entrypoints": [
     "static/css/main.240be8ed.css",
-    "static/js/main.91bc1fd1.js"
+    "static/js/main.ec606bd2.js"
   ]
 }
