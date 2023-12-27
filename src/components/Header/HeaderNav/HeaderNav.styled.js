@@ -109,7 +109,7 @@ export const NavList = styled.ul`
   list-style: none;
 `;
 
-export const NavListItem = styled.li`
+export const NavListItem = styled.a`
   color: rgba(255, 255, 255, 0.25);
   stroke: rgba(255, 255, 255, 0.25);
 

@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Form = styled.form`
-  width: 100%;
+  min-width: 320px;
+  max-width: 480px;
   height: 559px;
 
   background-color: #eaedf1;
@@ -14,9 +15,16 @@ export const Form = styled.form`
   padding-top: 8px;
   padding-left: 12px;
   padding-right: 12px;
+
+  @media screen and (min-width: 767px) {
+    width: 342px;
+  }
 `;
 
 export const Label = styled.label`
+  display: flex;
+  flex-direction: column;
+
   margin-top: 36px;
   color: #173d33;
   text-align: justify;
@@ -31,22 +39,40 @@ export const Label = styled.label`
 export const Input = styled.input`
   height: 36px;
 
+  color: #173d33;
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+
   background: transparent;
-  border: 0;
+  border: none;
+  outline: none;
   border-bottom: 1px solid #97d28b;
 `;
 
-export const InputDescription = styled.input`
+export const InputMessage = styled.textarea`
   height: 124px;
 
+  color: #173d33;
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+
   background: transparent;
-  border: 0;
+  border: none;
+  outline: none;
   border-bottom: 1px solid #97d28b;
 `;
 
 export const BlockBtn = styled.div`
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 export const SendBtn = styled.button`

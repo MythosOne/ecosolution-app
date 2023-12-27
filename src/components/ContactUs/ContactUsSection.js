@@ -22,8 +22,21 @@ export const TitleSection = styled.h2`
   margin-bottom: 24px;
 `;
 
-export const ContactList = styled.ul`
+export const Container = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 122px;
+    justify-content: center;
+  }
+`;
+
+export const ContactList = styled.ul`
   display: flex;
   flex-direction: column;
   /* align-items: flex-start; */

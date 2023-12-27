@@ -42,7 +42,7 @@ export const AboutSection = () => {
   }, [number]);
 
   return (
-    <Section>
+    <Section id='s2'>
       <AboutLink>
         <Address href="https://bit.ly/3n3ZUYY">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

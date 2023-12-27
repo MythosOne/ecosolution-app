@@ -16,7 +16,7 @@ import { FAQCard } from './FAQCard/FAQCard.jsx';
 
 export const FAQSection = () => {
   return (
-    <Section>
+    <Section id='s4'>
       <FAQSectionTitle>Frequently Asked Questions</FAQSectionTitle>
       <FAQList>
         {faq.map(questions => {

@@ -6,7 +6,7 @@ import {
   Form,
   Label,
   Input,
-  InputDescription,
+  InputMessage,
   BlockBtn,
   SendBtn,
   ButtonImg,
@@ -40,36 +40,43 @@ export const ContactForm = () => {
 
   return (
     <Form onSubmit={formik.handleSubmit}>
-      <Label for="fullName">Full name:</Label>
-      <Input
-        type="text"
-        name="fullName"
-        onChange={formik.handleChange}
-        value={formik.values.name}
-      />
-      <Label for="email">E-mail:</Label>
-      <Input
-        type="email"
-        name="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      />
-      <Label for="phone">Phone:</Label>
-      <Input
-        type="phone"
-        name="phone"
-        onChange={formik.handleChange}
-        value={formik.values.phone}
-      />
-      <Label for="description">Description:</Label>
-      <InputDescription
-        name="description"
-        editable
-        multiline
-        placeholder="Your message"
-        onChange={formik.handleChange}
-        value={formik.values.description}
-      />
+      <Label>
+        * Full name:
+        <Input
+          type="text"
+          name="fullName"
+          onChange={formik.handleChange}
+          value={formik.values.name}
+        />
+      </Label>
+      <Label>
+        * E-mail:
+        <Input
+          type="email"
+          name="email"
+          onChange={formik.handleChange}
+          value={formik.values.email}
+        />
+      </Label>
+      <Label>
+        * Phone:
+        <Input
+          type="phone"
+          name="phone"
+          onChange={formik.handleChange}
+          value={formik.values.phone}
+        />
+      </Label>
+      <Label>
+        * Message:
+        <InputMessage
+          name="description"
+          maxLength={200}
+          placeholder="Your message"
+          onChange={formik.handleChange}
+          value={formik.values.description}
+        />
+      </Label>
       <BlockBtn>
         <SendBtn
           type="submit"

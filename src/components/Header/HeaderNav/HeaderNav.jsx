@@ -29,19 +29,19 @@ export const HeaderNav = ({ handleClose }) => {
           </CloseBtn>
         </CloseBLock>
         <NavList>
-          <NavListItem>
-            Fira Sans <ArrowNavImg />
+          <NavListItem href='#s1'>
+            Main <ArrowNavImg />
           </NavListItem>
-          <NavListItem>
+          <NavListItem href='#s2'>
             About <ArrowNavImg />
           </NavListItem>
-          <NavListItem>
+          <NavListItem href='#s3'>
             Cases <ArrowNavImg />
           </NavListItem>
-          <NavListItem>
+          <NavListItem href='#s4'>
             FAQ <ArrowNavImg />
           </NavListItem>
-          <NavListItem>
+          <NavListItem href='#s5'>
             Contact US <ArrowNavImg />
           </NavListItem>
         </NavList>
