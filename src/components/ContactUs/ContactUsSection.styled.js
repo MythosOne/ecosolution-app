@@ -118,6 +118,10 @@ export const FaceBookItem = styled.li`
 export const InstagramItem = styled.li``;
 
 export const SocialFacebook = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   fill: #173d33;
   stroke: #173d33;
 
@@ -128,6 +132,10 @@ export const SocialFacebook = styled.a`
 `;
 
 export const SocialInstagram = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   stroke: #173d33;
 
   &:hover {

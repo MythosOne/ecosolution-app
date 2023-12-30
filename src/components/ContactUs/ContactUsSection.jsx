@@ -17,7 +17,7 @@ import {
   InstagramItem,
   SocialFacebook,
   SocialInstagram,
-} from './ContactUsSection';
+} from './ContactUsSection.styled';
 
 import {
   PhoneImg,
@@ -31,7 +31,7 @@ import { ContactForm } from './ContactForm/ContactForm';
 
 export const ContactUsSection = () => {
   return (
-    <Section id='s5'>
+    <Section id='contactUs'>
       <TitleSection>CONTACT US</TitleSection>
       <Container>
         <ContactList>

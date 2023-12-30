@@ -8,14 +8,20 @@ export const Section = styled.header`
   justify-content: space-between;
   /* width: 100%; */
   height: 55px;
-  background-color: transparent;
+  background: #f3f5fa;
+  /* background-color: transparent;  */
+  /* background-color: #fff;  */
   z-index: 1;
   margin: 0px 20px;
   /* gap: 11px; */
 
   @media screen and (min-width: 480px) {
-
   }
+
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
 `;
 
 export const MenuBtn = styled.button`

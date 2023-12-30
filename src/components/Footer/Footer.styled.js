@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.footer`
-  width: 100%;
+  /* width: 100%; */
 
   display: flex;
   justify-content: center;
@@ -10,10 +10,15 @@ export const Section = styled.footer`
 
   border-top: 1px solid;
   border-color: #97d28b;
+
+  margin: 0px 20px;
+
+  @media screen and (min-width: 767px) {
+  }
 `;
 
 export const FooterList = styled.ul`
-  width: 100%;
+  /* width: 100%; */
   list-style: none;
 
   display: flex;
@@ -22,15 +27,39 @@ export const FooterList = styled.ul`
   align-items: center;
 `;
 
+export const ContainerLogo = styled.ul`
+
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 19px;
+
+  @media screen and (min-width: 767px) {
+    width: 100%;
+
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+
+    gap: 0px
+  }
+`;
+
 export const LogoItem = styled.li`
   display: flex;
+  flex-direction: column;
   gap: 19px;
   align-items: center;
   margin-top: 24px;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 `;
 
-export const ArrowUpBtn = styled.button`
+export const ArrowUpBtn = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,16 +75,44 @@ export const ArrowUpBtn = styled.button`
     stroke: #97d28b;
     background: #173d33;
   }
+
+   @media screen and (min-width: 767px) {
+margin-left: 254px;
+  }
 `;
 
 export const SocialItem = styled.li`
   display: flex;
   gap: 8px;
 
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
+  margin-left: 38px;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    align-items: baseline;
+
+    margin-left: 94px;
+  }
+`;
+
+export const ContainerContact = styled.ul`
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+    align-items: baseline;
+  }
 `;
 
 export const SocialFacebook = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   fill: #173d33;
   stroke: #173d33;
 
@@ -65,6 +122,10 @@ export const SocialFacebook = styled.a`
   }
 `;
 export const SocialInstagram = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   stroke: #173d33;
 
   &:hover {
@@ -76,6 +137,11 @@ export const AddressItem = styled.li`
   color: #173d33;
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 767px) {
+    margin-right: 77px;
+    margin-bottom: 0;
+  }
 `;
 
 export const Address = styled.a`
@@ -99,6 +165,11 @@ export const MailItem = styled.li`
   color: #173d33;
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 767px) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
 `;
 
 export const Mail = styled.a`
@@ -128,5 +199,9 @@ export const CorpItem = styled.li`
   line-height: normal;
   letter-spacing: -0.64px;
 
-  margin-bottom: 51px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 40px;
+  }
 `;

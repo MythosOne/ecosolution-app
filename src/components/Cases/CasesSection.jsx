@@ -50,7 +50,7 @@ export const CasesSection = () => {
   };
 
   return (
-    <Section id='s3'>
+    <Section id='cases'>
       <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
       <Slider>
         <HeaderSlider>

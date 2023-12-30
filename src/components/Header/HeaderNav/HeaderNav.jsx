@@ -18,6 +18,8 @@ import {
   InstagramImg,
 } from '../../../icons/IconsComponent';
 
+import { Link } from 'react-router-dom';
+
 export const HeaderNav = ({ handleClose }) => {
   return (
     <NavContain>
@@ -29,19 +31,19 @@ export const HeaderNav = ({ handleClose }) => {
           </CloseBtn>
         </CloseBLock>
         <NavList>
-          <NavListItem href='#s1'>
+          <Link to='/main'>
             Main <ArrowNavImg />
-          </NavListItem>
-          <NavListItem href='#s2'>
+          </Link>
+          <NavListItem href='#about'>
             About <ArrowNavImg />
           </NavListItem>
-          <NavListItem href='#s3'>
+          <NavListItem href="#cases">
             Cases <ArrowNavImg />
           </NavListItem>
-          <NavListItem href='#s4'>
+          <NavListItem href='#faq'>
             FAQ <ArrowNavImg />
           </NavListItem>
-          <NavListItem href='#s5'>
+          <NavListItem href='#contactUs'>
             Contact US <ArrowNavImg />
           </NavListItem>
         </NavList>

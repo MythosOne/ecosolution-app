@@ -16,7 +16,7 @@ import { FAQCard } from './FAQCard/FAQCard.jsx';
 
 export const FAQSection = () => {
   return (
-    <Section id='s4'>
+    <Section id="faq">
       <FAQSectionTitle>Frequently Asked Questions</FAQSectionTitle>
       <FAQList>
         {faq.map(questions => {
@@ -28,12 +28,7 @@ export const FAQSection = () => {
         })}
       </FAQList>
       <QuestionText>Didn't find the answer to your question? </QuestionText>
-      <ContactUsBtn
-        type="button"
-        onClick={() => {
-          console.log('ContactUsBtn');
-        }}
-      >
+      <ContactUsBtn type="button" href="#contactUs">
         Contact Us
         <EllipseArrowDown />
       </ContactUsBtn>

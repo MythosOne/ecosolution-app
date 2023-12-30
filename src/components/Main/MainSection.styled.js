@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Section = styled.div`
+export const Section = styled.section`
   margin-top: 146px;
 
   display: flex;
@@ -33,7 +33,8 @@ export const MainText = styled.p`
   letter-spacing: -0.64px;
 `;
 
-export const MainBtn = styled.button`
+export const MainBtn = styled.a`
+  text-decoration: none;
   margin-bottom: 24px;
 
   padding: 3px;

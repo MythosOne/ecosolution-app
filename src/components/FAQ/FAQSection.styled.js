@@ -43,7 +43,9 @@ export const QuestionText = styled.p`
   margin-top: 36px;
 `;
 
-export const ContactUsBtn = styled.button`
+export const ContactUsBtn = styled.a`
+  text-decoration: none;
+  box-sizing: border-box;
   width: 130px;
   height: 39px;
 

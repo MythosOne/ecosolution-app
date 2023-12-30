@@ -110,6 +110,7 @@ export const NavList = styled.ul`
 `;
 
 export const NavListItem = styled.a`
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.25);
   stroke: rgba(255, 255, 255, 0.25);
 
