@@ -1,10 +1,31 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
+  display: grid;
+  grid-row-gap: 24px;
+
+  grid-template-areas:
+    'title'
+    'header'
+    'slide';
+
   margin-bottom: 36px;
+
+  @media screen and (min-width: 767px) {
+    /* width: 100%; */
+    grid-row-gap: 24px;
+    grid-column-gap: 12px;
+    grid-template-areas:
+      'title line header'
+      'slide slide slide';
+
+    /* grid-template-columns: repeat (2, 342px); */
+  }
 `;
 
 export const CasesCompanyTitle = styled.h2`
+  grid-area: title;
+
   color: #173d33;
   font-family: Oswald;
   font-size: 28px;
@@ -12,20 +33,33 @@ export const CasesCompanyTitle = styled.h2`
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 767px) {
+    width: 342px;
+  }
 `;
 
-export const Slider = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-
-  margin-top: 24px;
+export const VerticalLine = styled.hr`
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  grid-area: line;
+  height: 65px;
+  width: 1px;
+  background: #97d28b;
+  border: 0;
 `;
 
 export const HeaderSlider = styled.div`
+  grid-area: header;
+
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+
+  @media screen and (min-width: 767px) {
+    width: 342px;
+  }
 `;
 
 export const BlockMeter = styled.div``;
@@ -96,6 +130,8 @@ export const SliderRightBtn = styled.button`
 `;
 
 export const SlideWindow = styled.ul`
+  grid-area: slide;
+
   display: flex;
 
   width: 320px;
@@ -103,4 +139,13 @@ export const SlideWindow = styled.ul`
   overflow: hidden;
 
   margin: 0 auto;
+
+  @media screen and (min-width: 767px) {
+    width: 708px;
+    /* overflow: visible; */
+    margin: 0;
+    gap: 24px;
+  }
 `;
+
+export const SlideItem = styled.li``;

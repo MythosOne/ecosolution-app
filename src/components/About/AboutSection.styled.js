@@ -88,11 +88,11 @@ export const MainValuesText = styled.p`
 // `;
 
 export const AboutList = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(2, 148px);
-    grid-template-rows: repeat(2, 197px);
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 148px);
+  grid-template-rows: repeat(2, 197px);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
 `;
 
 export const AboutItem = styled.li`
@@ -154,6 +154,11 @@ export const AboutElectrTitle = styled.h2`
   text-transform: uppercase;
 
   margin-bottom: 24px;
+
+  @media screen and (min-width: 767px) {
+    font-size: 38px;
+    line-height: 36px;
+  }
 `;
 
 export const VerticalLine = styled.hr`
@@ -161,6 +166,10 @@ export const VerticalLine = styled.hr`
   width: 1px;
   background: #97d28b;
   border: 0;
+
+  @media screen and (min-width: 767px) {
+    height: 87px;
+  }
 `;
 
 export const MeterContainer = styled.div`
@@ -178,6 +187,10 @@ export const Meter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 767px) {
+    width: 602px;
+  }
 `;
 
 export const ElectricityMeter = styled.div`
@@ -189,6 +202,12 @@ export const ElectricityMeter = styled.div`
   font-weight: 700;
   line-height: 48px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 767px) {
+    width: 602px;
+    font-size: 100px;
+    line-height: 100px;
+  }
 `;
 
 export const Unit = styled.span`

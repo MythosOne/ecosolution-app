@@ -3,13 +3,14 @@ import {
   Section,
   CasesCompanyTitle,
   MeterSlide,
+  VerticalLine,
   HeaderSlider,
-  Slider,
   BlockMeter,
   SliderLeftBtn,
   SliderRightBtn,
   BlockBtn,
   SlideWindow,
+  SlideItem,
 } from './CasesSection.styled';
 
 import { ArrowLeftImg, ArrowRightImg } from 'icons/IconsComponent';
@@ -18,7 +19,8 @@ import { SlideCard } from './SlideCard/SlideCard';
 
 import data from 'data/data.js';
 
-const PAGE_WIDTH = 320;
+const PAGE_WIDTH_MOBILE = 320;
+const PAGE_WIDTH_TABLET = 342;
 
 export const CasesSection = () => {
   const [offset, setOffset] = useState(0);
@@ -30,20 +32,20 @@ export const CasesSection = () => {
     }
 
     setOffset(prevState => {
-      const newOffset = prevState + PAGE_WIDTH;
+      const newOffset = prevState + PAGE_WIDTH_MOBILE;
 
       return Math.min(newOffset, 0);
     });
   };
 
-  const handleRigthArrowClick = () => {
+  const handleRightArrowClick = () => {
     if (slideNUmber <= data.length - 1) {
       setSlideNumber(slideNUmber + 1);
     }
 
     setOffset(prevState => {
-      const newOffset = prevState - PAGE_WIDTH;
-      const maxOffset = -PAGE_WIDTH * (data.length - 1);
+      const newOffset = prevState - PAGE_WIDTH_MOBILE;
+      const maxOffset = -PAGE_WIDTH_MOBILE * (data.length - 1);
 
       return Math.max(newOffset, maxOffset);
     });
@@ -52,7 +54,7 @@ export const CasesSection = () => {
   return (
     <Section id='cases'>
       <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
-      <Slider>
+      <VerticalLine />
         <HeaderSlider>
           <BlockMeter>
             <MeterSlide>
@@ -72,7 +74,7 @@ export const CasesSection = () => {
             </SliderLeftBtn>
             <SliderRightBtn type='button'
               onClick={() => {
-                handleRigthArrowClick();
+                handleRightArrowClick();
               }}
             >
               <ArrowRightImg width={'36'} height={'36'} />
@@ -82,10 +84,10 @@ export const CasesSection = () => {
         <SlideWindow>
           {data.map(energyObjects => {
             return (
-              <li
+              <SlideItem
                 style={{
                   listStyle: 'none',
-                  minWidth: '100%',
+                  minWidth: `'100%'`,
                   maxWidth: '100%',
                   height: '100%',
                   transform: `translateX(${offset}px)`,
@@ -97,11 +99,10 @@ export const CasesSection = () => {
                 key={energyObjects.id}
               >
                 <SlideCard energyObject={energyObjects} />
-              </li>
+              </SlideItem>
             );
           })}
         </SlideWindow>
-      </Slider>
     </Section>
   );
 };

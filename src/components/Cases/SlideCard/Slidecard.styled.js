@@ -7,11 +7,8 @@ export const Container = styled.div`
 
   background: #eaedf1;
 
-  width: 100%;
-  height: 100%;
-
-  /* margin-top: 20px;
-  margin-bottom: 10px; */
+  /* width: 100%;
+  height: 100%; */
 `;
 
 export const Figure = styled.figure`
@@ -21,11 +18,17 @@ export const Figure = styled.figure`
 export const SlideImg = styled.img`
   width: 320px;
   height: 174px;
+
+  @media screen and (min-width: 767px) {
+    width: 342px;
+  }
 `;
 
 export const SlideLink = styled.div`
-  width: 296px;
-  height: 107px;
+  /* width: 296px; */
+  /* height: 107px; */
+  margin-left: 12px;
+  margin-right: 12px;
 
   display: flex;
   align-items: center;
@@ -66,14 +69,20 @@ export const SlideBtn = styled.button`
 `;
 
 export const SignatureProject = styled.div`
-  width: 296px;
+  /* width: 296px; */
+  /* margin-left: 12px;
+  margin-right: 12px; */
 
   display: flex;
   justify-content: space-between;
-  gap: 61px;
+  gap: 76px;
 
   margin-top: 12px;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 767px) {
+    gap: 62px;
+  }
 `;
 
 export const ProjectName = styled.span`
@@ -86,6 +95,11 @@ export const ProjectName = styled.span`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
 `;
 
 export const ProjectDate = styled.span`
@@ -97,4 +111,9 @@ export const ProjectDate = styled.span`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    letter-spacing: -0.56px;
+  }
 `;

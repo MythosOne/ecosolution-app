@@ -102,7 +102,7 @@ export const AboutSection = () => {
       </AboutList>
       <MeterContainer>
         <AboutElectrTitle>
-          Electricity we produced for all time
+          Electricity we produced <br/> for all time
         </AboutElectrTitle>
         <VerticalLine />
         <Meter>
