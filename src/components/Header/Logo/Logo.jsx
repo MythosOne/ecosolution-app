@@ -5,7 +5,7 @@ import {
   TitleGreen,
   Green,
 } from './Logo.styled';
-import { LogoImg } from '../../../icons/IconsComponent';
+import { LogoImg } from 'icons/IconsComponent';
 
 export const Logo = () => {
   return (

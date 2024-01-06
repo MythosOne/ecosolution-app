@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.footer`
-  /* width: 100%; */
 
   display: flex;
   justify-content: center;
@@ -14,11 +13,11 @@ export const Section = styled.footer`
   margin: 0px 20px;
 
   @media screen and (min-width: 767px) {
+    margin: 0px 30px;
   }
 `;
 
 export const FooterList = styled.ul`
-  /* width: 100%; */
   list-style: none;
 
   display: flex;
@@ -27,7 +26,7 @@ export const FooterList = styled.ul`
   align-items: center;
 `;
 
-export const ContainerLogo = styled.ul`
+export const ContainerLogo = styled.li`
 
   display: flex;
   align-items: baseline;
@@ -45,7 +44,7 @@ export const ContainerLogo = styled.ul`
   }
 `;
 
-export const LogoItem = styled.li`
+export const LogoItem = styled.div`
   display: flex;
   flex-direction: column;
   gap: 19px;
@@ -81,7 +80,7 @@ margin-left: 254px;
   }
 `;
 
-export const SocialItem = styled.li`
+export const SocialItem = styled.div`
   display: flex;
   gap: 8px;
 
@@ -96,7 +95,7 @@ export const SocialItem = styled.li`
   }
 `;
 
-export const ContainerContact = styled.ul`
+export const ContainerContact = styled.li`
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -133,7 +132,7 @@ export const SocialInstagram = styled.a`
   }
 `;
 
-export const AddressItem = styled.li`
+export const AddressItem = styled.div`
   color: #173d33;
 
   margin-bottom: 16px;
@@ -161,7 +160,7 @@ export const Address = styled.a`
   text-decoration: none;
 `;
 
-export const MailItem = styled.li`
+export const MailItem = styled.div`
   color: #173d33;
 
   margin-bottom: 16px;
@@ -189,7 +188,7 @@ export const Mail = styled.a`
   text-decoration: none;
 `;
 
-export const CorpItem = styled.li`
+export const CorpItem = styled.div`
   color: #173d33;
 
   font-family: Fira Sans;

@@ -21,8 +21,7 @@ import {
   FaceBookImg,
   InstagramImg,
   ArrowUpImg,
-} from '../../icons/IconsComponent';
-import { Container } from 'components/ContactUs/ContactUsSection.styled';
+} from 'icons/IconsComponent';
 
 export const Footer = () => {
   return (

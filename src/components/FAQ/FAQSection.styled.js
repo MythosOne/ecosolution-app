@@ -1,17 +1,31 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
-  /* width: 320px; */
-  max-width: 480px;
+  max-width: 440px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  display: grid;
+  grid-row: 3;
   margin-bottom: 36px;
+
+  grid-template-areas:
+    'title'
+    'list'
+    'question';
+
+  @media screen and (min-width: 767px) {
+    grid-template-areas:
+      'list title'
+      'list title'
+      'list question';
+
+    grid-gap: 24px;
+    max-width: 667px;
+  }
 `;
 
 export const FAQSectionTitle = styled.h2`
+  grid-area: title;
+
   color: #173d33;
   font-family: Oswald;
   font-size: 28px;
@@ -21,13 +35,33 @@ export const FAQSectionTitle = styled.h2`
   text-transform: uppercase;
 
   margin-bottom: 24px;
+
+  @media screen and (min-width: 767px) {
+    margin: 0;
+  }
 `;
 
 export const FAQList = styled.ul`
+  grid-area: list;
+
   display: flex;
   flex-direction: column;
 
   list-style: none;
+
+  @media screen and (min-width: 767px) {
+    width: 342px;
+  }
+`;
+
+export const AskQuestion = styled.div`
+  grid-area: question;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
 `;
 
 export const QuestionText = styled.p`
@@ -41,6 +75,10 @@ export const QuestionText = styled.p`
   letter-spacing: -0.72px;
 
   margin-top: 36px;
+
+  @media screen and (min-width: 767px) {
+    margin-top: 0;
+  }
 `;
 
 export const ContactUsBtn = styled.a`
@@ -57,8 +95,6 @@ export const ContactUsBtn = styled.a`
 
   border: none;
   border-radius: 500px;
-
-  margin-top: 12px;
 
   color: #173d33;
   font-family: Fira Sans;

@@ -80,11 +80,19 @@ export const MainValuesText = styled.p`
   letter-spacing: -0.64px;
 `;
 
+// export const AboutList = styled.ul`
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 24px;
+// `;
+
 export const AboutList = styled.ul`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 148px);
+    grid-template-rows: repeat(2, 197px);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
 `;
 
 export const AboutItem = styled.li`

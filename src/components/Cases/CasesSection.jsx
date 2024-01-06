@@ -12,11 +12,11 @@ import {
   SlideWindow,
 } from './CasesSection.styled';
 
-import { ArrowLeftImg, ArrowRightImg } from '../../icons/IconsComponent';
+import { ArrowLeftImg, ArrowRightImg } from 'icons/IconsComponent';
 
 import { SlideCard } from './SlideCard/SlideCard';
 
-import data from '../../data/data.js';
+import data from 'data/data.js';
 
 const PAGE_WIDTH = 320;
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {
   Container,
   CloseBLock,
@@ -16,11 +16,18 @@ import {
   CloseLightImg,
   FaceBookImg,
   InstagramImg,
-} from '../../../icons/IconsComponent';
+} from 'icons/IconsComponent';
 
-import { Link } from 'react-router-dom';
 
 export const HeaderNav = ({ handleClose }) => {
+  
+  //Experiense of use useRef
+const ref = useRef(null);
+
+const handleClick = () =>{
+  ref.current.scrollIntoView()
+}
+
   return (
     <NavContain>
       <Container>
@@ -31,9 +38,9 @@ export const HeaderNav = ({ handleClose }) => {
           </CloseBtn>
         </CloseBLock>
         <NavList>
-          <Link to='/main'>
+          <button onClick={handleClick}>
             Main <ArrowNavImg />
-          </Link>
+          </button>
           <NavListItem href='#about'>
             About <ArrowNavImg />
           </NavListItem>

@@ -8,7 +8,7 @@ import {
   PlusBtn,
 } from './FAQCard.styled';
 
-import { PlusImg, MinusImg } from '../../../icons/IconsComponent';
+import { PlusImg, MinusImg } from 'icons/IconsComponent';
 
 export const FAQCard = ({ FAQ }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Form = styled.form`
+  grid-area: form;
+
   min-width: 320px;
   max-width: 480px;
   height: 559px;
@@ -18,6 +20,7 @@ export const Form = styled.form`
 
   @media screen and (min-width: 767px) {
     width: 342px;
+    margin-left: 122px;
   }
 `;
 

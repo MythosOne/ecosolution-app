@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Section,
   TitleSection,
-  Container,
   ContactList,
   PhoneList,
   List,
@@ -25,7 +24,7 @@ import {
   AddressImg,
   FaceBookImg,
   InstagramImg,
-} from '../../icons/IconsComponent';
+} from 'icons/IconsComponent';
 
 import { ContactForm } from './ContactForm/ContactForm';
 
@@ -33,7 +32,7 @@ export const ContactUsSection = () => {
   return (
     <Section id='contactUs'>
       <TitleSection>CONTACT US</TitleSection>
-      <Container>
+      {/* <Container> */}
         <ContactList>
           <PhoneList>
             <List>
@@ -90,7 +89,7 @@ export const ContactUsSection = () => {
           </SocialItem>
         </ContactList>
         <ContactForm />
-      </Container>
+      {/* </Container> */}
     </Section>
   );
 };

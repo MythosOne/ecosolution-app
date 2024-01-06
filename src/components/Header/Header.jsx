@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import React, { useState } from 'react';
 import { Logo } from './Logo/Logo';
 import { HeaderNav } from './HeaderNav/HeaderNav';
 import { Section, MenuBtn } from './Header.styled';
@@ -11,14 +11,15 @@ export const Header = () => {
   return (
     <Section>
       <Logo />
-      {isOpen && <HeaderNav handleClose={handleClose}/>}
-        <MenuBtn type='button'
-          onClick={() => {
-            setIsOpen(true);
-          }}
-        >
-          <MenuBurgerImg />
-        </MenuBtn>
+      {isOpen && <HeaderNav handleClose={handleClose} />}
+      <MenuBtn
+        type="button"
+        onClick={() => {
+          setIsOpen(true);
+        }}
+      >
+        <MenuBurgerImg />
+      </MenuBtn>
     </Section>
   );
 };

@@ -11,7 +11,7 @@ import {
   ProjectDate,
 } from './Slidecard.styled';
 
-import { ArrowUpRightImg } from '../../../icons/IconsComponent';
+import { ArrowUpRightImg } from 'icons/IconsComponent';
 
 export const SlideCard = ({ energyObject }) => {
   const { image, title, signature, date } = energyObject;

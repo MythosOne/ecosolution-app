@@ -3,14 +3,27 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-areas:
+    'title'
+    'list'
+    'form';
+
+  @media screen and (min-width: 767px) {
+    grid-template-areas:
+      'title title'
+      'list form'
+      'list form';
+  }
 
   margin-bottom: 36px;
 `;
 
 export const TitleSection = styled.h2`
+  grid-area: title;
+
+  text-align: center;
+
   color: #173d33;
   font-family: Oswald;
   font-size: 28px;
@@ -22,26 +35,19 @@ export const TitleSection = styled.h2`
   margin-bottom: 24px;
 `;
 
-export const Container = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-
-  @media screen and (min-width: 767px) {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 122px;
-    justify-content: center;
-  }
-`;
-
 export const ContactList = styled.ul`
+  grid-area: list;
+
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   gap: 24px;
   list-style: none;
+
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const PhoneList = styled.li`

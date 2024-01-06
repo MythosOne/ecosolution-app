@@ -11,11 +11,11 @@ import {
   SendBtn,
   ButtonImg,
 } from './ContactForm.styled';
-import { ArrowRightImg } from '../../../icons/IconsComponent';
+import { ArrowRightImg } from 'icons/IconsComponent';
 
 export const ContactForm = () => {
   const [contact, setContact] = useState([]);
-  //   console.log(contact)
+    console.log(contact)
 
   const ContactUsSchema = Yup.object().shape({
     fullName: Yup.string().required('Required').min(2, 'Wrong Fullname'),
