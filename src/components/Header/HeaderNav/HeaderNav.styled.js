@@ -5,20 +5,18 @@ export const Backdrop = styled.div`
   top: 0;
   left: 0;
   z-index: 100;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   width: 100%;
   height: 100%;
 
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-
-  /* padding: 36px 20px; */
+  justify-content: center; */
+  box-sizing: border-box;
+  padding: 36px 20px;
 
   background: rgba(23, 61, 51, 0.25);
   backdrop-filter: blur(2px);
-
-  padding: 36px 20px;
 `;
 
 export const NavContain = styled.nav`
@@ -33,7 +31,7 @@ export const NavContain = styled.nav`
   padding: 24px;
   box-sizing: border-box;
 
-  /* position: absolute; */
+  position: relative;
 
   /* @media screen and ((min-width: 360px) and (max-width: 479px)) {
     top: 36px;
@@ -51,7 +49,7 @@ export const NavContain = styled.nav`
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
-  z-index: 100;
+  /* z-index: 100; */
 
   transition: all 3s;
 
@@ -68,7 +66,7 @@ export const NavContain = styled.nav`
     height: 701px;
   } */
 
-  @media screen and ((min-width: 768px) and (max-width: 1279px)) {
+  /* @media screen and ((min-width: 768px) and (max-width: 1279px)) {
     width: 320px;
     height: 701px;
 
@@ -79,20 +77,20 @@ export const NavContain = styled.nav`
   @media screen and (min-width: 1279px) {
     width: 365px;
     height: 873px;
-  }
+  } */
 `;
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
 
-  @media screen and (max-width: 767px) {
-    /* width: 272px; */
+  /* @media screen and (max-width: 767px) {
+    width: 272px;
   }
 
   @media screen and (min-width: 768px) {
     width: 317px;
-  }
+  } */
 `;
 
 export const CloseBLock = styled.div`
@@ -157,8 +155,8 @@ export const NavLink = styled.a`
 export const SocialList = styled.ul`
   display: flex;
   gap: 8px;
-  margin-bottom: 24px;
-  margin-left: 24px;
+  /* margin-bottom: 24px;
+  margin-left: 24px; */
   list-style: none;
 `;
 
