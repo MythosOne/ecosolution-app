@@ -1,11 +1,13 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import {
+  Backdrop,
   Container,
   CloseBLock,
   CloseBtn,
   NavContain,
   NavList,
-  NavListItem,
+  NavItem,
+  NavLink,
   SocialList,
   SocialItem,
   SocialFacebook,
@@ -18,41 +20,41 @@ import {
   InstagramImg,
 } from 'icons/IconsComponent';
 
-
 export const HeaderNav = ({ handleClose }) => {
-  
-  //Experiense of use useRef
-const ref = useRef(null);
+  const menuItems = [
+    { id: 1, title: 'Main' },
+    { id: 2, title: 'About' },
+    { id: 3, title: 'Cases' },
+    { id: 4, title: 'FAQ' },
+    { id: 5, title: 'ContactUS' },
+  ];
 
-const handleClick = () =>{
-  ref.current.scrollIntoView()
-}
+  //Experiense of use useRef
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current.scrollIntoView();
+  };
 
   return (
+    <Backdrop>
     <NavContain>
       <Container>
         <CloseBLock>
-          <CloseBtn type='button' onClick={handleClose}>
+          <CloseBtn type="button" onClick={handleClose}>
             <CloseLightImg />
             close
           </CloseBtn>
         </CloseBLock>
         <NavList>
-          <button onClick={handleClick}>
-            Main <ArrowNavImg />
-          </button>
-          <NavListItem href='#about'>
-            About <ArrowNavImg />
-          </NavListItem>
-          <NavListItem href="#cases">
-            Cases <ArrowNavImg />
-          </NavListItem>
-          <NavListItem href='#faq'>
-            FAQ <ArrowNavImg />
-          </NavListItem>
-          <NavListItem href='#contactUs'>
-            Contact US <ArrowNavImg />
-          </NavListItem>
+          {menuItems.map(menu => {
+            return(
+            <NavItem>
+              <NavLink href={`#${menu.title}`}>
+                {menu.title}<ArrowNavImg />
+              </NavLink>
+            </NavItem>);
+          })}
         </NavList>
       </Container>
       <SocialList>
@@ -76,5 +78,6 @@ const handleClick = () =>{
         </SocialItem>
       </SocialList>
     </NavContain>
+    </Backdrop>
   );
 };

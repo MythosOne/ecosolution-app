@@ -1,26 +1,53 @@
 import styled from '@emotion/styled';
 
+export const Backdrop = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 36px 20px; */
+
+  background: rgba(23, 61, 51, 0.25);
+  backdrop-filter: blur(2px);
+
+  padding: 36px 20px;
+`;
+
 export const NavContain = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: space-between;
 
-  position: absolute;
+  width: 100%;
+  height: 100%;
 
-  @media screen and ((min-width: 360px) and (max-width: 479px)) {
+  padding: 24px;
+  box-sizing: border-box;
+
+  /* position: absolute; */
+
+  /* @media screen and ((min-width: 360px) and (max-width: 479px)) {
     top: 36px;
     right: 20px;
     left: 20px;
-  }
+  } */
 
-  @media screen and (min-width: 480px) {
+  /* @media screen and (min-width: 480px) {
     top: 30px;
     right: 100px;
-  }
+  } */
 
-  width: 320px;
-  height: 701px;
+  /* width: 320px; */
+  /* height: 701px; */
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
@@ -36,14 +63,17 @@ export const NavContain = styled.nav`
   line-height: normal;
   letter-spacing: -0.96px;
 
-  @media screen and ((min-width: 360px) and (max-width: 767px)) {
+  /* @media screen and ((min-width: 360px) and (max-width: 767px)) {
     width: 320px;
     height: 701px;
-  }
+  } */
 
   @media screen and ((min-width: 768px) and (max-width: 1279px)) {
-    width: 365px;
-    height: 873px;
+    width: 320px;
+    height: 701px;
+
+    top: 42px;
+    right: 30px;
   }
 
   @media screen and (min-width: 1279px) {
@@ -53,15 +83,16 @@ export const NavContain = styled.nav`
 `;
 
 export const Container = styled.div`
+  width: 100%;
+  height: 100%;
+
   @media screen and (max-width: 767px) {
-    width: 272px;
+    /* width: 272px; */
   }
 
   @media screen and (min-width: 768px) {
     width: 317px;
   }
-
-  margin-top: 24px;
 `;
 
 export const CloseBLock = styled.div`
@@ -109,7 +140,9 @@ export const NavList = styled.ul`
   list-style: none;
 `;
 
-export const NavListItem = styled.a`
+export const NavItem = styled.li``;
+
+export const NavLink = styled.a`
   text-decoration: none;
   color: rgba(255, 255, 255, 0.25);
   stroke: rgba(255, 255, 255, 0.25);

@@ -52,7 +52,7 @@ export const CasesSection = () => {
   };
 
   return (
-    <Section id='cases'>
+    <Section id='Cases'>
       <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
       <VerticalLine />
         <HeaderSlider>

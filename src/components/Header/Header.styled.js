@@ -5,7 +5,7 @@ export const Section = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  height: 55px;
+  height: 76px;
   background: #f3f5fa;
 
   z-index: 1;
