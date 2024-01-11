@@ -5,19 +5,22 @@ export const Section = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  height: 76px;
+  /* height: 76px; */
   background: #f3f5fa;
-
-  z-index: 1;
-  margin: 0px 20px;
-
-  @media screen and (min-width: 480px) {
-  }
+  padding: 36px 20px 10px;
 
   top: 0;
   left: 0;
   position: sticky;
   z-index: 1100;
+
+  @media screen and ((min-width: 480px) and (max-width: 1280px)) {
+    padding: 42px 30px;
+  }
+
+  @media screen and ((min-width: 1280px) ) {
+    padding: 30px 100px;
+  }
 `;
 
 export const MenuBtn = styled.button`

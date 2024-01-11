@@ -49,7 +49,7 @@ export const HeaderNav = ({ handleClose }) => {
         <NavList>
           {menuItems.map(menu => {
             return(
-            <NavItem>
+            <NavItem key={menu.id}>
               <NavLink href={`#${menu.title}`}>
                 {menu.title}<ArrowNavImg />
               </NavLink>

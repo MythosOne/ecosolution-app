@@ -9,14 +9,22 @@ export const Backdrop = styled.div`
   width: 100%;
   height: 100%;
 
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  display: flex;
   box-sizing: border-box;
   padding: 36px 20px;
 
   background: rgba(23, 61, 51, 0.25);
   backdrop-filter: blur(2px);
+
+  @media screen and ((min-width: 480px) and (max-width: 1280px)) {
+    justify-content: flex-end;
+    padding: 42px 30px;
+  }
+
+  @media screen and ((min-width: 1280px) ) {
+    justify-content: flex-end;
+    padding: 30px 100px;
+  }
 `;
 
 export const NavContain = styled.nav`
@@ -33,23 +41,14 @@ export const NavContain = styled.nav`
 
   position: relative;
 
-  /* @media screen and ((min-width: 360px) and (max-width: 479px)) {
-    top: 36px;
-    right: 20px;
-    left: 20px;
-  } */
+  @media screen and (min-width: 480px) {
+    width: 320px;
+    height: 701px;
+  }
 
-  /* @media screen and (min-width: 480px) {
-    top: 30px;
-    right: 100px;
-  } */
-
-  /* width: 320px; */
-  /* height: 701px; */
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
-  /* z-index: 100; */
 
   transition: all 3s;
 
@@ -60,37 +59,11 @@ export const NavContain = styled.nav`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.96px;
-
-  /* @media screen and ((min-width: 360px) and (max-width: 767px)) {
-    width: 320px;
-    height: 701px;
-  } */
-
-  /* @media screen and ((min-width: 768px) and (max-width: 1279px)) {
-    width: 320px;
-    height: 701px;
-
-    top: 42px;
-    right: 30px;
-  }
-
-  @media screen and (min-width: 1279px) {
-    width: 365px;
-    height: 873px;
-  } */
 `;
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-
-  /* @media screen and (max-width: 767px) {
-    width: 272px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 317px;
-  } */
 `;
 
 export const CloseBLock = styled.div`
@@ -155,8 +128,6 @@ export const NavLink = styled.a`
 export const SocialList = styled.ul`
   display: flex;
   gap: 8px;
-  /* margin-bottom: 24px;
-  margin-left: 24px; */
   list-style: none;
 `;
 
