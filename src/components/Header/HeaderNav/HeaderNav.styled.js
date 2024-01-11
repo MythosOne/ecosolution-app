@@ -74,12 +74,6 @@ export const CloseBLock = styled.div`
   padding-bottom: 8px;
 
   stroke: white;
-
-  &:focus,
-  &:hover {
-    color: #97d28b;
-    stroke: #97d28b;
-  }
 `;
 
 export const CloseBtn = styled.button`
@@ -98,8 +92,10 @@ export const CloseBtn = styled.button`
   line-height: normal;
   letter-spacing: -0.8px;
 
+  &:focus,
   &:hover {
     color: #97d28b;
+    stroke: #97d28b;
   }
 `;
 
