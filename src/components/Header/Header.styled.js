@@ -79,11 +79,11 @@ export const GetInBtn = styled.a`
     fill: #97d28b;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     display: flex;
   }
 `;
