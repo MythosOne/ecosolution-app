@@ -7,6 +7,11 @@ export const Section = styled.section`
 
   margin-top: 24px;
   margin-bottom: 36px;
+
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    margin-top: 16px;
+    margin-bottom: 100px;
+  }
 `;
 
 export const AboutLink = styled.div`
@@ -14,6 +19,18 @@ export const AboutLink = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 8px;
+
+  @media screen and (min-width: 767px) and (max-width: 1279px) {
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 `;
 
 export const Address = styled.a`
@@ -40,6 +57,25 @@ export const Mail = styled.a`
   text-decoration: none;
 
   margin-bottom: 40px;
+
+  @media screen and (min-width: 767px) {
+    margin: 0;
+  }
+`;
+
+export const Copyright = styled.p`
+  display: none;
+  color: #173d33;
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+
+  @media screen and (min-width: 767px) {
+    display: inline;
+  }
 `;
 
 export const Figure = styled.figure`
@@ -49,6 +85,7 @@ export const Figure = styled.figure`
 export const AboutImg = styled.img`
   width: 320px;
 `;
+
 export const AboutMainValues = styled.div`
   margin-top: 40px;
   margin-bottom: 36px;
@@ -87,61 +124,61 @@ export const MainValuesText = styled.p`
 //     gap: 24px;
 // `;
 
-export const AboutList = styled.ul`
-  display: grid;
-  grid-template-columns: repeat(2, 148px);
-  grid-template-rows: repeat(2, 197px);
-  grid-column-gap: 24px;
-  grid-row-gap: 24px;
-`;
+// export const AboutList = styled.ul`
+//   display: grid;
+//   grid-template-columns: repeat(2, 148px);
+//   grid-template-rows: repeat(2, 197px);
+//   grid-column-gap: 24px;
+//   grid-row-gap: 24px;
+// `;
 
-export const AboutItem = styled.li`
-  list-style: none;
-  box-sizing: border-box;
+// export const AboutItem = styled.li`
+//   list-style: none;
+//   box-sizing: border-box;
 
-  width: 148px;
-  height: 197px;
+//   width: 148px;
+//   height: 197px;
 
-  padding: 12px;
+//   padding: 12px;
 
-  background: #eaedf1;
-`;
+//   background: #eaedf1;
+// `;
 
-export const CardItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
+// export const CardItem = styled.div`
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
 
-  padding-top: 13px;
-  padding-bottom: 33px;
+//   padding-top: 13px;
+//   padding-bottom: 33px;
 
-  color: #173d33;
-  font-family: Oswald;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
+//   color: #173d33;
+//   font-family: Oswald;
+//   font-size: 14px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: 24px;
+//   text-transform: uppercase;
 
-  border-bottom: 1px solid #97d28b;
-`;
+//   border-bottom: 1px solid #97d28b;
+// `;
 
-// export const CardImage = styled.img``;
+// // export const CardImage = styled.img``;
 
-export const CardTitle = styled.h3``;
+// export const CardTitle = styled.h3``;
 
-export const CardText = styled.p`
-  color: #173d33;
-  text-align: justify;
-  font-family: Fira Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.56px;
+// export const CardText = styled.p`
+//   color: #173d33;
+//   text-align: justify;
+//   font-family: Fira Sans;
+//   font-size: 14px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
+//   letter-spacing: -0.56px;
 
-  margin-top: 12px;
-`;
+//   margin-top: 12px;
+// `;
 
 export const AboutElectrTitle = styled.h2`
   color: #173d33;
@@ -161,6 +198,14 @@ export const AboutElectrTitle = styled.h2`
   }
 `;
 
+export const VerticalLineMain = styled.hr`
+  display: none;
+  height: 110px;
+  width: 1px;
+  background: #97d28b;
+  border: 0;
+`;
+
 export const VerticalLine = styled.hr`
   height: 48px;
   width: 1px;
@@ -170,6 +215,18 @@ export const VerticalLine = styled.hr`
   @media screen and (min-width: 767px) {
     height: 87px;
   }
+`;
+
+export const FarmsImg = styled.img`
+  display: none;
+  width: 346px;
+  height: 234px;
+`;
+
+export const SolarImg = styled.img`
+  display: none;
+  width: 346px;
+  height: 234px;
 `;
 
 export const MeterContainer = styled.div`

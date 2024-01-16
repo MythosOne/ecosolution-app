@@ -4,16 +4,20 @@ import {
   AboutLink,
   Address,
   Mail,
+  Copyright,
   Figure,
   AboutImg,
   AboutMainValues,
+  VerticalLineMain,
   MainValuesTitle,
   MainValuesText,
-  AboutList,
-  AboutItem,
-  CardItem,
-  CardTitle,
-  CardText,
+  // AboutList,
+  // AboutItem,
+  // CardItem,
+  // CardTitle,
+  // CardText,
+  FarmsImg,
+  SolarImg,
   MeterContainer,
   AboutElectrTitle,
   VerticalLine,
@@ -22,14 +26,18 @@ import {
   Unit,
 } from './AboutSection.styled';
 
-import {
-  OpennessImg,
-  RespImg,
-  InnovImg,
-  QualityImg,
-} from '../../icons/IconsComponent';
+import { AboutCard } from './AboutCard/AboutCard';
 
-import img from '../../images/wind-turbine-clean-energy.png';
+// import {
+//   OpennessImg,
+//   RespImg,
+//   InnovImg,
+//   QualityImg,
+// } from 'icons/IconsComponent';
+
+import imgWind from 'images/wind-turbine-clean-energy.png';
+import imgFarms from 'images/wind-farms-fields.png';
+import imgSolar from 'images/man-worker-field-by-solar-panels.png'
 
 export const AboutSection = () => {
   const [number, setNumber] = useState(1134147804);
@@ -42,18 +50,20 @@ export const AboutSection = () => {
   }, [number]);
 
   return (
-    <Section id='about'>
+    <Section id="about">
       <AboutLink>
         <Address href="https://bit.ly/3n3ZUYY">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </Address>
         <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
+        <Copyright>ecosolution © 2023</Copyright>
       </AboutLink>
       <Figure>
-        <AboutImg src={img} alt="Wind turbine" />
+        <AboutImg src={imgWind} alt="Wind turbine" />
       </Figure>
       <AboutMainValues>
         <MainValuesTitle>Main values of our company</MainValuesTitle>
+        <VerticalLineMain />
         <MainValuesText>
           EcoSolution envisions a world where sustainable energy solutions power
           a brighter and cleaner future for all. We aspire to be at the
@@ -62,7 +72,7 @@ export const AboutSection = () => {
           meet the world's energy needs.
         </MainValuesText>
       </AboutMainValues>
-      <AboutList>
+      {/* <AboutList>
         <AboutItem>
           <CardItem>
             <OpennessImg />
@@ -99,10 +109,17 @@ export const AboutSection = () => {
             best in our business
           </CardText>
         </AboutItem>
-      </AboutList>
+      </AboutList> */}
+      <AboutCard/>
+      <Figure>
+        <FarmsImg src={imgFarms} alt="Farms fields" />
+      </Figure>
+      <Figure>
+        <SolarImg src={imgSolar} alt="Solar panels" />
+      </Figure>
       <MeterContainer>
         <AboutElectrTitle>
-          Electricity we produced <br/> for all time
+          Electricity we produced <br /> for all time
         </AboutElectrTitle>
         <VerticalLine />
         <Meter>
