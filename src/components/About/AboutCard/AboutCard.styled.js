@@ -1,11 +1,22 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const CardList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 148px);
-  grid-template-rows: repeat(2, 197px);
+  /* grid-template-columns: repeat(2, 148px);
+  grid-template-rows: repeat(2, 197px); */
+
+  grid-template-areas:
+    'open resp'
+    'inno qual';
+
   grid-column-gap: 24px;
   grid-row-gap: 24px;
+
+  @media screen and (min-width: 767px) {
+    grid-template-areas:
+      'open resp farm farm'
+      'solar solar inno qual';
+  }
 `;
 
 export const CardItem = styled.li`
@@ -40,13 +51,14 @@ export const CardHead = styled.div`
 `;
 
 export const CardTitle = styled.h3`
-color: #173D33;
-font-family: Oswald;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-text-transform: uppercase;`;
+  color: #173d33;
+  font-family: Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+`;
 
 export const CardText = styled.p`
   color: #173d33;
@@ -59,4 +71,24 @@ export const CardText = styled.p`
   letter-spacing: -0.56px;
 
   margin-top: 12px;
+`;
+
+export const Figure = styled.figure`
+  display: none;
+  margin: 0;
+  width: 320px;
+  height: 197px;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+    height: 100%;
+  }
+`;
+
+export const FarmsImg = styled.img`
+  height: 100%;
+`;
+
+export const SolarImg = styled.img`
+  height: 100%;
 `;

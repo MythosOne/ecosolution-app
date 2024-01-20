@@ -20,16 +20,13 @@ export const AboutLink = styled.div`
   align-items: center;
   gap: 8px;
 
-  @media screen and (min-width: 767px) and (max-width: 1279px) {
+  @media screen and (min-width: 767px) {
     flex-direction: row;
     gap: 0;
     width: 100%;
     justify-content: space-between;
 
     margin-bottom: 24px;
-  }
-
-  @media screen and (min-width: 1280px) {
   }
 `;
 
@@ -78,12 +75,15 @@ export const Copyright = styled.p`
   }
 `;
 
-export const Figure = styled.figure`
+export const Picture = styled.picture`
+  width: 100%;
   margin: 0;
 `;
 
+// export const Figure = styled.figure``;
+
 export const AboutImg = styled.img`
-  width: 320px;
+  width: 100%;
 `;
 
 export const AboutMainValues = styled.div`
@@ -94,9 +94,20 @@ export const AboutMainValues = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+
+  @media screen and (min-width: 767px) {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    display: grid;
+    grid-template-areas: 'title line article';
+  }
 `;
 
 export const MainValuesTitle = styled.h2`
+  display: inline-block;
+  grid-area: title;
+
   color: #173d33;
   font-family: Oswald;
   font-size: 28px;
@@ -104,9 +115,29 @@ export const MainValuesTitle = styled.h2`
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 767px) {
+    width: 272px;
+  }
+`;
+
+export const VerticalLineMain = styled.hr`
+  grid-area: line;
+
+  display: none;
+  height: 110px;
+  width: 1px;
+  background: #97d28b;
+  border: 0;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
 `;
 
 export const MainValuesText = styled.p`
+  grid-area: article;
+
   color: #173d33;
   text-align: justify;
   font-family: Fira Sans;
@@ -198,14 +229,6 @@ export const AboutElectrTitle = styled.h2`
   }
 `;
 
-export const VerticalLineMain = styled.hr`
-  display: none;
-  height: 110px;
-  width: 1px;
-  background: #97d28b;
-  border: 0;
-`;
-
 export const VerticalLine = styled.hr`
   height: 48px;
   width: 1px;
@@ -217,17 +240,17 @@ export const VerticalLine = styled.hr`
   }
 `;
 
-export const FarmsImg = styled.img`
-  display: none;
-  width: 346px;
-  height: 234px;
-`;
+// export const FarmsImg = styled.img`
+//   display: none;
+//   width: 346px;
+//   height: 234px;
+// `;
 
-export const SolarImg = styled.img`
-  display: none;
-  width: 346px;
-  height: 234px;
-`;
+// export const SolarImg = styled.img`
+//   display: none;
+//   width: 346px;
+//   height: 234px;
+// `;
 
 export const MeterContainer = styled.div`
   margin-top: 36px;
@@ -235,6 +258,10 @@ export const MeterContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 767px) {
+    margin-top: 100px;
+  }
 `;
 
 export const Meter = styled.div`

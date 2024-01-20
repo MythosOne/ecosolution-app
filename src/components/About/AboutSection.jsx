@@ -5,7 +5,8 @@ import {
   Address,
   Mail,
   Copyright,
-  Figure,
+  // Figure,
+  Picture,
   AboutImg,
   AboutMainValues,
   VerticalLineMain,
@@ -16,8 +17,8 @@ import {
   // CardItem,
   // CardTitle,
   // CardText,
-  FarmsImg,
-  SolarImg,
+  // FarmsImg,
+  // SolarImg,
   MeterContainer,
   AboutElectrTitle,
   VerticalLine,
@@ -36,8 +37,9 @@ import { AboutCard } from './AboutCard/AboutCard';
 // } from 'icons/IconsComponent';
 
 import imgWind from 'images/wind-turbine-clean-energy.png';
-import imgFarms from 'images/wind-farms-fields.png';
-import imgSolar from 'images/man-worker-field-by-solar-panels.png'
+import imgWindTablet from 'images/wind-turbine-clean-energy-tablet.png';
+// import imgFarms from 'images/wind-farms-fields.png';
+// import imgSolar from 'images/man-worker-field-by-solar-panels.png';
 
 export const AboutSection = () => {
   const [number, setNumber] = useState(1134147804);
@@ -58,9 +60,10 @@ export const AboutSection = () => {
         <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
         <Copyright>ecosolution © 2023</Copyright>
       </AboutLink>
-      <Figure>
+      <Picture>
+        <source srcSet={imgWindTablet} media="(min-width:767px)" />
         <AboutImg src={imgWind} alt="Wind turbine" />
-      </Figure>
+      </Picture>
       <AboutMainValues>
         <MainValuesTitle>Main values of our company</MainValuesTitle>
         <VerticalLineMain />
@@ -110,13 +113,13 @@ export const AboutSection = () => {
           </CardText>
         </AboutItem>
       </AboutList> */}
-      <AboutCard/>
-      <Figure>
+      <AboutCard />
+      {/* <Figure>
         <FarmsImg src={imgFarms} alt="Farms fields" />
       </Figure>
       <Figure>
         <SolarImg src={imgSolar} alt="Solar panels" />
-      </Figure>
+      </Figure> */}
       <MeterContainer>
         <AboutElectrTitle>
           Electricity we produced <br /> for all time
