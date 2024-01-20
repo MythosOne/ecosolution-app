@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
+  max-width: 440px;
+
   margin-top: 146px;
 
   display: grid;
@@ -17,6 +19,7 @@ export const Section = styled.section`
     'button';
 
   @media screen and (min-width: 767px) and (max-width: 1280px) {
+    max-width: none;
     width: 100%;
     grid-template-areas:
       'title article'
@@ -26,6 +29,7 @@ export const Section = styled.section`
   }
 
   @media screen and (min-width: 1279px) {
+    max-width: none;
     width: 100%;
     grid-template-areas:
       'title article'

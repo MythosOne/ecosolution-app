@@ -1,6 +1,8 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
+  max-width: 440px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +11,14 @@ export const Section = styled.section`
   margin-bottom: 36px;
 
   @media screen and (min-width: 767px) and (max-width: 1279px) {
+    max-width: none;
     margin-top: 16px;
     margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    max-width: none;
+    /* width: 100%; */
   }
 `;
 

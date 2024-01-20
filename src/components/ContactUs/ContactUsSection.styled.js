@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.section`
+  max-width: 440px;
   width: 100%;
 
   display: grid;
@@ -9,6 +10,8 @@ export const Section = styled.section`
     'list'
     'form';
 
+  margin-bottom: 36px;
+
   @media screen and (min-width: 767px) {
     grid-template-areas:
       'title title'
@@ -16,7 +19,10 @@ export const Section = styled.section`
       'list form';
   }
 
-  margin-bottom: 36px;
+  @media screen and (min-width: 1279px) {
+    max-width: none;
+    /* width: 100%; */
+  }
 `;
 
 export const TitleSection = styled.h2`

@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   display: grid;
   grid-row-gap: 24px;
+  margin: 0 auto;
 
   grid-template-areas:
     'title'
@@ -20,6 +21,9 @@ export const Section = styled.section`
       'slide slide slide';
 
     /* grid-template-columns: repeat (2, 342px); */
+  }
+
+  @media screen and (min-width: 1279px) {
   }
 `;
 

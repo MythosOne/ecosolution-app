@@ -7,6 +7,8 @@ export const Section = styled.section`
   grid-row: 3;
   margin-bottom: 36px;
 
+  margin: 0 auto 36px;
+
   grid-template-areas:
     'title'
     'list'
@@ -20,6 +22,11 @@ export const Section = styled.section`
 
     grid-gap: 24px;
     max-width: 667px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    max-width: none;
+    /* width: 100%; */
   }
 `;
 
