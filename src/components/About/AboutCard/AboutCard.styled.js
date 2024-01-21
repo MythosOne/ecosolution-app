@@ -29,6 +29,10 @@ export const CardItem = styled.li`
   padding: 12px;
 
   background: #eaedf1;
+
+  @media screen and (min-width: 767px) {
+    width: 159px;
+  }
 `;
 
 export const CardHead = styled.div`
@@ -81,6 +85,7 @@ export const Figure = styled.figure`
 
   @media screen and (min-width: 767px) {
     display: block;
+    width: 348px;
     height: 100%;
   }
 `;

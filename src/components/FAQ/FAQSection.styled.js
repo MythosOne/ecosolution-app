@@ -7,7 +7,7 @@ export const Section = styled.section`
   grid-row: 3;
   margin-bottom: 36px;
 
-  margin: 0 auto 36px;
+  /* margin: 0 auto 36px; */
 
   grid-template-areas:
     'title'
@@ -21,11 +21,13 @@ export const Section = styled.section`
       'list question';
 
     grid-gap: 24px;
-    max-width: 667px;
+    width: 708px;
+    max-width: none;
   }
 
   @media screen and (min-width: 1279px) {
     max-width: none;
+    grid-column-gap: 185px;
     /* width: 100%; */
   }
 `;

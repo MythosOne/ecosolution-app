@@ -17,11 +17,12 @@ export const Section = styled.section`
       'title title'
       'list form'
       'list form';
+      
+    max-width: none;
+    width: 708px;
   }
 
   @media screen and (min-width: 1279px) {
-    max-width: none;
-    /* width: 100%; */
   }
 `;
 

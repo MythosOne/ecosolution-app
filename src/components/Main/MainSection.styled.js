@@ -20,12 +20,13 @@ export const Section = styled.section`
 
   @media screen and (min-width: 767px) and (max-width: 1280px) {
     max-width: none;
-    width: 100%;
+    width: 708px;
     grid-template-areas:
       'title article'
       'title button';
     grid-row-gap: 43px;
-    grid-column-gap: 65px;
+    /* grid-column-gap: 65px; */
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1279px) {
@@ -48,7 +49,7 @@ export const MainTitle = styled.h2`
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 36px; /* 100% */
+  line-height: 36px;
   text-transform: uppercase;
 
   @media screen and (min-width: 767px) and (max-width: 1280px) {
@@ -77,6 +78,10 @@ export const MainText = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.64px;
+
+  @media screen and (min-width: 767px) {
+    width: 342px;
+  }
 
   @media screen and (min-width: 1279px) {
     width: 363px;

@@ -1,9 +1,12 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.header`
+  max-width: 440px;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 
   /* height: 76px; */
   background: #f3f5fa;
@@ -14,11 +17,13 @@ export const Section = styled.header`
   position: sticky;
   z-index: 1100;
 
-  @media screen and ((min-width: 480px) and (max-width: 1280px)) {
+  @media screen and ((min-width: 767px) and (max-width: 1280px)) {
+    max-width: none;
+    width: 708px;
     padding: 42px 30px;
   }
 
-  @media screen and ((min-width: 1280px)) {
+  @media screen and ((min-width: 1279px)) {
     padding: 30px 100px;
   }
 `;

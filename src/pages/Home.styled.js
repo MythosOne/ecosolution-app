@@ -12,6 +12,6 @@ export const Main = styled.div`
     margin-left: 30px;
     margin-right: 30px;
 
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
 `;

@@ -65,7 +65,7 @@ export const AboutSection = () => {
         <AboutImg src={imgWind} alt="Wind turbine" />
       </Picture>
       <AboutMainValues>
-        <MainValuesTitle>Main values of our company</MainValuesTitle>
+        <MainValuesTitle>Main values of <br/> our company</MainValuesTitle>
         <VerticalLineMain />
         <MainValuesText>
           EcoSolution envisions a world where sustainable energy solutions power

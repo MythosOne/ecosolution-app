@@ -13,7 +13,7 @@ export const Section = styled.section`
   margin-bottom: 36px;
 
   @media screen and (min-width: 767px) {
-    /* width: 100%; */
+    width: 708px;
     grid-row-gap: 24px;
     grid-column-gap: 12px;
     grid-template-areas:

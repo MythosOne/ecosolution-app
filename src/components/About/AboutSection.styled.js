@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Section = styled.section`
   max-width: 440px;
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +11,7 @@ export const Section = styled.section`
   margin-bottom: 36px;
 
   @media screen and (min-width: 767px) and (max-width: 1279px) {
+    width: 708px;
     max-width: none;
     margin-top: 16px;
     margin-bottom: 100px;
@@ -31,8 +32,7 @@ export const AboutLink = styled.div`
   @media screen and (min-width: 767px) {
     flex-direction: row;
     gap: 0;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     margin-bottom: 24px;
   }
@@ -48,6 +48,10 @@ export const Address = styled.a`
   letter-spacing: -0.64px;
 
   text-decoration: none;
+
+  @media screen and (min-width: 767px) {
+    margin-right: 77px;
+  }
 `;
 
 export const Mail = styled.a`
@@ -64,7 +68,7 @@ export const Mail = styled.a`
   margin-bottom: 40px;
 
   @media screen and (min-width: 767px) {
-    margin: 0;
+    margin: 0 50px 0 0;
   }
 `;
 
@@ -100,8 +104,8 @@ export const AboutMainValues = styled.div`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  align-items:flex-start;
+  gap: 11px;
 
   @media screen and (min-width: 767px) {
     margin-top: 100px;
@@ -113,7 +117,6 @@ export const AboutMainValues = styled.div`
 `;
 
 export const MainValuesTitle = styled.h2`
-  display: inline-block;
   grid-area: title;
 
   color: #173d33;
@@ -125,7 +128,7 @@ export const MainValuesTitle = styled.h2`
   text-transform: uppercase;
 
   @media screen and (min-width: 767px) {
-    width: 272px;
+    width: 354px;
   }
 `;
 
@@ -133,10 +136,11 @@ export const VerticalLineMain = styled.hr`
   grid-area: line;
 
   display: none;
-  height: 110px;
+  height: 130px;
   width: 1px;
   background: #97d28b;
   border: 0;
+  margin: 0;
 
   @media screen and (min-width: 767px) {
     display: block;
@@ -145,6 +149,8 @@ export const VerticalLineMain = styled.hr`
 
 export const MainValuesText = styled.p`
   grid-area: article;
+
+  /* width: 342px; */
 
   color: #173d33;
   text-align: justify;

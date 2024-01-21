@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Section = styled.footer`
+  max-width: 440px;
 
   display: flex;
   justify-content: center;
@@ -12,8 +13,14 @@ export const Section = styled.footer`
 
   margin: 0px 20px;
 
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: 767px) {
-    margin: 0px 30px;
+    max-width: none;
+    width: 708px;
+    margin: 0px auto;
   }
 `;
 
