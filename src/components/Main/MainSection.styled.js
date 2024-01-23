@@ -6,8 +6,6 @@ export const Section = styled.section`
   margin-top: 146px;
 
   display: grid;
-  /* flex-direction: column;
-  align-items: center; */
   grid-row-gap: 24px;
 
   border-bottom: 1px solid;
@@ -18,25 +16,27 @@ export const Section = styled.section`
     'article'
     'button';
 
-  @media screen and (min-width: 767px) and (max-width: 1280px) {
+  @media screen and (min-width: 767px) {
     max-width: none;
     width: 708px;
     grid-template-areas:
       'title article'
       'title button';
     grid-row-gap: 43px;
-    /* grid-column-gap: 65px; */
     justify-content: space-between;
   }
 
   @media screen and (min-width: 1279px) {
     max-width: none;
-    width: 100%;
+    width: 1240px;
+    margin-top: 180px;
+
     grid-template-areas:
       'title article'
       'title button';
     grid-row-gap: 20px;
     grid-column-gap: 296px;
+    justify-content: start;
   }
 `;
 
@@ -52,8 +52,8 @@ export const MainTitle = styled.h2`
   line-height: 36px;
   text-transform: uppercase;
 
-  @media screen and (min-width: 767px) and (max-width: 1280px) {
-    /* width: 300px; */
+  @media screen and (min-width: 767px) {
+    width: 300px;
     font-size: 48px;
     line-height: 48px;
     text-align: left;

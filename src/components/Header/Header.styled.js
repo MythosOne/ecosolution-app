@@ -8,7 +8,6 @@ export const Section = styled.header`
   justify-content: space-between;
   margin: 0 auto;
 
-  /* height: 76px; */
   background: #f3f5fa;
   padding: 36px 20px 10px;
 
@@ -17,14 +16,16 @@ export const Section = styled.header`
   position: sticky;
   z-index: 1100;
 
-  @media screen and ((min-width: 767px) and (max-width: 1280px)) {
+  @media screen and (min-width: 767px) {
     max-width: none;
     width: 708px;
     padding: 42px 30px;
   }
 
-  @media screen and ((min-width: 1279px)) {
-    padding: 30px 100px;
+  @media screen and (min-width: 1279px) {
+    max-width: none;
+    width: 1240px;
+    padding: 30px 10px;
   }
 `;
 
