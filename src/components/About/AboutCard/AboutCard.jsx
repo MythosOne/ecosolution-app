@@ -3,8 +3,11 @@ import {
   CardList,
   CardItem,
   CardHead,
+  SymbolCard,
   CardTitle,
   CardText,
+  Farm,
+  Solar,
   Figure,
   FarmsImg,
   SolarImg,
@@ -57,21 +60,25 @@ export const AboutCard = () => {
       <CardList>
         {cardItems.map(card => {
           return (
-            <CardItem key={card.id} style={{gridArea: card.area}}>
+            <CardItem key={card.id} style={{ gridArea: card.area }}>
               <CardHead>
-                {card.img}
+                <SymbolCard>{card.img}</SymbolCard>
                 <CardTitle>{card.title}</CardTitle>
               </CardHead>
               <CardText>{card.text}</CardText>
             </CardItem>
           );
         })}
-        <Figure style={{gridArea: "farm"}}>
-          <FarmsImg src={imgFarms} alt="Farms fields" />
-        </Figure>
-        <Figure style={{gridArea: "solar"}}>
-          <SolarImg src={imgSolar} alt="Solar panels" />
-        </Figure>
+        <Farm>
+          <Figure>
+            <FarmsImg src={imgFarms} alt="Farms fields" />
+          </Figure>
+        </Farm>
+        <Solar>
+          <Figure>
+            <SolarImg src={imgSolar} alt="Solar panels" />
+          </Figure>
+        </Solar>
       </CardList>
     </>
   );

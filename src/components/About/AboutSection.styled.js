@@ -107,8 +107,6 @@ export const Picture = styled.picture`
   margin: 0;
 `;
 
-// export const Figure = styled.figure``;
-
 export const AboutImg = styled.img`
   width: 100%;
 `;
@@ -152,7 +150,7 @@ export const MainValuesTitle = styled.h2`
   text-transform: uppercase;
 
   @media screen and (min-width: 767px) {
-    width: 354px;
+    width: 344px;
 
     font-size: 36px;
     line-height: 36px;
@@ -160,7 +158,7 @@ export const MainValuesTitle = styled.h2`
 
   @media screen and (min-width: 1279px){
     width: 365px;
-    
+
     font-size: 48px;
     line-height: 48px;
 
@@ -210,69 +208,6 @@ export const MainValuesText = styled.p`
   }
 `;
 
-// export const AboutList = styled.ul`
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     gap: 24px;
-// `;
-
-// export const AboutList = styled.ul`
-//   display: grid;
-//   grid-template-columns: repeat(2, 148px);
-//   grid-template-rows: repeat(2, 197px);
-//   grid-column-gap: 24px;
-//   grid-row-gap: 24px;
-// `;
-
-// export const AboutItem = styled.li`
-//   list-style: none;
-//   box-sizing: border-box;
-
-//   width: 148px;
-//   height: 197px;
-
-//   padding: 12px;
-
-//   background: #eaedf1;
-// `;
-
-// export const CardItem = styled.div`
-//   display: flex;
-//   align-items: center;
-//   gap: 8px;
-
-//   padding-top: 13px;
-//   padding-bottom: 33px;
-
-//   color: #173d33;
-//   font-family: Oswald;
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 24px;
-//   text-transform: uppercase;
-
-//   border-bottom: 1px solid #97d28b;
-// `;
-
-// // export const CardImage = styled.img``;
-
-// export const CardTitle = styled.h3``;
-
-// export const CardText = styled.p`
-//   color: #173d33;
-//   text-align: justify;
-//   font-family: Fira Sans;
-//   font-size: 14px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: normal;
-//   letter-spacing: -0.56px;
-
-//   margin-top: 12px;
-// `;
-
 export const AboutElectrTitle = styled.h2`
   color: #173d33;
   text-align: center;
@@ -301,18 +236,6 @@ export const VerticalLine = styled.hr`
     height: 87px;
   }
 `;
-
-// export const FarmsImg = styled.img`
-//   display: none;
-//   width: 346px;
-//   height: 234px;
-// `;
-
-// export const SolarImg = styled.img`
-//   display: none;
-//   width: 346px;
-//   height: 234px;
-// `;
 
 export const MeterContainer = styled.div`
   margin-top: 36px;
