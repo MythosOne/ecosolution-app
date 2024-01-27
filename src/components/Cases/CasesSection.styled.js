@@ -59,7 +59,7 @@ export const VerticalLine = styled.hr`
     display: none;
   }
   grid-area: line;
-  height: 100%;
+  height: 72px;
   width: 1px;
   background: #97d28b;
   border: 0;
@@ -67,6 +67,7 @@ export const VerticalLine = styled.hr`
   margin: 0 9px 0 90px;
 
   @media screen and (min-width: 1279px) {
+    height: 96px;
     margin: 0 161px 0 221px;
   }
 `;
