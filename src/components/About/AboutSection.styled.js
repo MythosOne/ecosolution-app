@@ -19,7 +19,6 @@ export const Section = styled.section`
 
   @media screen and (min-width: 1279px) {
     width: 1240px;
-    /* max-width: none; */
     margin-top: 12px;
     margin-bottom: 127px;
   }
@@ -208,6 +207,23 @@ export const MainValuesText = styled.p`
   }
 `;
 
+export const MeterContainer = styled.div`
+  margin-top: 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 767px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    margin-top: 121px;
+    width: 960px;
+  }
+`;
+
 export const AboutElectrTitle = styled.h2`
   color: #173d33;
   text-align: center;
@@ -221,8 +237,15 @@ export const AboutElectrTitle = styled.h2`
   margin-bottom: 24px;
 
   @media screen and (min-width: 767px) {
-    font-size: 38px;
+    font-size: 36px;
     line-height: 36px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    font-size: 48px;
+    line-height: 48px;
+
+    margin-bottom: 16px;
   }
 `;
 
@@ -232,20 +255,10 @@ export const VerticalLine = styled.hr`
   background: #97d28b;
   border: 0;
 
+  margin: 0 auto;
+
   @media screen and (min-width: 767px) {
     height: 87px;
-  }
-`;
-
-export const MeterContainer = styled.div`
-  margin-top: 36px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 767px) {
-    margin-top: 100px;
   }
 `;
 
@@ -259,6 +272,12 @@ export const Meter = styled.div`
 
   @media screen and (min-width: 767px) {
     width: 602px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 960px;
+
+    margin-top: 16px;
   }
 `;
 
@@ -277,6 +296,12 @@ export const ElectricityMeter = styled.div`
     font-size: 100px;
     line-height: 100px;
   }
+
+  @media screen and (min-width: 1279px) {
+    width: 960px;
+    font-size: 164px;
+    line-height: 164px;
+  }
 `;
 
 export const Unit = styled.span`
@@ -287,4 +312,9 @@ export const Unit = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+
+  @media screen and (min-width: 1279px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
 `;

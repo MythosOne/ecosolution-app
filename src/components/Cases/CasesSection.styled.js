@@ -14,16 +14,17 @@ export const Section = styled.section`
 
   @media screen and (min-width: 767px) {
     width: 708px;
-    grid-row-gap: 24px;
-    grid-column-gap: 12px;
+    /* grid-row-gap: 24px;
+    grid-column-gap: 12px; */
     grid-template-areas:
       'title line header'
       'slide slide slide';
-
-    /* grid-template-columns: repeat (2, 342px); */
   }
 
   @media screen and (min-width: 1279px) {
+    width: 1240px;
+
+    grid-row-gap: 72px;
   }
 `;
 
@@ -39,7 +40,17 @@ export const CasesCompanyTitle = styled.h2`
   text-transform: uppercase;
 
   @media screen and (min-width: 767px) {
-    width: 342px;
+    width: 264px;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 398px;
+
+    font-size: 48px;
+    line-height: 48px;
   }
 `;
 
@@ -48,10 +59,16 @@ export const VerticalLine = styled.hr`
     display: none;
   }
   grid-area: line;
-  height: 65px;
+  height: 100%;
   width: 1px;
   background: #97d28b;
   border: 0;
+
+  margin: 0 9px 0 90px;
+
+  @media screen and (min-width: 1279px) {
+    margin: 0 161px 0 221px;
+  }
 `;
 
 export const HeaderSlider = styled.div`
@@ -64,15 +81,18 @@ export const HeaderSlider = styled.div`
   @media screen and (min-width: 767px) {
     width: 342px;
   }
-`;
 
-export const BlockMeter = styled.div``;
+  @media screen and (min-width: 1279px) {
+    width: 459px;
+  }
+`;
 
 export const MeterSlide = styled.div`
   width: 72px;
 
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
   color: #173d33;
 
@@ -89,6 +109,10 @@ export const BlockBtn = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 12px;
+
+  @media screen and (min-width: 1279px) {
+    gap: 24px;
+  }
 `;
 
 export const SliderLeftBtn = styled.button`
@@ -110,6 +134,11 @@ export const SliderLeftBtn = styled.button`
   }
 
   cursor: pointer;
+
+  @media screen and (min-width: 1279px) {
+    width: 84px;
+    height: 84px;
+  }
 `;
 
 export const SliderRightBtn = styled.button`
@@ -131,6 +160,11 @@ export const SliderRightBtn = styled.button`
   }
 
   cursor: pointer;
+
+  @media screen and (min-width: 1279px) {
+    width: 84px;
+    height: 84px;
+  }
 `;
 
 export const SlideWindow = styled.ul`
@@ -139,7 +173,7 @@ export const SlideWindow = styled.ul`
   display: flex;
 
   width: 320px;
-  height: 318px;
+  /* height: 318px; */
   overflow: hidden;
 
   margin: 0 auto;
@@ -150,6 +184,21 @@ export const SlideWindow = styled.ul`
     margin: 0;
     gap: 24px;
   }
+
+  @media screen and (min-width: 1279px) {
+    width: 1240px;
+    gap: 48px;
+  }
 `;
 
-export const SlideItem = styled.li``;
+export const SlideItem = styled.li`
+  list-style: none;
+  /* min-width: 100%;
+  max-width: 100%;
+  height: 100%; */
+  transform: translateX(${props => props.offset}px);
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+`;

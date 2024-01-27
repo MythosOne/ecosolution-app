@@ -5,7 +5,6 @@ import {
   MeterSlide,
   VerticalLine,
   HeaderSlider,
-  BlockMeter,
   SliderLeftBtn,
   SliderRightBtn,
   BlockBtn,
@@ -20,7 +19,8 @@ import { SlideCard } from './SlideCard/SlideCard';
 import data from 'data/data.js';
 
 const PAGE_WIDTH_MOBILE = 320;
-const PAGE_WIDTH_TABLET = 342;
+const PAGE_WIDTH_TABLET = 708;
+const PAGE_WIDTH_DESKTOP = 1240;
 
 export const CasesSection = () => {
   const [offset, setOffset] = useState(0);
@@ -56,14 +56,12 @@ export const CasesSection = () => {
       <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
       <VerticalLine />
         <HeaderSlider>
-          <BlockMeter>
             <MeterSlide>
               <span>{slideNUmber.toString().padStart(2, '0')}</span>
               <span style={{ opacity: '0.2' }}>
                 /{data.length.toString().padStart(2, '0')}
               </span>
             </MeterSlide>
-          </BlockMeter>
           <BlockBtn>
             <SliderLeftBtn type='button'
               onClick={() => {
@@ -85,18 +83,8 @@ export const CasesSection = () => {
           {data.map(energyObjects => {
             return (
               <SlideItem
-                style={{
-                  listStyle: 'none',
-                  minWidth: `'100%'`,
-                  maxWidth: '100%',
-                  height: '100%',
-                  transform: `translateX(${offset}px)`,
-                  transition: 'translate',
-                  transitionProperty: 'transform',
-                  transitionDuration: '300ms',
-                  transitionTimingFunction: 'ease-in-out',
-                }}
                 key={energyObjects.id}
+                offset={offset}
               >
                 <SlideCard energyObject={energyObjects} />
               </SlideItem>

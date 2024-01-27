@@ -7,8 +7,18 @@ export const Container = styled.div`
 
   background: #eaedf1;
 
-  /* width: 100%;
-  height: 100%; */
+  width: 320px;
+  height: 318px;
+
+  @media screen and (min-width: 767px) {
+    width: 342px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 596px;
+    height: 506px;
+  }
 `;
 
 export const Figure = styled.figure`
@@ -21,6 +31,11 @@ export const SlideImg = styled.img`
 
   @media screen and (min-width: 767px) {
     width: 342px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 596px;
+    height: 320px;
   }
 `;
 
@@ -38,6 +53,13 @@ export const SlideLink = styled.div`
   padding-bottom: 21px;
 
   border-bottom: 1px solid #97d28b;
+
+  @media screen and (min-width: 1279px) {
+    margin-left: 48px;
+    margin-right: 48px;
+
+    gap: 83px;
+  }
 `;
 
 export const SlideText = styled.p`
@@ -49,6 +71,11 @@ export const SlideText = styled.p`
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.72px;
+
+  @media screen and (min-width: 1279px) {
+    font-size: 24px;
+    letter-spacing: -0.96px;
+  }
 `;
 
 export const SlideBtn = styled.button`
@@ -78,10 +105,15 @@ export const SignatureProject = styled.div`
   gap: 76px;
 
   margin-top: 12px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 
   @media screen and (min-width: 767px) {
     gap: 62px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    margin-top: 24px;
+    gap: 207px;
   }
 `;
 
@@ -100,6 +132,11 @@ export const ProjectName = styled.span`
     font-size: 14px;
     letter-spacing: -0.56px;
   }
+
+  @media screen and (min-width: 1279px) {
+    font-size: 16px;
+    letter-spacing: -0.64px;
+  }
 `;
 
 export const ProjectDate = styled.span`
@@ -115,5 +152,10 @@ export const ProjectDate = styled.span`
   @media screen and (min-width: 767px) {
     font-size: 14px;
     letter-spacing: -0.56px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    font-size: 16px;
+    letter-spacing: -0.64px;
   }
 `;
