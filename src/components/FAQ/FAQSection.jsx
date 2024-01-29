@@ -4,6 +4,7 @@ import {
   Section,
   FAQSectionTitle,
   FAQList,
+  FAQItem,
   AskQuestion,
   QuestionText,
   ContactUsBtn,
@@ -22,9 +23,9 @@ export const FAQSection = () => {
         <FAQList>
           {faq.map(questions => {
             return (
-              <li key={nanoid()}>
+              <FAQItem key={nanoid()}>
                 <FAQCard FAQ={questions} />
-              </li>
+              </FAQItem>
             );
           })}
         </FAQList>

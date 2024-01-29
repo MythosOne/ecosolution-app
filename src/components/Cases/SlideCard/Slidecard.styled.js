@@ -27,7 +27,7 @@ export const Figure = styled.figure`
 
 export const SlideImg = styled.img`
   width: 320px;
-  height: 174px;
+  height: 170px;
 
   @media screen and (min-width: 767px) {
     width: 342px;
@@ -35,7 +35,7 @@ export const SlideImg = styled.img`
 
   @media screen and (min-width: 1279px) {
     width: 596px;
-    height: 320px;
+    height: 324px;
   }
 `;
 
@@ -48,11 +48,10 @@ export const SlideLink = styled.div`
   display: flex;
   align-items: center;
   gap: 61px;
+  height: 66px;
 
-  padding-top: 21px;
-  padding-bottom: 21px;
-
-  border-bottom: 1px solid #97d28b;
+  margin-top: 21px;
+  margin-bottom: 21px;
 
   @media screen and (min-width: 1279px) {
     margin-left: 48px;
@@ -72,9 +71,18 @@ export const SlideText = styled.p`
   line-height: normal;
   letter-spacing: -0.72px;
 
+  @media screen and (min-width: 767px) {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+
+    height: 72px;
+  }
+
   @media screen and (min-width: 1279px) {
     font-size: 24px;
     letter-spacing: -0.96px;
+
+    height: 58px;
   }
 `;
 
@@ -96,23 +104,20 @@ export const SlideBtn = styled.button`
 `;
 
 export const SignatureProject = styled.div`
-  /* width: 296px; */
-  /* margin-left: 12px;
-  margin-right: 12px; */
-
   display: flex;
   justify-content: space-between;
   gap: 76px;
 
-  margin-top: 12px;
-  /* margin-bottom: 12px; */
+  padding-top: 12px;
+  
+  border-top: 1px solid #97d28b;
 
   @media screen and (min-width: 767px) {
     gap: 62px;
   }
 
   @media screen and (min-width: 1279px) {
-    margin-top: 24px;
+    padding-top: 24px;
     gap: 207px;
   }
 `;

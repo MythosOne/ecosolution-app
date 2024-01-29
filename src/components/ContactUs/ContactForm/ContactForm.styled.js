@@ -14,13 +14,18 @@ export const Form = styled.form`
 
   box-sizing: border-box;
 
-  padding-top: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 8px 12px 0;
 
   @media screen and (min-width: 767px) {
     width: 342px;
-    margin-left: 122px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 596px;
+    height: 623px;
+    max-width: none;
+
+    padding: 20px 48px 0;
   }
 `;
 
@@ -28,7 +33,7 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
 
-  margin-top: 36px;
+  margin-top: 28px;
   color: #173d33;
   text-align: justify;
   font-family: Fira Sans;
@@ -54,10 +59,17 @@ export const Input = styled.input`
   border: none;
   outline: none;
   border-bottom: 1px solid #97d28b;
+
+  @media screen and (min-width: 1279px) {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+
+    margin: 6px 0;
+  }
 `;
 
 export const InputMessage = styled.textarea`
-  height: 124px;
+  height: 149px;
 
   color: #173d33;
   font-family: Fira Sans;
@@ -102,11 +114,16 @@ export const SendBtn = styled.button`
   line-height: 18px;
   letter-spacing: -0.64px;
 
-  stroke: #173d33;
+  /* stroke: #173d33; */
 
   &:hover {
     background: #173d33;
     color: #97d28b;
+    border-color: #173d33;
+  }
+
+  @media screen and (min-width: 1279px) {
+    margin-top: 32px;
   }
 `;
 

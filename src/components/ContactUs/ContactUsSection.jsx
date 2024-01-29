@@ -61,7 +61,7 @@ export const ContactUsSection = () => {
             <TitleLine>Address:</TitleLine>
             <Link href="https://bit.ly/3n3ZUYY">
               <AddressImg />
-              79005, Ukraine, Lvivstreet. <br /> Shota Rustaveli, 7
+              79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
             </Link>
           </AddressItem>
           <SocialItem>

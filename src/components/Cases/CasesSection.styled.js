@@ -14,17 +14,20 @@ export const Section = styled.section`
 
   @media screen and (min-width: 767px) {
     width: 708px;
-    /* grid-row-gap: 24px;
-    grid-column-gap: 12px; */
+
     grid-template-areas:
       'title line header'
       'slide slide slide';
+
+    margin-bottom: 107px;
   }
 
   @media screen and (min-width: 1279px) {
     width: 1240px;
 
     grid-row-gap: 72px;
+
+    margin-bottom: 127px;
   }
 `;
 

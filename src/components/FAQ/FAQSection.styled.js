@@ -23,12 +23,15 @@ export const Section = styled.section`
     grid-gap: 24px;
     width: 708px;
     max-width: none;
+
+    margin-bottom: 84px
   }
 
   @media screen and (min-width: 1279px) {
-    max-width: none;
+    width: 1240px;
     grid-column-gap: 185px;
-    /* width: 100%; */
+
+    margin-bottom: 96px
   }
 `;
 
@@ -46,7 +49,18 @@ export const FAQSectionTitle = styled.h2`
   margin-bottom: 24px;
 
   @media screen and (min-width: 767px) {
+    width: 300px;
     margin: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 400px;
+
+    font-size: 48px;
+    line-height: 48px;
   }
 `;
 
@@ -61,7 +75,13 @@ export const FAQList = styled.ul`
   @media screen and (min-width: 767px) {
     width: 342px;
   }
+
+  @media screen and (min-width: 1279px) {
+    width: 596px;
+  }
 `;
+
+export const FAQItem = styled.li``;
 
 export const AskQuestion = styled.div`
   grid-area: question;
@@ -71,6 +91,18 @@ export const AskQuestion = styled.div`
   align-items: center;
   gap: 12px;
   justify-content: flex-end;
+
+  @media screen and (min-width: 767px) {
+    width: 300px;
+
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: 400px;
+
+    margin-bottom: 24px;
+  }
 `;
 
 export const QuestionText = styled.p`
@@ -87,6 +119,11 @@ export const QuestionText = styled.p`
 
   @media screen and (min-width: 767px) {
     margin-top: 0;
+  }
+
+  @media screen and (min-width: 1279px) {
+    font-size: 24px;
+    letter-spacing: -0.96px;
   }
 `;
 

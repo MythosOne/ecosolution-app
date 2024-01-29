@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-// import { theme } from '../../../theme/theme';
 
 export const LogoWrapper = styled.div`
   display: flex;
@@ -10,6 +9,7 @@ export const LogoWrapper = styled.div`
 export const LogoImg = styled.img``;
 
 export const TitleEco = styled.a`
+
   color: #173d33;
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 33px;
@@ -25,7 +25,9 @@ export const TitleEco = styled.a`
   }
 `;
 
-export const TitleGreen = styled.h2`
+export const TitleGreen = styled.p`
+  width: 60px;
+
   color: #173d33;
   font-family: 'CA Saygon Text', sans-serif;
   font-size: 10px;
@@ -37,10 +39,4 @@ export const TitleGreen = styled.h2`
 
 export const Green = styled.span`
   color: #97d28b;
-  font-family: 'CA Saygon Text', sans-serif;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 9px; /* 90% */
-  letter-spacing: -0.4px;
 `;

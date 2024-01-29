@@ -18,11 +18,19 @@ export const Section = styled.section`
       'list form'
       'list form';
       
+    column-gap: 122px;
     max-width: none;
     width: 708px;
+
+    margin-bottom: 100px;
   }
 
   @media screen and (min-width: 1279px) {
+    width: 1240px;
+
+    column-gap: 178px;
+
+    margin-bottom: 120px;
   }
 `;
 
@@ -40,6 +48,20 @@ export const TitleSection = styled.h2`
   text-transform: uppercase;
 
   margin-bottom: 24px;
+
+  @media screen and (min-width: 767px) {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1279px) {
+    font-size: 48px;
+    line-height: 48px;
+
+    margin-bottom: 120px;
+  }
 `;
 
 export const ContactList = styled.ul`
@@ -50,10 +72,14 @@ export const ContactList = styled.ul`
   gap: 24px;
   list-style: none;
 
-  margin-bottom: 24px;
+  margin-bottom: 36px;
 
   @media screen and (min-width: 767px) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1279px) {
+    gap: 36px;
   }
 `;
 
@@ -108,6 +134,11 @@ export const Link = styled.a`
 
   &:hover {
     stroke: #97d28b;
+  }
+
+  @media screen and (min-width: 1279px) {
+    font-size: 24px;
+    letter-spacing: -0.96px;
   }
 `;
 

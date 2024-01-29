@@ -3,14 +3,22 @@ import styled from '@emotion/styled';
 export const Section = styled.footer`
   max-width: 440px;
 
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-areas:
+    'logo arrow'
+    'social social'
+    'address address'
+    'mail mail'
+    'corp corp';
+
   align-items: center;
-  bottom: 0;
+  justify-items: center;
+  justify-content: space-between;
 
   border-top: 1px solid;
   border-color: #97d28b;
 
+  padding-top: 24px;
   margin: 0px 20px;
 
   @media screen and (min-width: 480px) {
@@ -20,52 +28,29 @@ export const Section = styled.footer`
   @media screen and (min-width: 767px) {
     max-width: none;
     width: 708px;
-    margin: 0px auto;
+
+    display: grid;
+    grid-template-areas:
+      'logo social arrow'
+      'address mail corp';
+    align-items: start;
+    justify-items: start;
+    row-gap: 16px;
+
+    padding: 40px 0;
+    column-gap: 87px 40px;
+    
   }
-`;
 
-export const FooterList = styled.ul`
-  list-style: none;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ContainerLogo = styled.li`
-
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 19px;
-
-  @media screen and (min-width: 767px) {
-    width: 100%;
-
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: flex-start;
-
-    gap: 0px
-  }
-`;
-
-export const LogoItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
-
-  @media screen and (min-width: 767px) {
-    flex-direction: row;
-    align-items: baseline;
+  @media screen and (min-width: 1279px) {
+    width: 1240px;
   }
 `;
 
 export const ArrowUpBtn = styled.a`
+  grid-area: arrow;
+  justify-self: end;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,35 +67,19 @@ export const ArrowUpBtn = styled.a`
     background: #173d33;
   }
 
-   @media screen and (min-width: 767px) {
-margin-left: 254px;
+  @media screen and (min-width: 767px) {
   }
 `;
 
 export const SocialItem = styled.div`
+  grid-area: social;
   display: flex;
   gap: 8px;
 
-  /* margin-bottom: 24px; */
-  margin-left: 38px;
+  margin: 24px 0;
 
   @media screen and (min-width: 767px) {
-    flex-direction: row;
-    align-items: baseline;
-
-    margin-left: 94px;
-  }
-`;
-
-export const ContainerContact = styled.li`
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media screen and (min-width: 767px) {
-    flex-direction: row;
-    align-items: baseline;
+    margin: 0;
   }
 `;
 
@@ -139,50 +108,51 @@ export const SocialInstagram = styled.a`
   }
 `;
 
-export const AddressItem = styled.div`
-  color: #173d33;
-
-  margin-bottom: 16px;
-
-  @media screen and (min-width: 767px) {
-    margin-right: 77px;
-    margin-bottom: 0;
-  }
-`;
-
 export const Address = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  color: #173d33;
-
-  font-family: Fira Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
-
-  text-decoration: none;
-`;
-
-export const MailItem = styled.div`
+  grid-area: address;
   color: #173d33;
 
   margin-bottom: 16px;
 
+  color: #173d33;
+
+font-family: Fira Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.64px;
+
+text-decoration: none;
+
   @media screen and (min-width: 767px) {
-    margin-right: 50px;
-    margin-bottom: 0;
+    margin: 0;
   }
 `;
 
 export const Mail = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  grid-area: mail;
+  color: #173d33;
 
+  margin-bottom: 16px;
+
+  color: #173d33;
+
+font-family: Fira Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.64px;
+
+text-decoration: none;
+
+  @media screen and (min-width: 767px) {
+   margin: 0;
+  }
+`;
+export const Corp = styled.a`
+  grid-area: corp;
   color: #173d33;
 
   font-family: Fira Sans;
@@ -193,21 +163,10 @@ export const Mail = styled.a`
   letter-spacing: -0.64px;
 
   text-decoration: none;
-`;
-
-export const CorpItem = styled.div`
-  color: #173d33;
-
-  font-family: Fira Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.64px;
 
   margin-bottom: 24px;
 
   @media screen and (min-width: 767px) {
-    margin-bottom: 40px;
+    margin: 0;
   }
 `;

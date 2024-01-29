@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import {
   Container,
   BlockChapter,
-  BlockDescription,
-  Chapter,
-  Description,
+  BlockBtn,
   PlusBtn,
+  Chapter,
+  BlockDescription,
+  Description,
 } from './FAQCard.styled';
 
 import { PlusImg, MinusImg } from 'icons/IconsComponent';
@@ -17,14 +18,16 @@ export const FAQCard = ({ FAQ }) => {
   return (
     <Container>
       <BlockChapter>
-        <PlusBtn
-          type="button"
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-        >
-          {isOpen ? <MinusImg /> : <PlusImg />}
-        </PlusBtn>
+        <BlockBtn>
+          <PlusBtn
+            type="button"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
+            {isOpen ? <MinusImg /> : <PlusImg />}
+          </PlusBtn>
+        </BlockBtn>
         <Chapter>{chapter}</Chapter>
       </BlockChapter>
       {isOpen && (
