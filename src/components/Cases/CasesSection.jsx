@@ -20,14 +20,13 @@ import data from 'data/data.js';
 
 const PAGE_WIDTH_MOBILE = 320;
 const PAGE_WIDTH_TABLET = 732;
-const PAGE_WIDTH_DESKTOP = 1264;
+const PAGE_WIDTH_DESKTOP = 1288;
 
 export const CasesSection = () => {
   const [offset, setOffset] = useState(0);
   const [windowWidth, setWindowWidth] = useState(360);
   const [slideNumber, setSlideNumber] = useState(1);
-  console.log(`windowWidth:${windowWidth}px`);
-  console.log(`slideNumber: ${slideNumber}`);
+  console.log(`windowWidth: ${windowWidth}`)
 
   const handleLeftArrowClick = () => {
     if (windowWidth < 768) {

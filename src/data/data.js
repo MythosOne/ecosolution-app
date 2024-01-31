@@ -1,35 +1,43 @@
+import React from 'react';
+
+import pic1 from 'images/wind-turbines.png';
+import pic2 from 'images/solar-panels.png';
+import pic3 from 'images/thermal-modules.png';
+import pic4 from 'images/wind-power.png';
+import pic5 from 'images/mini-nuclear-station.png';
+
 const energyObjects = [
   {
     id: 1,
-    image: '../../../images/wind-turbines.png',
+    image: pic1,
     title: 'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”',
     signature: 'Wind Power for auto field irrigation',
     date: 'July 2023',
   },
   {
     id: 2,
-    image: '../../../images/solar-panels.png',
+    image: pic2,
     title: 'Zhytomyr city Private Enterprise “Bosch”',
     signature: 'Solar Panels for industrial use',
     date: 'November 2023',
   },
   {
     id: 3,
-    image: '../../../images/thermal-modules.png',
+    image: pic3,
     title: 'Rivne city Private Enterprise “Biotech”',
     signature: 'Thermal modules',
     date: 'October 2023',
   },
   {
     id: 4,
-    image: '../../../images/wind-power.png',
+    image: pic4,
     title: 'Kherson city Private Enterprise “HealthyFarm”',
     signature: 'Wind power',
     date: 'September 2021',
   },
   {
     id: 5,
-    image: '../../../images/mini-nuclear-station.png',
+    image: pic5,
     title: 'Zaporizhia city Private Enterprise “Biotech”',
     signature: 'Mini nuclear stations',
     date: 'May 2021',
