@@ -1,17 +1,22 @@
 {
   "files": {
     "main.css": "/ecosolution-app/static/css/main.91700874.css",
-    "main.js": "/ecosolution-app/static/js/main.afb34cc1.js",
+    "main.js": "/ecosolution-app/static/js/main.149e4426.js",
     "static/media/wind-turbine-clean-energy-tablet.png": "/ecosolution-app/static/media/wind-turbine-clean-energy-tablet.8756476ab3eca3194a06.png",
+    "static/media/solar-panels.png": "/ecosolution-app/static/media/solar-panels.a8c12311c0eadd8212bf.png",
+    "static/media/thermal-modules.png": "/ecosolution-app/static/media/thermal-modules.508310ef098a18003b2b.png",
+    "static/media/mini-nuclear-station.png": "/ecosolution-app/static/media/mini-nuclear-station.2007ee58698a3272e4e2.png",
     "static/media/man-worker-field-by-solar-panels.png": "/ecosolution-app/static/media/man-worker-field-by-solar-panels.c972965c14de6caee6e5.png",
     "static/media/wind-farms-fields.png": "/ecosolution-app/static/media/wind-farms-fields.c67bf10fb0b37aec4b2f.png",
+    "static/media/wind-turbines.png": "/ecosolution-app/static/media/wind-turbines.df182b42e929331d4d42.png",
+    "static/media/wind-power.png": "/ecosolution-app/static/media/wind-power.6a98bee7f03c14419266.png",
     "static/media/wind-turbine-clean-energy.png": "/ecosolution-app/static/media/wind-turbine-clean-energy.82188a65894393fb43c5.png",
     "index.html": "/ecosolution-app/index.html",
     "main.91700874.css.map": "/ecosolution-app/static/css/main.91700874.css.map",
-    "main.afb34cc1.js.map": "/ecosolution-app/static/js/main.afb34cc1.js.map"
+    "main.149e4426.js.map": "/ecosolution-app/static/js/main.149e4426.js.map"
   },
   "entrypoints": [
     "static/css/main.91700874.css",
-    "static/js/main.afb34cc1.js"
+    "static/js/main.149e4426.js"
   ]
 }
