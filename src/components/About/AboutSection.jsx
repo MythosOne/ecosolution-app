@@ -36,7 +36,7 @@ export const AboutSection = () => {
   }, [number]);
 
   return (
-    <Section id="about">
+    <Section id="About">
       <AboutLink>
         <Address href="https://bit.ly/3n3ZUYY">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7

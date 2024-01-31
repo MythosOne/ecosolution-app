@@ -19,13 +19,13 @@ export const Section = styled.header`
   @media screen and (min-width: 767px) {
     max-width: none;
     width: 708px;
-    padding: 42px 30px;
+    padding: 36px 30px 10px;
   }
 
   @media screen and (min-width: 1279px) {
     max-width: none;
     width: 1240px;
-    padding: 30px 10px;
+    padding: 24px 10px;
   }
 `;
 

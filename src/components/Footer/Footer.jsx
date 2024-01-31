@@ -33,7 +33,7 @@ export const Footer = () => {
           <InstagramImg />
         </SocialInstagram>
       </SocialItem>
-      <ArrowUpBtn type="button" href="#main">
+      <ArrowUpBtn type="button" href="#Main">
         <ArrowUpImg />
       </ArrowUpBtn>
       <Address href="https://bit.ly/3n3ZUYY">

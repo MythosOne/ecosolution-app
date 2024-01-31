@@ -10,8 +10,8 @@ import { ArrowRightImg } from '../../icons/IconsComponent';
 
 export const MainSection = () => {
   return (
-    <Section id="main" >
-      <MainTitle>RENEWABLE ENERGY For  any task</MainTitle>
+    <Section id="Main">
+      <MainTitle>RENEWABLE ENERGY For any task</MainTitle>
       <MainText>
         Development and implementation of renewable non-polluting energy
         sources, generating power generation using energy wind, sun, water,
@@ -25,4 +25,4 @@ export const MainSection = () => {
       </MainBtn>
     </Section>
   );
-}
+};

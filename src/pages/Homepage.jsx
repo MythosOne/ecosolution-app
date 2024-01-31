@@ -8,14 +8,12 @@ import { ContactUsSection } from 'components/ContactUs/ContactUsSection';
 
 export const Homepage = () => {
   return (
-    <>
-      <Main>
-        <MainSection />
-        <AboutSection />
-        <CasesSection />
-        <FAQSection />
-        <ContactUsSection />
-      </Main>
-    </>
+    <Main>
+      <MainSection />
+      <AboutSection />
+      <CasesSection />
+      <FAQSection />
+      <ContactUsSection />
+    </Main>
   );
 };

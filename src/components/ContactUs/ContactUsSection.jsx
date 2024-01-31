@@ -30,9 +30,8 @@ import { ContactForm } from './ContactForm/ContactForm';
 
 export const ContactUsSection = () => {
   return (
-    <Section id='contactUs'>
+    <Section id='Contact Us'>
       <TitleSection>CONTACT US</TitleSection>
-      {/* <Container> */}
         <ContactList>
           <PhoneList>
             <List>
@@ -89,7 +88,6 @@ export const ContactUsSection = () => {
           </SocialItem>
         </ContactList>
         <ContactForm />
-      {/* </Container> */}
     </Section>
   );
 };

@@ -106,19 +106,19 @@ export const SlideBtn = styled.button`
 export const SignatureProject = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 76px;
+  width: 296px;
 
   padding-top: 12px;
   
   border-top: 1px solid #97d28b;
 
   @media screen and (min-width: 767px) {
-    gap: 62px;
+    width: 318px;
   }
 
   @media screen and (min-width: 1279px) {
     padding-top: 24px;
-    gap: 207px;
+    width: 500px;
   }
 `;
 

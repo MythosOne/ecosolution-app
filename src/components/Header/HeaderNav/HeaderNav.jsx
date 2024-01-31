@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   Backdrop,
   Container,
@@ -26,58 +26,53 @@ export const HeaderNav = ({ handleClose }) => {
     { id: 2, title: 'About' },
     { id: 3, title: 'Cases' },
     { id: 4, title: 'FAQ' },
-    { id: 5, title: 'ContactUS' },
+    { id: 5, title: 'Contact Us' },
   ];
-
-  //Experiense of use useRef
-  const ref = useRef(null);
-
-  const handleClick = () => {
-    ref.current.scrollIntoView();
-  };
 
   return (
     <Backdrop>
-    <NavContain>
-      <Container>
-        <CloseBLock>
-          <CloseBtn type="button" onClick={handleClose}>
-            <CloseLightImg />
-            close
-          </CloseBtn>
-        </CloseBLock>
-        <NavList>
-          {menuItems.map(menu => {
-            return(
-            <NavItem key={menu.id}>
-              <NavLink href={`#${menu.title}`}>
-                {menu.title}<ArrowNavImg />
-              </NavLink>
-            </NavItem>);
-          })}
-        </NavList>
-      </Container>
-      <SocialList>
-        <SocialItem>
-          <SocialFacebook
-            href="https://www.facebook.com/"
-            rel="noopener noreferrer"
-            aria-label="facebook"
-          >
-            <FaceBookImg />
-          </SocialFacebook>
-        </SocialItem>
-        <SocialItem>
-          <SocialInstagram
-            href="https://www.instagram.com/"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <InstagramImg />
-          </SocialInstagram>
-        </SocialItem>
-      </SocialList>
-    </NavContain>
+      <NavContain>
+        <Container>
+          <CloseBLock>
+            <CloseBtn type="button" onClick={handleClose}>
+              <CloseLightImg />
+              close
+            </CloseBtn>
+          </CloseBLock>
+          <NavList>
+            {menuItems.map(menu => {
+              return (
+                <NavItem key={menu.id}>
+                  <NavLink href={`#${menu.title}`}>
+                    {menu.title}
+                    <ArrowNavImg />
+                  </NavLink>
+                </NavItem>
+              );
+            })}
+          </NavList>
+        </Container>
+        <SocialList>
+          <SocialItem>
+            <SocialFacebook
+              href="https://www.facebook.com/"
+              rel="noopener noreferrer"
+              aria-label="facebook"
+            >
+              <FaceBookImg />
+            </SocialFacebook>
+          </SocialItem>
+          <SocialItem>
+            <SocialInstagram
+              href="https://www.instagram.com/"
+              rel="noopener noreferrer"
+              aria-label="instagram"
+            >
+              <InstagramImg />
+            </SocialInstagram>
+          </SocialItem>
+        </SocialList>
+      </NavContain>
     </Backdrop>
   );
 };
