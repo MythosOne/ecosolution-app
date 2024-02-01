@@ -6,6 +6,7 @@ import {
   Form,
   Label,
   Input,
+  ErrorMessage,
   InputMessage,
   BlockBtn,
   SendBtn,
@@ -15,13 +16,12 @@ import { ArrowRightImg } from 'icons/IconsComponent';
 
 export const ContactForm = () => {
   const [contact, setContact] = useState([]);
-    // console.log(contact)
 
   const ContactUsSchema = Yup.object().shape({
-    fullName: Yup.string().required('Required').min(2, 'Wrong Fullname'),
+    fullName: Yup.string().required('Required').min(2, 'Please enter fullname'),
     email: Yup.string().required('Required').email('Wrong Email'),
     phone: Yup.number().positive().required('Required'),
-    description: Yup.string().required('Required').max(200),
+    description: Yup.string().max(200),
   });
 
   const formik = useFormik({
@@ -31,9 +31,10 @@ export const ContactForm = () => {
       phone: '',
       description: '',
     },
+
     onSubmit: values => {
-      setContact({ id: nanoid(), ...values });
-      formik.resetForm();
+      setContact([...contact, { id: nanoid(), values }]);
+      formik.resetForm({});
     },
     validationSchema: ContactUsSchema,
   });
@@ -43,29 +44,41 @@ export const ContactForm = () => {
       <Label>
         * Full name:
         <Input
-          type="text"
+          // type="text"
           name="fullName"
           onChange={formik.handleChange}
           value={formik.values.name}
+          onError={formik.errors.fullName && formik.touched.fullName}
         />
+        {formik.errors.fullName && formik.touched.fullName && (
+          <ErrorMessage>Wrong Fullname</ErrorMessage>
+        )}
       </Label>
       <Label>
         * E-mail:
         <Input
-          type="email"
+          // type="email"
           name="email"
           onChange={formik.handleChange}
           value={formik.values.email}
+          onError={formik.errors.email && formik.touched.email}
         />
+        {formik.errors.email && formik.touched.email && (
+          <ErrorMessage>Wrong Email</ErrorMessage>
+        )}
       </Label>
       <Label>
         * Phone:
         <Input
-          type="phone"
+          // type="phone"
           name="phone"
           onChange={formik.handleChange}
           value={formik.values.phone}
+          onError={formik.errors.phone && formik.touched.phone}
         />
+        {formik.errors.phone && formik.touched.phone && (
+          <ErrorMessage>Wrong Phone</ErrorMessage>
+        )}
       </Label>
       <Label>
         * Message:
@@ -80,9 +93,9 @@ export const ContactForm = () => {
       <BlockBtn>
         <SendBtn
           type="submit"
-          onClick={() => {
-            console.log('SendButton clicked');
-          }}
+          // onClick={() => {
+          //   console.log('SendButton clicked');
+          // }}
         >
           Send
           <ButtonImg>

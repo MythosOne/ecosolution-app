@@ -26,7 +26,6 @@ export const CasesSection = () => {
   const [offset, setOffset] = useState(0);
   const [windowWidth, setWindowWidth] = useState(360);
   const [slideNumber, setSlideNumber] = useState(1);
-  console.log(`windowWidth: ${windowWidth}`)
 
   const handleLeftArrowClick = () => {
     if (windowWidth < 768) {

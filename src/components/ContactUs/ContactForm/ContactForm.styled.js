@@ -5,7 +5,7 @@ export const Form = styled.form`
 
   min-width: 320px;
   max-width: 480px;
-  height: 559px;
+  /* height: 559px; */
 
   background-color: #eaedf1;
 
@@ -22,7 +22,7 @@ export const Form = styled.form`
 
   @media screen and (min-width: 1279px) {
     width: 596px;
-    height: 623px;
+    /* height: 623px; */
     max-width: none;
 
     padding: 20px 48px 0;
@@ -58,7 +58,8 @@ export const Input = styled.input`
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid #97d28b;
+  border-bottom: 1px solid;
+  border-color: ${props => (!props.onError ? '#97d28b' : '#d28b8b')};
 
   @media screen and (min-width: 1279px) {
     font-size: 20px;
@@ -66,6 +67,19 @@ export const Input = styled.input`
 
     margin: 6px 0;
   }
+`;
+
+export const ErrorMessage = styled.div`
+  margin-top: 8px;
+
+  font-family: Fira Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  text-align: right;
+
+  color: #d28b8b;
 `;
 
 export const InputMessage = styled.textarea`
@@ -114,6 +128,8 @@ export const SendBtn = styled.button`
   line-height: 18px;
   letter-spacing: -0.64px;
 
+  margin-bottom: 36px;
+
   /* stroke: #173d33; */
 
   &:hover {
@@ -123,7 +139,7 @@ export const SendBtn = styled.button`
   }
 
   @media screen and (min-width: 1279px) {
-    margin-top: 32px;
+    margin: 32px 0 48px;
   }
 `;
 

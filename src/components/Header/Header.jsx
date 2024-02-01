@@ -22,7 +22,7 @@ export const Header = () => {
         >
           <MenuBurgerImg />
         </MenuBtn>
-        <GetInBtn type="button" href="#contactUs">
+        <GetInBtn type="button" href="#Contact Us">
           Get in touch
           <EllipseArrowDown />
         </GetInBtn>

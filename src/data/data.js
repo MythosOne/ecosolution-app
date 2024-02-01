@@ -1,5 +1,3 @@
-import React from 'react';
-
 import pic1 from 'images/wind-turbines.png';
 import pic2 from 'images/solar-panels.png';
 import pic3 from 'images/thermal-modules.png';
