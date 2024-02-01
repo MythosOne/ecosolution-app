@@ -7,8 +7,6 @@ export const Section = styled.section`
   grid-row: 3;
   margin-bottom: 36px;
 
-  /* margin: 0 auto 36px; */
-
   grid-template-areas:
     'title'
     'list'

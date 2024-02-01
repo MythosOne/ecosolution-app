@@ -40,8 +40,6 @@ export const SlideImg = styled.img`
 `;
 
 export const SlideLink = styled.div`
-  /* width: 296px; */
-  /* height: 107px; */
   margin-left: 12px;
   margin-right: 12px;
 

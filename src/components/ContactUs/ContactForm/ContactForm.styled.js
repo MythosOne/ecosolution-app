@@ -5,7 +5,6 @@ export const Form = styled.form`
 
   min-width: 320px;
   max-width: 480px;
-  /* height: 559px; */
 
   background-color: #eaedf1;
 
@@ -22,7 +21,6 @@ export const Form = styled.form`
 
   @media screen and (min-width: 1279px) {
     width: 596px;
-    /* height: 623px; */
     max-width: none;
 
     padding: 20px 48px 0;
@@ -59,7 +57,7 @@ export const Input = styled.input`
   border: none;
   outline: none;
   border-bottom: 1px solid;
-  border-color: ${props => (!props.onError ? '#97d28b' : '#d28b8b')};
+  border-color: ${props => (!props.error ? '#97d28b' : '#d28b8b')};
 
   @media screen and (min-width: 1279px) {
     font-size: 20px;
@@ -129,8 +127,6 @@ export const SendBtn = styled.button`
   letter-spacing: -0.64px;
 
   margin-bottom: 36px;
-
-  /* stroke: #173d33; */
 
   &:hover {
     background: #173d33;

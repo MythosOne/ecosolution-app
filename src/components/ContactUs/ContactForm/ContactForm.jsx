@@ -18,15 +18,15 @@ export const ContactForm = () => {
   const [contact, setContact] = useState([]);
 
   const ContactUsSchema = Yup.object().shape({
-    fullName: Yup.string().required('Required').min(2, 'Please enter fullname'),
-    email: Yup.string().required('Required').email('Wrong Email'),
+    name: Yup.string().required('Required').min(2),
+    email: Yup.string().required('Required').email(),
     phone: Yup.number().positive().required('Required'),
     description: Yup.string().max(200),
   });
 
   const formik = useFormik({
     initialValues: {
-      fullName: '',
+      name: '',
       email: '',
       phone: '',
       description: '',
@@ -34,9 +34,10 @@ export const ContactForm = () => {
 
     onSubmit: values => {
       setContact([...contact, { id: nanoid(), values }]);
-      formik.resetForm({});
+      formik.resetForm();
     },
     validationSchema: ContactUsSchema,
+    
   });
 
   return (
@@ -44,24 +45,22 @@ export const ContactForm = () => {
       <Label>
         * Full name:
         <Input
-          // type="text"
-          name="fullName"
+          name="name"
           onChange={formik.handleChange}
           value={formik.values.name}
-          onError={formik.errors.fullName && formik.touched.fullName}
+          error={formik.errors.name && formik.touched.name}
         />
-        {formik.errors.fullName && formik.touched.fullName && (
-          <ErrorMessage>Wrong Fullname</ErrorMessage>
+        {formik.errors.name && formik.touched.name && (
+          <ErrorMessage>Wrong name</ErrorMessage>
         )}
       </Label>
       <Label>
         * E-mail:
         <Input
-          // type="email"
           name="email"
           onChange={formik.handleChange}
           value={formik.values.email}
-          onError={formik.errors.email && formik.touched.email}
+          error={formik.errors.email && formik.touched.email}
         />
         {formik.errors.email && formik.touched.email && (
           <ErrorMessage>Wrong Email</ErrorMessage>
@@ -70,11 +69,10 @@ export const ContactForm = () => {
       <Label>
         * Phone:
         <Input
-          // type="phone"
           name="phone"
           onChange={formik.handleChange}
           value={formik.values.phone}
-          onError={formik.errors.phone && formik.touched.phone}
+          error={formik.errors.phone && formik.touched.phone}
         />
         {formik.errors.phone && formik.touched.phone && (
           <ErrorMessage>Wrong Phone</ErrorMessage>
@@ -93,9 +91,6 @@ export const ContactForm = () => {
       <BlockBtn>
         <SendBtn
           type="submit"
-          // onClick={() => {
-          //   console.log('SendButton clicked');
-          // }}
         >
           Send
           <ButtonImg>

@@ -17,7 +17,7 @@ export const MainSection = () => {
         sources, generating power generation using energy wind, sun, water,
         biomass
       </MainText>
-      <MainBtn type="button" href="#cases">
+      <MainBtn type="button" href="#Cases">
         Learn more
         <ButtonImg>
           <ArrowRightImg width={'16'} height={'16'} />

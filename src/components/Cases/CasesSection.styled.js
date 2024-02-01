@@ -177,14 +177,12 @@ export const SlideWindow = styled.ul`
   display: flex;
 
   width: 320px;
-  /* height: 318px; */
   overflow: hidden;
 
   margin: 0 auto;
 
   @media screen and (min-width: 767px) {
     width: 708px;
-    /* overflow: visible; */
     margin: 0;
     gap: 24px;
   }
@@ -197,9 +195,6 @@ export const SlideWindow = styled.ul`
 
 export const SlideItem = styled.li`
   list-style: none;
-  /* min-width: 100%;
-  max-width: 100%;
-  height: 100%; */
   transform: translateX(${props => props.offset}px);
   transition: translate;
   transition-property: transform;

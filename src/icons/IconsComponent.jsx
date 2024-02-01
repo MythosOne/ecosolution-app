@@ -160,8 +160,6 @@ export const OpennessImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="16"
-      // height="16"
       viewBox="0 0 16 16"
       fill="none"
     >
@@ -209,8 +207,6 @@ export const RespImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="16"
-      // height="16"
       viewBox="0 0 16 16"
       fill="none"
     >
@@ -266,8 +262,6 @@ export const InnovImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="16"
-      // height="16"
       viewBox="0 0 16 16"
       fill="none"
     >
@@ -369,8 +363,6 @@ export const QualityImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="16"
-      // height="16"
       viewBox="0 0 16 16"
       fill="none"
     >
@@ -611,8 +603,6 @@ export const MinusImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="16"
-      // height="16"
       viewBox="0 0 16 16"
       fill="none"
     >
@@ -631,8 +621,6 @@ export const PlusImg = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width="16"
-      // height="16"
       viewBox="0 0 16 16"
       fill="none"
     >
