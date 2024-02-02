@@ -65,6 +65,8 @@ export const ArrowUpBtn = styled.a`
   &:hover {
     stroke: #97d28b;
     background: #173d33;
+
+    transition: all 0.2s ease-in-out;
   }
 
   @media screen and (min-width: 767px) {
@@ -94,6 +96,8 @@ export const SocialFacebook = styled.a`
   &:hover {
     fill: #97d28b;
     stroke: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 `;
 export const SocialInstagram = styled.a`
@@ -105,6 +109,8 @@ export const SocialInstagram = styled.a`
 
   &:hover {
     stroke: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 `;
 

@@ -20,6 +20,7 @@ export const Footer = () => {
       <SocialItem>
         <SocialFacebook
           href="https://www.facebook.com/"
+          target="_blank"
           rel="noopener noreferrer"
           aria-label="facebook"
         >
@@ -27,6 +28,7 @@ export const Footer = () => {
         </SocialFacebook>
         <SocialInstagram
           href="https://www.instagram.com/"
+          target="_blank"
           rel="noopener noreferrer"
           aria-label="instagram"
         >
@@ -36,7 +38,11 @@ export const Footer = () => {
       <ArrowUpBtn type="button" href="#Main">
         <ArrowUpImg />
       </ArrowUpBtn>
-      <Address href="https://bit.ly/3n3ZUYY">
+      <Address
+        href="https://bit.ly/3n3ZUYY"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
       </Address>
       <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>

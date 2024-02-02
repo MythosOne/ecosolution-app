@@ -22,14 +22,14 @@ export const Section = styled.section`
     width: 708px;
     max-width: none;
 
-    margin-bottom: 84px
+    margin-bottom: 84px;
   }
 
   @media screen and (min-width: 1279px) {
     width: 1240px;
     grid-column-gap: 185px;
 
-    margin-bottom: 96px
+    margin-bottom: 96px;
   }
 `;
 
@@ -155,5 +155,7 @@ export const ContactUsBtn = styled.a`
     background: #173d33;
     color: #97d28b;
     fill: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 `;

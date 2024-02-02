@@ -1,14 +1,16 @@
 import styled from '@emotion/styled';
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled.a`
   display: flex;
   align-items: center;
   gap: 4px;
+
+  text-decoration: none;
 `;
 
 export const LogoImg = styled.img``;
 
-export const TitleEco = styled.a`
+export const TitleEco = styled.p`
 
   color: #173d33;
   font-family: 'Nanum Gothic', sans-serif;
@@ -18,10 +20,10 @@ export const TitleEco = styled.a`
   line-height: normal;
   letter-spacing: -1.32px;
 
-  text-decoration: none;
-
   &:hover {
     color: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 `;
 

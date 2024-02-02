@@ -38,7 +38,7 @@ export const AboutSection = () => {
   return (
     <Section id="About">
       <AboutLink>
-        <Address href="https://bit.ly/3n3ZUYY">
+        <Address href="https://bit.ly/3n3ZUYY" target='_blank' rel="noopener noreferrer">
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </Address>
         <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>

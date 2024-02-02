@@ -96,6 +96,8 @@ export const CloseBtn = styled.button`
   &:hover {
     color: #97d28b;
     stroke: #97d28b;
+
+    transition: all 0.2 ease-in-out;
   }
 `;
 
@@ -118,6 +120,8 @@ export const NavLink = styled.a`
   &:hover {
     color: #97d28b;
     stroke: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 `;
 
@@ -133,6 +137,8 @@ export const SocialItem = styled.li`
   &:focus,
   &:hover {
     stroke: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 `;
 

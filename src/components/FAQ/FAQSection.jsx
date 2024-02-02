@@ -31,7 +31,7 @@ export const FAQSection = () => {
         </FAQList>
         <AskQuestion>
           <QuestionText>Didn't find the answer to your question? </QuestionText>
-          <ContactUsBtn type="button" href="#contactUs">
+          <ContactUsBtn type="button" href="#Contact Us">
             Contact Us
             <EllipseArrowDown />
           </ContactUsBtn>

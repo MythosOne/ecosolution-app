@@ -95,9 +95,13 @@ export const SlideBtn = styled.button`
 
   stroke: #173d33;
 
+  cursor: pointer;
+
   &:hover {
     stroke: #97d28b;
     background: #173d33;
+
+    transition: all 0.2s ease-in-out;
   }
 `;
 
@@ -107,7 +111,7 @@ export const SignatureProject = styled.div`
   width: 296px;
 
   padding-top: 12px;
-  
+
   border-top: 1px solid #97d28b;
 
   @media screen and (min-width: 767px) {

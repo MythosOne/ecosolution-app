@@ -18,10 +18,17 @@ export const ContactForm = () => {
   const [contact, setContact] = useState([]);
 
   const ContactUsSchema = Yup.object().shape({
-    name: Yup.string().required('Required').min(2),
-    email: Yup.string().required('Required').email(),
-    phone: Yup.number().positive().required('Required'),
-    description: Yup.string().max(200),
+    name: Yup.string()
+      .matches(/^[a-zA-Zа-яА-ЯёЁ]+$/)
+      .required('Required')
+      .min(2),
+    email: Yup.string()
+      .required('Required')
+      .matches(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/),
+    phone: Yup.string()
+      .matches(/^[+]?[0-9\s()-]+$/)
+      .required('Required'),
+    description: Yup.string().min(10),
   });
 
   const formik = useFormik({
@@ -37,7 +44,6 @@ export const ContactForm = () => {
       formik.resetForm();
     },
     validationSchema: ContactUsSchema,
-    
   });
 
   return (
@@ -79,19 +85,21 @@ export const ContactForm = () => {
         )}
       </Label>
       <Label>
-        * Message:
+        Message:
         <InputMessage
           name="description"
           maxLength={200}
           placeholder="Your message"
           onChange={formik.handleChange}
           value={formik.values.description}
+          error={formik.errors.description && formik.touched.description}
         />
+        {formik.errors.description && formik.touched.description && (
+          <ErrorMessage>Min 10 symbols</ErrorMessage>
+        )}
       </Label>
       <BlockBtn>
-        <SendBtn
-          type="submit"
-        >
+        <SendBtn type="submit">
           Send
           <ButtonImg>
             <ArrowRightImg width={'16'} height={'16'} />

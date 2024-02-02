@@ -112,6 +112,7 @@ export const CasesSection = () => {
         <BlockBtn>
           <SliderLeftBtn
             type="button"
+            style={{transition: "all 0.2s ease-in-out"}} 
             onClick={() => {
               handleLeftArrowClick();
             }}
@@ -120,6 +121,7 @@ export const CasesSection = () => {
           </SliderLeftBtn>
           <SliderRightBtn
             type="button"
+            style={{transition: "all 0.2s ease-in-out"}} 
             onClick={() => {
               handleRightArrowClick();
             }}

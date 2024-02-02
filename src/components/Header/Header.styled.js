@@ -44,12 +44,16 @@ export const MenuBtn = styled.button`
   gap: 12px;
   flex-shrink: 0;
 
+  cursor: pointer;
+
   border-radius: 50%;
   background: #dcefd8;
   border: 0;
 
   &:hover {
     background: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 `;
 
@@ -83,6 +87,8 @@ export const GetInBtn = styled.a`
     background: #173d33;
     color: #97d28b;
     fill: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 
   @media screen and (max-width: 767px) {

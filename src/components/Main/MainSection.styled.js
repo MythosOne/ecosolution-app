@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Section = styled.section`
   max-width: 440px;
 
-  margin-top: 146px;
+  margin-top: 60px;
 
   display: grid;
   grid-row-gap: 24px;
@@ -29,14 +29,12 @@ export const Section = styled.section`
   @media screen and (min-width: 1279px) {
     max-width: none;
     width: 1240px;
-    margin-top: 180px;
 
     grid-template-areas:
       'title article'
       'title button';
     grid-row-gap: 20px;
     grid-column-gap: 296px;
-    justify-content: start;
   }
 `;
 
@@ -122,6 +120,8 @@ export const MainBtn = styled.a`
   &:hover {
     background: #173d33;
     color: #97d28b;
+
+    transition: all 0.2s ease-in-out;
   }
 
   @media screen and (min-width: 767px) and (max-width: 1279px) {

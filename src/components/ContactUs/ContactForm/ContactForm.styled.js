@@ -95,6 +95,7 @@ export const InputMessage = styled.textarea`
   border: none;
   outline: none;
   border-bottom: 1px solid #97d28b;
+  border-color: ${props => (!props.error ? '#97d28b' : '#d28b8b')};
 `;
 
 export const BlockBtn = styled.div`
@@ -128,10 +129,14 @@ export const SendBtn = styled.button`
 
   margin-bottom: 36px;
 
+  cursor: pointer;
+
   &:hover {
     background: #173d33;
     color: #97d28b;
     border-color: #173d33;
+
+    transition: all 0.2s ease-in-out;
   }
 
   @media screen and (min-width: 1279px) {
