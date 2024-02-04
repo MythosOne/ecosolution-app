@@ -12,7 +12,7 @@ export const Header = () => {
   return (
     <Section>
       <Logo />
-      {isOpen && <HeaderNav handleClose={handleClose} />}
+      {isOpen && <HeaderNav handleClose={handleClose}/>}
       <BlockBtn>
         <MenuBtn
           type="button"

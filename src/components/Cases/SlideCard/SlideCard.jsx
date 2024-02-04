@@ -25,7 +25,7 @@ export const SlideCard = ({ energyObject }) => {
         <SlideText>{title}</SlideText>
         <SlideBtn type='button'
           onClick={() => {
-            console.log('SlideLinkButton');
+            alert('Мы обязательно куди нить перейдём...)))');
           }}
         >
           <ArrowUpRightImg />

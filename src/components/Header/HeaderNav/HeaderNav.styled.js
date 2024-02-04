@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 
+
 export const Backdrop = styled.div`
   position: fixed;
   top: 0;
@@ -21,7 +22,7 @@ export const Backdrop = styled.div`
     padding: 42px 30px;
   }
 
-  @media screen and ((min-width: 1280px) ) {
+  @media screen and ((min-width: 1280px)) {
     justify-content: flex-end;
     padding: 30px 100px;
   }
@@ -49,8 +50,6 @@ export const NavContain = styled.nav`
   border-radius: 25px;
   background: rgba(23, 61, 51, 0.75);
   backdrop-filter: blur(12.5px);
-
-  transition: all 3s;
 
   color: #fff;
   font-family: Fira Sans;
