@@ -30,7 +30,7 @@ import { ContactForm } from './ContactForm/ContactForm';
 
 export const ContactUsSection = () => {
   return (
-    <Section id="Contact Us">
+    <Section id="contactUs">
       <TitleSection>CONTACT US</TitleSection>
       <ContactList>
         <PhoneList>

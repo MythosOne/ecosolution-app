@@ -21,20 +21,13 @@ export const Container = styled.div`
   }
 `;
 
-export const Figure = styled.figure`
-  margin: 0;
+export const Picture = styled.picture`
 `;
 
 export const SlideImg = styled.img`
-  width: 320px;
   height: 170px;
 
-  @media screen and (min-width: 767px) {
-    width: 342px;
-  }
-
   @media screen and (min-width: 1279px) {
-    width: 596px;
     height: 324px;
   }
 `;

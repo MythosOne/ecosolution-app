@@ -149,10 +149,7 @@ export const Solar = styled.li`
   }
 `;
 
-export const Figure = styled.figure`
-  width: 100%;
-  height: 100%;
-  margin: 0;
+export const Picture = styled.picture`
 `;
 
 export const FarmsImg = styled.img`
@@ -160,5 +157,6 @@ export const FarmsImg = styled.img`
 `;
 
 export const SolarImg = styled.img`
+
   height: 100%;
 `;

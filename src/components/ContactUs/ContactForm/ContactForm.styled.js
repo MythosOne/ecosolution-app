@@ -144,7 +144,7 @@ export const SendBtn = styled.button`
   }
 `;
 
-export const ButtonImg = styled.div`
+export const ButtonImg = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;

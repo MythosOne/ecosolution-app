@@ -99,7 +99,7 @@ export const CasesSection = () => {
   }, []);
 
   return (
-    <Section id="Cases">
+    <Section id="cases">
       <CasesCompanyTitle>Successful cases of our company</CasesCompanyTitle>
       <VerticalLine />
       <HeaderSlider>
@@ -112,6 +112,8 @@ export const CasesSection = () => {
         <BlockBtn>
           <SliderLeftBtn
             type="button"
+            title='Previous slide'
+            aria-label='left-button'
             style={{transition: "all 0.2s ease-in-out"}} 
             onClick={() => {
               handleLeftArrowClick();
@@ -121,6 +123,8 @@ export const CasesSection = () => {
           </SliderLeftBtn>
           <SliderRightBtn
             type="button"
+            title='Next slide'
+            aria-label='right-button'
             style={{transition: "all 0.2s ease-in-out"}} 
             onClick={() => {
               handleRightArrowClick();
@@ -133,7 +137,7 @@ export const CasesSection = () => {
       <SlideWindow>
         {data.map(energyObjects => {
           return (
-            <SlideItem key={energyObjects.id} offset={offset}>
+            <SlideItem key={energyObjects.id} dataOffset={offset}>
               <SlideCard energyObject={energyObjects} />
             </SlideItem>
           );

@@ -18,7 +18,7 @@ import { FAQCard } from './FAQCard/FAQCard.jsx';
 
 export const FAQSection = () => {
   return (
-    <Section id="FAQ">
+    <Section id="faq">
       <FAQSectionTitle>Frequently Asked Questions</FAQSectionTitle>
         <FAQList>
           {faq.map(questions => {
@@ -31,7 +31,7 @@ export const FAQSection = () => {
         </FAQList>
         <AskQuestion>
           <QuestionText>Didn't find the answer to your question? </QuestionText>
-          <ContactUsBtn type="button" href="#Contact Us">
+          <ContactUsBtn href="#contactUs" title='Go to Contact Us'>
             Contact Us
             <EllipseArrowDown />
           </ContactUsBtn>

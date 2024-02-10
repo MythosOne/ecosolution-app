@@ -101,13 +101,9 @@ export const Copyright = styled.p`
   }
 `;
 
-export const Picture = styled.picture`
-  width: 100%;
-  margin: 0;
-`;
+export const Picture = styled.picture``;
 
 export const AboutImg = styled.img`
-  width: 100%;
 `;
 
 export const AboutMainValues = styled.div`
@@ -155,7 +151,7 @@ export const MainValuesTitle = styled.h2`
     line-height: 36px;
   }
 
-  @media screen and (min-width: 1279px){
+  @media screen and (min-width: 1279px) {
     width: 365px;
 
     font-size: 48px;
@@ -199,11 +195,11 @@ export const MainValuesText = styled.p`
   letter-spacing: -0.64px;
 
   @media screen and (min-width: 767px) {
-      width: 342px;
+    width: 342px;
   }
 
-  @media screen and (min-width:1279px) {
-      width: 459px;
+  @media screen and (min-width: 1279px) {
+    width: 459px;
   }
 `;
 

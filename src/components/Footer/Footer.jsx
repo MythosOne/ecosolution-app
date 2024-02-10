@@ -35,7 +35,7 @@ export const Footer = () => {
           <InstagramImg />
         </SocialInstagram>
       </SocialItem>
-      <ArrowUpBtn type="button" href="#Main">
+      <ArrowUpBtn href="#main" title='Top of page'>
         <ArrowUpImg />
       </ArrowUpBtn>
       <Address

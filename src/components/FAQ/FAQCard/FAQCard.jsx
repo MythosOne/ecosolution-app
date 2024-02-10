@@ -21,6 +21,7 @@ export const FAQCard = ({ FAQ }) => {
         <BlockBtn>
           <PlusBtn
             type="button"
+            aria-label='plus-button'
             onClick={() => {
               setIsOpen(!isOpen);
             }}

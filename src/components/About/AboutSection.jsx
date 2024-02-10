@@ -5,7 +5,6 @@ import {
   Address,
   Mail,
   Copyright,
-  // Figure,
   Picture,
   AboutImg,
   AboutMainValues,
@@ -22,8 +21,12 @@ import {
 
 import { AboutCard } from './AboutCard/AboutCard';
 
-import imgWind from 'images/wind-turbine-clean-energy.png';
-import imgWindTablet from 'images/wind-turbine-clean-energy-tablet.png';
+import wind_mobile_1x from 'images/wind-turbine-clean-energy@1x_sm.jpg';
+import wind_mobile_2x from 'images/wind-turbine-clean-energy@2x_sm.jpg';
+import wind_tablet_1x from 'images/wind-turbine-clean-energy@1x_av.jpg';
+import wind_tablet_2x from 'images/wind-turbine-clean-energy@2x_av.jpg';
+import wind_desktop_1x from 'images/wind-turbine-clean-energy@1x_lg.jpg';
+import wind_desktop_2x from 'images/wind-turbine-clean-energy@2x_lg.jpg';
 
 export const AboutSection = () => {
   const [number, setNumber] = useState(1134147804);
@@ -36,20 +39,39 @@ export const AboutSection = () => {
   }, [number]);
 
   return (
-    <Section id="About">
+    <Section id="about">
       <AboutLink>
-        <Address href="https://bit.ly/3n3ZUYY" target='_blank' rel="noopener noreferrer">
+        <Address
+          href="https://bit.ly/3n3ZUYY"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
         </Address>
         <Mail href="mailto:office@ecosolution.com">office@ecosolution.com</Mail>
         <Copyright>ecosolution © 2023</Copyright>
       </AboutLink>
       <Picture>
-        <source srcSet={imgWindTablet} media="(min-width:767px)" />
-        <AboutImg src={imgWind} alt="Wind turbine" />
+        <source
+          srcSet={`${wind_mobile_1x} 1x, ${wind_mobile_2x} 2x`}
+          media="(max-width: 767px)"
+        />
+        <source
+          srcSet={`${wind_tablet_1x} 1x, ${wind_tablet_2x} 2x`}
+          media="(max-width: 1279px)"
+        />
+        <AboutImg
+          srcSet={`${wind_desktop_1x} 1x, ${wind_desktop_2x} 2x`}
+          src={`${wind_desktop_1x}`}
+          width="1240"
+          alt="wind-turbine"
+          loading="lazy"
+        />
       </Picture>
       <AboutMainValues>
-        <MainValuesTitle>Main values of <br/> our company</MainValuesTitle>
+        <MainValuesTitle>
+          Main values of <br /> our company
+        </MainValuesTitle>
         <VerticalLineMain />
         <MainValuesText>
           EcoSolution envisions a world where sustainable energy solutions power

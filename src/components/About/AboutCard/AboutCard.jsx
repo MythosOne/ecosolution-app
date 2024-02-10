@@ -8,7 +8,7 @@ import {
   CardText,
   Farm,
   Solar,
-  Figure,
+  Picture,
   FarmsImg,
   SolarImg,
 } from './AboutCard.styled';
@@ -20,8 +20,14 @@ import {
   QualityImg,
 } from 'icons/IconsComponent';
 
-import imgFarms from 'images/wind-farms-fields.png';
-import imgSolar from 'images/man-worker-field-by-solar-panels.png';
+import solar_panels_tablet_1x from 'images/man-worker-field-by-solar-panels@1x_av.jpg';
+import solar_panels_tablet_2x from 'images/man-worker-field-by-solar-panels@2x_av.jpg';
+import solar_panels_desktop_1x from 'images/man-worker-field-by-solar-panels@1x_lg.jpg';
+import solar_panels_desktop_2x from 'images/man-worker-field-by-solar-panels@2x_lg.jpg';
+import wind_farms_tablet_1x from 'images/wind-farms-fields@1x_av.jpg';
+import wind_farms_tablet_2x from 'images/wind-farms-fields@2x_av.jpg';
+import wind_farms_desktop_1x from 'images/wind-farms-fields@1x_lg.jpg';
+import wind_farms_desktop_2x from 'images/wind-farms-fields@2x_lg.jpg';
 
 export const AboutCard = () => {
   const cardItems = [
@@ -70,14 +76,31 @@ export const AboutCard = () => {
           );
         })}
         <Farm>
-          <Figure>
-            <FarmsImg src={imgFarms} alt="Farms fields" />
-          </Figure>
+          <Picture>
+            <source
+              srcSet={`${wind_farms_tablet_1x} 1x, ${wind_farms_tablet_2x} 2x`}
+              media="(max-width: 1279px)"
+            />
+            <FarmsImg
+              srcSet={`${wind_farms_desktop_1x} 1x, ${wind_farms_desktop_2x} 2x`}
+              src={wind_farms_desktop_1x}
+              alt="Farms fields"
+            />
+          </Picture>
         </Farm>
         <Solar>
-          <Figure>
-            <SolarImg src={imgSolar} alt="Solar panels" />
-          </Figure>
+          <Picture>
+            <source
+              srcSet={`${solar_panels_tablet_1x} 1x, ${solar_panels_tablet_2x} 2x`}
+              media="(max-width: 1279px)"
+            />
+            <SolarImg
+              srcSet={`${solar_panels_desktop_1x} 1x, ${solar_panels_desktop_2x} 2x`}
+              src={solar_panels_desktop_1x}
+              width="596"
+              alt="Solar panels"
+            />
+          </Picture>
         </Solar>
       </CardList>
     </>

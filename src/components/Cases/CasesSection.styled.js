@@ -195,7 +195,7 @@ export const SlideWindow = styled.ul`
 
 export const SlideItem = styled.li`
   list-style: none;
-  transform: translateX(${props => props.offset}px);
+  transform: translateX(${props => props.dataOffset}px);
   transition: translate;
   transition-property: transform;
   transition-duration: 300ms;

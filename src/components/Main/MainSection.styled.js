@@ -34,11 +34,11 @@ export const Section = styled.section`
       'title article'
       'title button';
     grid-row-gap: 20px;
-    grid-column-gap: 296px;
+    grid-column-gap: 296px;-
   }
 `;
 
-export const MainTitle = styled.h2`
+export const MainTitle = styled.h1`
   grid-area: title;
 
   text-align: center;

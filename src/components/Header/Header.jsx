@@ -12,17 +12,19 @@ export const Header = () => {
   return (
     <Section>
       <Logo />
-      {isOpen && <HeaderNav handleClose={handleClose}/>}
+      {isOpen && <HeaderNav handleClose={handleClose} />}
       <BlockBtn>
         <MenuBtn
           type="button"
+          aria-label='burger-menu'
+          title='Menu'
           onClick={() => {
             setIsOpen(true);
           }}
         >
           <MenuBurgerImg />
         </MenuBtn>
-        <GetInBtn type="button" href="#Contact Us">
+        <GetInBtn href="#contactUs" title="Go to Contact Us">
           Get in touch
           <EllipseArrowDown />
         </GetInBtn>

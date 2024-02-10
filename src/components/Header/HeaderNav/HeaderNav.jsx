@@ -22,11 +22,11 @@ import {
 
 export const HeaderNav = ({ handleClose }) => {
   const menuItems = [
-    { id: 1, title: 'Main' },
-    { id: 2, title: 'About' },
-    { id: 3, title: 'Cases' },
-    { id: 4, title: 'FAQ' },
-    { id: 5, title: 'Contact Us' },
+    { id: 1, title: 'Main', link: "main" },
+    { id: 2, title: 'About', link: "about" },
+    { id: 3, title: 'Cases', link:  "cases"},
+    { id: 4, title: 'FAQ', link: "faq" },
+    { id: 5, title: 'Contact Us', link: "contactUs" },
   ];
 
   return (
@@ -43,7 +43,7 @@ export const HeaderNav = ({ handleClose }) => {
             {menuItems.map(menu => {
               return (
                 <NavItem key={menu.id}>
-                  <NavLink href={`#${menu.title}`}>
+                  <NavLink href={`#${menu.link}`}>
                     {menu.title}
                     <ArrowNavImg />
                   </NavLink>
@@ -58,6 +58,7 @@ export const HeaderNav = ({ handleClose }) => {
               href="https://www.facebook.com/"
               rel="noopener noreferrer"
               aria-label="facebook"
+              target='_blank'
             >
               <FaceBookImg />
             </SocialFacebook>
@@ -67,6 +68,7 @@ export const HeaderNav = ({ handleClose }) => {
               href="https://www.instagram.com/"
               rel="noopener noreferrer"
               aria-label="instagram"
+              target='_blank'
             >
               <InstagramImg />
             </SocialInstagram>

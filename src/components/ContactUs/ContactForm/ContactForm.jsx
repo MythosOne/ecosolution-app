@@ -52,6 +52,7 @@ export const ContactForm = () => {
         * Full name:
         <Input
           name="name"
+          autoComplete="on"
           onChange={formik.handleChange}
           value={formik.values.name}
           error={formik.errors.name && formik.touched.name}
@@ -64,6 +65,7 @@ export const ContactForm = () => {
         * E-mail:
         <Input
           name="email"
+          autoComplete="on"
           onChange={formik.handleChange}
           value={formik.values.email}
           error={formik.errors.email && formik.touched.email}
@@ -76,6 +78,7 @@ export const ContactForm = () => {
         * Phone:
         <Input
           name="phone"
+          autoComplete="on"
           onChange={formik.handleChange}
           value={formik.values.phone}
           error={formik.errors.phone && formik.touched.phone}
@@ -99,7 +102,7 @@ export const ContactForm = () => {
         )}
       </Label>
       <BlockBtn>
-        <SendBtn type="submit">
+        <SendBtn type="submit" title='Submit form'>
           Send
           <ButtonImg>
             <ArrowRightImg width={'16'} height={'16'} />

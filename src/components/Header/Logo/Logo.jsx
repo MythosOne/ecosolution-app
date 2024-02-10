@@ -4,7 +4,7 @@ import { LogoImg } from 'icons/IconsComponent';
 
 export const Logo = () => {
   return (
-      <LogoWrapper href="#Main">
+      <LogoWrapper href="#main">
         <LogoImg />
         <TitleEco >ecosolution</TitleEco>
         <TitleGreen>

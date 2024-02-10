@@ -25,7 +25,7 @@ export const LogoImg = () => {
         />
       </g>
       <defs>
-        <clipPath id="clip0_101_1515">
+        <clipPath >
           <rect width="31" height="18" fill="white" />
         </clipPath>
       </defs>
