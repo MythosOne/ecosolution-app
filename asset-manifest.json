@@ -1,22 +1,37 @@
 {
   "files": {
     "main.css": "/ecosolution-app/static/css/main.91700874.css",
-    "main.js": "/ecosolution-app/static/js/main.d65cbb75.js",
-    "static/media/wind-turbine-clean-energy-tablet.png": "/ecosolution-app/static/media/wind-turbine-clean-energy-tablet.8756476ab3eca3194a06.png",
-    "static/media/solar-panels.png": "/ecosolution-app/static/media/solar-panels.a8c12311c0eadd8212bf.png",
-    "static/media/thermal-modules.png": "/ecosolution-app/static/media/thermal-modules.508310ef098a18003b2b.png",
-    "static/media/mini-nuclear-station.png": "/ecosolution-app/static/media/mini-nuclear-station.2007ee58698a3272e4e2.png",
-    "static/media/man-worker-field-by-solar-panels.png": "/ecosolution-app/static/media/man-worker-field-by-solar-panels.c972965c14de6caee6e5.png",
-    "static/media/wind-farms-fields.png": "/ecosolution-app/static/media/wind-farms-fields.c67bf10fb0b37aec4b2f.png",
-    "static/media/wind-turbines.png": "/ecosolution-app/static/media/wind-turbines.df182b42e929331d4d42.png",
-    "static/media/wind-power.png": "/ecosolution-app/static/media/wind-power.6a98bee7f03c14419266.png",
-    "static/media/wind-turbine-clean-energy.png": "/ecosolution-app/static/media/wind-turbine-clean-energy.82188a65894393fb43c5.png",
+    "main.js": "/ecosolution-app/static/js/main.7fabc969.js",
+    "static/media/wind-turbine-clean-energy@2x_lg.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@2x_lg.3dbc20fe79c2ec02c34f.jpg",
+    "static/media/wind-turbine-clean-energy@2x_av.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@2x_av.13a2923476fca8db721c.jpg",
+    "static/media/solar-panels@2x_av.jpg": "/ecosolution-app/static/media/solar-panels@2x_av.6d919f0660abf8989c6b.jpg",
+    "static/media/wind-turbine-clean-energy@1x_lg.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@1x_lg.cd38a8821486a4464819.jpg",
+    "static/media/thermal-modules@2x_av.jpg": "/ecosolution-app/static/media/thermal-modules@2x_av.d7e5b36af2190a133252.jpg",
+    "static/media/nuclear-station@2x_av.jpg": "/ecosolution-app/static/media/nuclear-station@2x_av.abc01f12493f00df4704.jpg",
+    "static/media/wind-turbines@2x_av.jpg": "/ecosolution-app/static/media/wind-turbines@2x_av.1e8522bfd162635ce1d2.jpg",
+    "static/media/wind-farms-fields@2x_lg.jpg": "/ecosolution-app/static/media/wind-farms-fields@2x_lg.9a076db0f6f1a99b02cb.jpg",
+    "static/media/man-worker-field-by-solar-panels@2x_lg.jpg": "/ecosolution-app/static/media/man-worker-field-by-solar-panels@2x_lg.ad908791256514480a51.jpg",
+    "static/media/wind-power@2x_av.jpg": "/ecosolution-app/static/media/wind-power@2x_av.b0a98e9aa1883beb7554.jpg",
+    "static/media/wind-turbine-clean-energy@2x_sm.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@2x_sm.d5e05c2f06557db52dc4.jpg",
+    "static/media/wind-turbine-clean-energy@1x_av.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@1x_av.b2cece1a5e0894ae2ff6.jpg",
+    "static/media/solar-panels@1x_av.jpg": "/ecosolution-app/static/media/solar-panels@1x_av.f0529d4befea2124eda1.jpg",
+    "static/media/thermal-modules@1x_av.jpg": "/ecosolution-app/static/media/thermal-modules@1x_av.7595651d3e3190f1af47.jpg",
+    "static/media/wind-farms-fields@2x_av.jpg": "/ecosolution-app/static/media/wind-farms-fields@2x_av.967e7a2d4a06729da3fb.jpg",
+    "static/media/nuclear-station@1x_av.jpg": "/ecosolution-app/static/media/nuclear-station@1x_av.bb123683135768f14b44.jpg",
+    "static/media/wind-turbines@1x_av.jpg": "/ecosolution-app/static/media/wind-turbines@1x_av.5d327cb1a173fb782d65.jpg",
+    "static/media/man-worker-field-by-solar-panels@2x_av.jpg": "/ecosolution-app/static/media/man-worker-field-by-solar-panels@2x_av.88cc63f68dd595fa1843.jpg",
+    "static/media/wind-farms-fields@1x_lg.jpg": "/ecosolution-app/static/media/wind-farms-fields@1x_lg.bdc255adc565531b78ac.jpg",
+    "static/media/man-worker-field-by-solar-panels@1x_lg.jpg": "/ecosolution-app/static/media/man-worker-field-by-solar-panels@1x_lg.dde9792667a79aa57f40.jpg",
+    "static/media/wind-power@1x_av.jpg": "/ecosolution-app/static/media/wind-power@1x_av.e7a8c434bea60a9dcafd.jpg",
+    "static/media/wind-turbine-clean-energy@1x_sm.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@1x_sm.7f376e33f6ba5a14db20.jpg",
+    "static/media/wind-farms-fields@1x_av.jpg": "/ecosolution-app/static/media/wind-farms-fields@1x_av.d1718e8183608e8f6002.jpg",
+    "static/media/man-worker-field-by-solar-panels@1x_av.jpg": "/ecosolution-app/static/media/man-worker-field-by-solar-panels@1x_av.7516baecc88a9b6fee44.jpg",
     "index.html": "/ecosolution-app/index.html",
     "main.91700874.css.map": "/ecosolution-app/static/css/main.91700874.css.map",
-    "main.d65cbb75.js.map": "/ecosolution-app/static/js/main.d65cbb75.js.map"
+    "main.7fabc969.js.map": "/ecosolution-app/static/js/main.7fabc969.js.map"
   },
   "entrypoints": [
     "static/css/main.91700874.css",
-    "static/js/main.d65cbb75.js"
+    "static/js/main.7fabc969.js"
   ]
 }
