@@ -21,7 +21,13 @@ export const SlideCard = ({ energyObject }) => {
       <Picture>
         <source srcSet={image} media="(max-width: 767px)" />
         <source srcSet={image} media="(max-width: 1279px)" />
-        <SlideImg srcSet={image} src={imgSrc} alt={altImg} />
+        <SlideImg
+          srcSet={image}
+          src={imgSrc}
+          alt={altImg}
+          width="596"
+          loading="lazy"
+        />
       </Picture>
       <SlideLink>
         <SlideText>{title}</SlideText>

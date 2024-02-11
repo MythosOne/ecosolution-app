@@ -84,7 +84,9 @@ export const AboutCard = () => {
             <FarmsImg
               srcSet={`${wind_farms_desktop_1x} 1x, ${wind_farms_desktop_2x} 2x`}
               src={wind_farms_desktop_1x}
+              width="594"
               alt="Farms fields"
+              loading="lazy"
             />
           </Picture>
         </Farm>
@@ -97,8 +99,9 @@ export const AboutCard = () => {
             <SolarImg
               srcSet={`${solar_panels_desktop_1x} 1x, ${solar_panels_desktop_2x} 2x`}
               src={solar_panels_desktop_1x}
-              width="596"
+              width="594"
               alt="Solar panels"
+              loading="lazy"
             />
           </Picture>
         </Solar>
