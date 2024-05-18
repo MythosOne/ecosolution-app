@@ -34,7 +34,7 @@ export const Section = styled.section`
       'title article'
       'title button';
     grid-row-gap: 20px;
-    grid-column-gap: 296px;-
+    grid-column-gap: 296px;
   }
 `;
 
