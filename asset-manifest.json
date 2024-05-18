@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ecosolution-app/static/css/main.91700874.css",
-    "main.js": "/ecosolution-app/static/js/main.24f291b5.js",
+    "main.js": "/ecosolution-app/static/js/main.dc2cd08e.js",
     "static/media/wind-turbine-clean-energy@2x_lg.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@2x_lg.3dbc20fe79c2ec02c34f.jpg",
     "static/media/wind-turbine-clean-energy@2x_av.jpg": "/ecosolution-app/static/media/wind-turbine-clean-energy@2x_av.13a2923476fca8db721c.jpg",
     "static/media/solar-panels@2x_av.jpg": "/ecosolution-app/static/media/solar-panels@2x_av.6d919f0660abf8989c6b.jpg",
@@ -28,10 +28,10 @@
     "static/media/man-worker-field-by-solar-panels@1x_av.jpg": "/ecosolution-app/static/media/man-worker-field-by-solar-panels@1x_av.7516baecc88a9b6fee44.jpg",
     "index.html": "/ecosolution-app/index.html",
     "main.91700874.css.map": "/ecosolution-app/static/css/main.91700874.css.map",
-    "main.24f291b5.js.map": "/ecosolution-app/static/js/main.24f291b5.js.map"
+    "main.dc2cd08e.js.map": "/ecosolution-app/static/js/main.dc2cd08e.js.map"
   },
   "entrypoints": [
     "static/css/main.91700874.css",
-    "static/js/main.24f291b5.js"
+    "static/js/main.dc2cd08e.js"
   ]
 }
